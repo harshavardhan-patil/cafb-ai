@@ -1,0 +1,16 @@
+ipython
+jupyterlab
+loguru
+matplotlib
+mkdocs
+notebook
+numpy==1.23.5
+pandasai
+pip
+python-dotenv
+ruff
+scikit-learn
+tqdm
+typer
+openpyxl
+-e .
