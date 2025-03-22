@@ -13,4 +13,5 @@ scikit-learn
 tqdm
 typer
 openpyxl
+streamlit
 -e .
