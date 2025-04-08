@@ -5,7 +5,7 @@ matplotlib
 mkdocs
 notebook
 numpy==1.23.5
-pandasai
+#pandasai
 pip
 python-dotenv
 ruff
@@ -14,4 +14,10 @@ tqdm
 typer
 openpyxl
 streamlit
+jira
+psycopg2-binary
+pgvector
+langchain
+langchain-ollama
+ollama
 -e .

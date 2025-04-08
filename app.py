@@ -6,8 +6,12 @@ import base64
 from loguru import logger
 import plotly.graph_objects as go
 
+
+
+st.set_page_config(layout='wide', initial_sidebar_state='expanded')
+
 #converting static image and setting as website background
-st.title("CAFB AI Support System")
+st.title("CAFB Support System")
 
 pg = st.navigation([st.Page("src/pages/support.py"), st.Page("src/pages/dashboard.py")])
 pg.run()

@@ -1,0 +1,2 @@
+MODEL_OPENAI="OpenAI"
+MODEL_GEMMA3="Gemma3"

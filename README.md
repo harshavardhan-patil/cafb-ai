@@ -59,3 +59,6 @@ CAFB AI Support System
 
 --------
 
+
+sudo docker exec -t cafb-ai-postgres-1 pg_dump -U postgres -d jira_rag > jira_db.dump
+sudo docker exec -i cafb-ai-postgres-1 psql -U postgres -d jira_rag < jira_db.dump

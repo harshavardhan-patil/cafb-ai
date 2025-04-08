@@ -1,0 +1,34 @@
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  # jira-rag-app:
+  #   build: .
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     - POSTGRES_HOST=postgres
+  #     - POSTGRES_PORT=5432
+  #     - POSTGRES_DB=${POSTGRES_DB}
+  #     - POSTGRES_USER=${POSTGRES_USER}
+  #     - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  #     - JIRA_URL=${JIRA_URL}
+  #     - JIRA_EMAIL=${JIRA_EMAIL}
+  #     - JIRA_API_TOKEN=${JIRA_API_TOKEN}
+  #     - OPENAI_API_KEY=${OPENAI_API_KEY}
+  #     - API_KEY=${API_KEY}
+  #   ports:
+  #     - "8000:8000"
+  #   restart: always
+
+volumes:
+  postgres_data:
