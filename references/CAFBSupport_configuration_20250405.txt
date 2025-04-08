@@ -1,0 +1,219 @@
+{
+  "projectData": {
+    "name": "CAFB Support",
+    "key": "CAFBSS",
+    "type": "business",
+    "style": "TEAM_MANAGED_PROJECT",
+    "accessLevel": "OPEN",
+    "template": null
+  },
+  "dateTimeProperties": {
+    "dateFormat": "yyyy-MM-dd HH:mm:ss",
+    "timeZone": "America/New_York",
+    "locale": "en_US"
+  },
+  "fieldMappings": {
+    "Title": {
+      "fieldName": "Summary",
+      "fieldId": "summary",
+      "fieldType": "summary",
+      "dataParser": null
+    },
+    "Desc": {
+      "fieldName": "Description",
+      "fieldId": "description",
+      "fieldType": "description",
+      "dataParser": null
+    },
+    "Main Category": {
+      "fieldId": null,
+      "fieldName": "Main Category",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+    },
+    "Sub-Category": {
+      "fieldId": null,
+      "fieldName": "Sub-Category",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:labels"
+    },
+    "Issue id": {
+      "fieldName": "Issue id",
+      "fieldId": "issueId",
+      "fieldType": "issueId",
+      "dataParser": null
+    },
+    "Issue Type": {
+      "fieldName": "Issue Type",
+      "fieldId": "issuetype",
+      "fieldType": "issuetype",
+      "dataParser": null
+    },
+    "Status": {
+      "fieldName": "Status",
+      "fieldId": "status",
+      "fieldType": "status",
+      "dataParser": null
+    },
+    "Priority": {
+      "fieldName": "Priority",
+      "fieldId": "priority",
+      "fieldType": "priority",
+      "dataParser": null
+    },
+    "Resolution": {
+      "fieldName": "Resolution",
+      "fieldId": "resolution",
+      "fieldType": "resolution",
+      "dataParser": null
+    },
+    "Assignee": {
+      "fieldName": "Assignee",
+      "fieldId": "assignee",
+      "fieldType": "assignee",
+      "dataParser": null
+    },
+    "Reporter (Email)": {
+      "fieldId": null,
+      "fieldName": "Reporter (Email)",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Creator (Email)": {
+      "fieldName": "Creator",
+      "fieldId": "creator",
+      "fieldType": "creator",
+      "dataParser": null
+    },
+    "Created": {
+      "fieldName": "Created",
+      "fieldId": "created",
+      "fieldType": "created",
+      "dataParser": null
+    },
+    "Updated": {
+      "fieldName": "Updated",
+      "fieldId": "updated",
+      "fieldType": "updated",
+      "dataParser": null
+    },
+    "Last Viewed": {
+      "fieldId": null,
+      "fieldName": "Last Viewed",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+    },
+    "Resolved": {
+      "fieldId": null,
+      "fieldName": "Resolved",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+    },
+    "Due date": {
+      "fieldName": "Due date",
+      "fieldId": "duedate",
+      "fieldType": "duedate",
+      "dataParser": null
+    },
+    "Partner Names": {
+      "fieldId": null,
+      "fieldName": "Partner Names",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Record/Transaction ID": {
+      "fieldId": null,
+      "fieldName": "Record/Transaction ID",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Region": {
+      "fieldId": null,
+      "fieldName": "Region",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Relevant Departments": {
+      "fieldId": null,
+      "fieldName": "Relevant Departments",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Custom field (Relevant Departments).1": {
+      "fieldId": null,
+      "fieldName": "Custom field (Relevant Departments).1",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Request Category": {
+      "fieldId": null,
+      "fieldName": "Request Category",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Request Type": {
+      "fieldId": null,
+      "fieldName": "Request Type",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Request language": {
+      "fieldId": null,
+      "fieldName": "Request language",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Resolution Action": {
+      "fieldId": null,
+      "fieldName": "Resolution Action",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Satisfaction rating": {
+      "fieldId": null,
+      "fieldName": "Satisfaction rating",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:float"
+    },
+    "Satisfaction date": {
+      "fieldId": null,
+      "fieldName": "Satisfaction date",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+    },
+    "Source": {
+      "fieldId": null,
+      "fieldName": "Source",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Time to first response": {
+      "fieldId": null,
+      "fieldName": "Time to first response",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Time to resolution": {
+      "fieldId": null,
+      "fieldName": "Time to resolution",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Status Category": {
+      "fieldName": "Status Category",
+      "fieldId": "statusCategory",
+      "fieldType": "statusCategory",
+      "dataParser": null
+    },
+    "Status Category Changed": {
+      "fieldId": null,
+      "fieldName": "Status Category Changed",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "[CHART] Date of First Response": {
+      "fieldId": null,
+      "fieldName": "[CHART] Date of First Response",
+      "fieldType": "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+    },
+    "Comments": {
+      "fieldName": "Comment",
+      "fieldId": "comment",
+      "fieldType": "comment",
+      "dataParser": null
+    }
+  },
+  "linkMappings": {},
+  "userMappings": {
+    "mjsi14c7g9mv@o.la": "mjsi14c7g9mv@o.la",
+    "intnieea.sscys-otu@tmesm.vet": "intnieea.sscys-otu@tmesm.vet",
+    "mog6aacjrg@mmni.li": "mog6aacjrg@mmni.li",
+    "visoeuye.s-eaittncsem@mnt.st": "visoeuye.s-eaittncsem@mnt.st",
+    "raeiabenkarrottlponagrpa@frouptopcd.as": "raeiabenkarrottlponagrpa@frouptopcd.as",
+    "BNNORBWAEC@LRO.MO": "BNNORBWAEC@LRO.MO",
+    "dri@goecrmanimrbncohl.as": "dri@goecrmanimrbncohl.as",
+    "1o1avaesrennr@tz.ai": "1o1avaesrennr@tz.ai",
+    "vloaucdanu@dea.sc": "vloaucdanu@dea.sc"
+  },
+  "userRoles": {}
+}
