@@ -64,6 +64,6 @@ CAFB AI Support System
 
 ### Commands
 1. Starts the container: docker compose up -d
-2. Not needed since I've already backed up - To Backup: docker exec -t <docker container name> pg_dump -U postgres -d jira_rag > jira_db.dump
-3. Restoring Backup: docker exec -i <docker container name> psql -U postgres -d jira_rag < jira_db.dump
+2. Not needed since I've already backed up - To Backup: docker exec -t <docker_container_name> pg_dump -U postgres -d jira_rag > jira_db.dump
+3. Restoring Backup: docker exec -i <docker_container_name> psql -U postgres -d jira_rag < jira_db.dump
 4. docker compose down #-v for removing data
