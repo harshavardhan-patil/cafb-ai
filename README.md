@@ -58,7 +58,12 @@ CAFB AI Support System
 ```
 
 --------
+### Install 
+1. Docker and Docker Compose
+2. Ollama
 
-
-sudo docker exec -t cafb-ai-postgres-1 pg_dump -U postgres -d jira_rag > jira_db.dump
-sudo docker exec -i cafb-ai-postgres-1 psql -U postgres -d jira_rag < jira_db.dump
+### Commands
+1. Starts the container: docker compose up -d
+2. Not needed since I've already backed up - To Backup: docker exec -t <docker container name> pg_dump -U postgres -d jira_rag > jira_db.dump
+3. Restoring Backup: docker exec -i <docker container name> psql -U postgres -d jira_rag < jira_db.dump
+4. docker compose down #-v for removing data
