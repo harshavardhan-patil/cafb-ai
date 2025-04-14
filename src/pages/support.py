@@ -114,7 +114,6 @@ if st.session_state.chat_started:
 
         Ticket Context: {issue_context}
         """
-        print(system_prompt)
         
     else:  # todo new issue flow
         system_prompt = f"""
@@ -164,47 +163,4 @@ if st.session_state.chat_started:
         # New messages are saved to history automatically by Langchain during run
         config = {"configurable": {"session_id": "any"}}
         st.chat_message('ai').write_stream(chain_with_history.stream({"question": user_input}, config))
-        
-# llm = ChatOllama(
-#     model="gemma3",
-# )
-
-# # Set up memory
-# msgs = StreamlitChatMessageHistory(key="langchain_messages")
-
-# prompt = ChatPromptTemplate.from_messages(
-#     [
-#         ("system", 
-#          """
-#         You are a frontdesk assistant for Capital Area Food Bank (CAFB). Various partners of CAFB come to you with queries/complaints/questions.
-#         You should help these partners by understanding their query and providing helpful answers. 
-#         These questions might be related to existing Jira tickets or might require creation of new Jira tickets
-#         The system will provide context from the Jira database to answer the questions.
-#         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question. DO NOT MAKE UP/SIMULATE INFORMATION
-#         """),
-#         MessagesPlaceholder(variable_name="history"),
-#         ("human", "{question}"),
-#     ]
-# )
-
-# chain = prompt | llm
-# chain_with_history = RunnableWithMessageHistory(
-#     chain,
-#     lambda session_id: msgs,
-#     input_messages_key="question",
-#     history_messages_key="history",
-# )
-
-# # Render current messages from StreamlitChatMessageHistory
-# for msg in msgs.messages:
-#     if msg.type == 'AIMessageChunk':
-#         st.chat_message('ai').write(msg.content)
-#     else:
-#         st.chat_message(msg.type).write(msg.content)
-
-# # If user inputs a new prompt, generate and draw a new response
-# if prompt := st.chat_input("How can I help?"):
-#     st.chat_message("human").write(prompt)
-#     # New messages are saved to history automatically by Langchain during run
-#     config = {"configurable": {"session_id": "any"}}
-#     st.chat_message('ai').write_stream(chain_with_history.stream({"question": prompt}, config))
+         
