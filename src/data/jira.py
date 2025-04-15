@@ -146,6 +146,37 @@ def get_comment_info(comment_id):
             "author": "Unknown"
         }
 
+
+def get_issue_kb(issue_key):
+    """Get knowledge base for handling issue"""
+    conn = connect_to_db()
+    cursor = conn.cursor()
+    
+    cursor.execute(
+        """
+        SELECT main_category, sub_category
+        FROM jira_issues
+        WHERE issue_key = %s
+        """,
+        (issue_key,)
+    )
+    
+    result = cursor.fetchone()
+    
+    cursor.execute(
+        """
+        SELECT kb
+        FROM knowledge_base
+        WHERE 
+        main_category = %s AND sub_category = %s
+        """,
+        (result[0], result[1])
+    )
+
+    result = cursor.fetchone()
+    conn.close
+    return result[0]
+
 def extract_and_load_issues(project_key, max_results=100):
     """Extract issues from Jira and load them into the database."""
     jira = connect_to_jira()

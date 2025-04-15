@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import re
 
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
@@ -28,3 +29,14 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     df['Resolved Year'] = df['Resolved'].dt.year
 
     return df
+
+def clean_ticket(ticket):
+    # Remove special characters and formatting
+    ticket = re.sub(r'\{color:[^}]*\}|\{color\}|\{quote\}|\{adf\}.*?\{adf\}', ' ', ticket)
+    ticket = re.sub(r'<[^>]*>', ' ', ticket)
+    ticket = re.sub(r'!https?://[^\s!]*!', ' ', ticket)
+    ticket = re.sub(r'\[[^\]]*\]', ' ', ticket)
+    ticket = re.sub(r'https?://\S+', ' ', ticket)
+    ticket = re.sub(r'\s+', ' ', ticket)
+    
+    return ticket.strip()

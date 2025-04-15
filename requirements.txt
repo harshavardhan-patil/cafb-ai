@@ -4,8 +4,7 @@ loguru
 matplotlib
 mkdocs
 notebook
-numpy==1.23.5
-#pandasai
+numpy
 pip
 python-dotenv
 ruff
@@ -20,4 +19,7 @@ pgvector
 langchain
 langchain-ollama
 ollama
+langchain_openai
+langchain_community
+langchain_google
 -e .

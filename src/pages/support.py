@@ -10,7 +10,7 @@ from langchain_community.chat_message_histories import StreamlitChatMessageHisto
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_ollama import ChatOllama
-from src.data.jira import check_ticket_exists, get_issue_context
+from src.data.jira import check_ticket_exists, get_issue_context, get_issue_kb
 
 load_dotenv()
 
@@ -103,16 +103,20 @@ if st.session_state.chat_started:
     # Create appropriate system prompt based on context
     if st.session_state.selected_option == "existing":
         issue_context = get_issue_context(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
+        issue_kb = get_issue_kb(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
         system_prompt = f"""
         You are a frontdesk assistant for Capital Area Food Bank (CAFB). 
         A partner is inquiring about an existing ticket with ID: {st.session_state.issue_key}.
         
         Try to provide helpful context and solutions related to this ticket.
-        Use the information retrieved from the Jira database to answer questions.
+        Use the Ticket Context and Knowledge Base to answer questions
         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question. 
         DO NOT MAKE UP OR SIMULATE INFORMATION.
 
         Ticket Context: {issue_context}
+         
+        ##############
+        Knowledge Base: {issue_kb}
         """
         
     else:  # todo new issue flow

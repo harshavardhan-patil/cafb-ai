@@ -128,6 +128,18 @@ def setup_db():
     )
     """)
 
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS knowledge_base (
+        id SERIAL PRIMARY KEY,
+        main_category TEXT,
+        sub_category TEXT,
+        kb TEXT NOT NULL,
+        created_at TIMESTAMP NOT NULL,
+        updated_at TIMESTAMP NOT NULL
+    )
+    """)
+
     # for nomic-embed
     emb_size = 768
     # for openai
