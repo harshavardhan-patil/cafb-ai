@@ -1,0 +1,131 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Grant & Billing Issues – Billing Discrepancies  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports LLMs in assisting CAFB partners who report discrepancies in invoices, payment applications, grant allocations, or billing charges. Discrepancies may involve:
+
+- Invoices billed for cancelled orders
+- Charges for items already credited or returned
+- Delivery fees on grant-covered or free items
+- Missing invoices from the portal
+- Grants not applying correctly to eligible items
+- Duplicate or unrecognized charges on PartnerLink
+- Credit memos not reflected accurately
+
+---
+SECTION 2: COMMON BILLING DISCREPANCIES & RESPONSE FLOWS
+---
+
+**1. Duplicate Charges or Delivery Mistakes**
+- Example: Partner received frozen meals on 11/26, but was charged again on 11/27.
+- Steps:
+  - Confirm the item was delivered only once.
+  - Verify SO number and corresponding invoice.
+  - Escalate to finance team to remove duplicate line.
+- Resolution: Delivery charge removed; invoice adjusted.
+
+**2. Charges for Cancelled Orders**
+- Example: A $675.99 order was canceled but still billed.
+- Steps:
+  - Request SO number and invoice ID.
+  - Check for partial credit or refund status in PartnerLink.
+  - Follow up with IT and management for full reversal.
+- Resolution: Partial refunds may be shown; ensure fees are also reviewed.
+
+**3. Delivery Fee Disputes on Free or Grant-Funded Orders**
+- Example: Partner disputes $75 fee on an all-produce (TEFAP) order.
+- Steps:
+  - Determine if a grant was applied.
+  - Check item eligibility for free delivery.
+  - If not eligible, confirm fee stands and explain policy.
+- Resolution: Inform partner whether the fee is valid or has been waived.
+
+**4. Payment Reflected but Invoice Unpaid**
+- Example: Partner made payment but invoice still shows as open.
+- Steps:
+  - Confirm payment date and method.
+  - Escalate to finance for reconciliation.
+  - Cross-check PartnerLink status.
+- Resolution: Update backend systems to reflect payment; notify partner.
+
+**5. Missing Invoices from CAFB Portal**
+- Example: Partner couldn’t find all FY24 invoices on PartnerLink.
+- Steps:
+  - Verify if invoices were credit card purchases (these may not appear).
+  - Request manual export if needed.
+  - Suggest future visibility improvements via IT.
+- Resolution: Provide download or PDF summary if possible.
+
+**6. Grant Misallocation or Partial Application**
+- Example: Order balance remains due despite full grant expectation.
+- Steps:
+  - Clarify that only one grant can be applied per line item.
+  - Explain how leftover balances work (e.g., $30 grant on $50 item = $20 owed).
+  - Offer to switch grant allocation (requires IT ticket).
+- Resolution: Adjust grant use; confirm updated invoice reflects zero balance.
+
+**7. Discount Not Applied**
+- Example: 50% discount not reflected on grab-and-go boxes.
+- Steps:
+  - Request SO and invoice number.
+  - Confirm eligibility and discount application.
+  - Escalate to IT if discount failed at system level.
+- Resolution: Credit memo issued or invoice adjusted.
+
+---
+SECTION 3: LLM RESPONSE TEMPLATES
+---
+
+**General Billing Inquiry**  
+“Thank you for reaching out. We’re currently reviewing your invoice and will get back to you shortly with clarification.”
+
+**Charge Dispute Acknowledgment**  
+“We apologize for any confusion regarding this charge. We’re reviewing the invoice and associated records to determine the correct amount.”
+
+**Duplicate Charge Resolved**  
+“Thank you for your patience. The delivery charge has been removed and your invoice will reflect this shortly.”
+
+**Unapplied Payment Clarification**  
+“We’ve received your payment. Our billing team is reconciling the payment with your invoice and will update the system shortly.”
+
+**Grant Balance Clarification**  
+“Grants can only be applied to one line item at a time. If a grant doesn’t fully cover the item cost, the remaining balance is billed unless we switch to another available grant.”
+
+**Missing Invoice Support**  
+“Some orders paid by credit card may not appear in PartnerLink. We’ve requested a feature update and can provide a complete invoice summary upon request.”
+
+---
+SECTION 4: LLM INSTRUCTIONS & BEHAVIOR GUIDELINES
+---
+
+✓ Always start with empathy and assurance  
+✓ Avoid assuming fault; guide partners with verified info  
+✓ Encourage them to provide:  
+   - Sales Order (SO) number  
+   - Invoice number  
+   - Payment date/method (if applicable)  
+✓ Do not confirm grant adjustments unless explicitly resolved by IT/Finance  
+✓ Flag unresolved grant disputes to Customer Relations and Finance  
+✓ When discount issues arise, confirm eligibility and system status before suggesting refunds  
+
+---
+SECTION 5: INTERNAL TEAMS & RESOURCES
+---
+
+- **Finance Team**: Refunds, credits, and payment reconciliation  
+- **IT Team**: Manual invoice or grant adjustments in system  
+- **Customer Relations**: Initial ticket handling and escalation coordination  
+- **PartnerLink Portal**: Used for invoice visibility, payment tracking, and grant reference  
+
+---
+SECTION 6: ADDITIONAL CONSIDERATIONS
+---
+
+- Some billing updates may take several business days  
+- Holiday schedules may delay processing — inform partners as needed  
+- Encourage checking invoices regularly through PartnerLink  
+- Advise partners to reach out promptly for grant corrections before editing orders  
+

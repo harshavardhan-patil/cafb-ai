@@ -1,0 +1,121 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Pickup Scheduling & Rescheduling – Rescheduling Pickup
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base is designed to support Capital Area Food Bank (CAFB) partners who need assistance with scheduling or rescheduling pickups and deliveries, including empty pallet pickups. It covers common issues such as weather-related rescheduling, holiday closures, operational conflicts, and routing constraints. The KB equips a chatbot or LLM-based support system to provide accurate, supportive, and policy-aligned responses to partner inquiries.
+
+Common partner requests:
+- Rescheduling pickups due to inclement weather, closures, or volunteer availability
+- Requesting empty pallet pickups
+- Coordinating pickup/delivery date adjustments to align with partner needs
+- Combining orders or switching pickup to delivery (or vice versa)
+- Managing last-minute conflicts or emergencies
+
+---
+SECTION 2: COMMON REQUEST TYPES & RESPONSES
+---
+
+**1. Rescheduling Due to Weather or Emergencies**
+- CAFB prioritizes partner and driver safety. In cases of snow, ice, or closures, partners are encouraged to request alternate dates in advance.
+- Final decisions on delivery/pickup cancellations are made by CAFB leadership.
+- Orders that are already locked for fulfillment may not be eligible for rescheduling unless an exception is approved by Operations.
+
+_Template:_  
+“We appreciate you reaching out. We’re monitoring the weather and will coordinate with you if schedules change. Your safety is our priority.”
+
+**2. Requesting Pallet Pickup**
+- Partners may request pallet pickups, ideally to coincide with scheduled deliveries.
+- CAFB Transportation must confirm driver availability for pickups.
+- Pallets must be accessible on a hard surface (e.g., asphalt) for pickup—drivers cannot retrieve pallets from grassy or unpaved areas.
+
+_Template:_  
+“We’ve notified our Transportation team. Please ensure pallets are stacked neatly on a hard surface. We’ll follow up with your scheduled time.”
+
+**3. Switching from Pickup to Delivery or Vice Versa**
+- Modifications are only possible if the order hasn’t locked (typically 3 business days before the scheduled date).
+- CAFB evaluates delivery capacity before confirming any change.
+
+_Template:_  
+“We’ve updated your order to a [pickup/delivery] for [new date and time]. Let us know if you have further questions.”
+
+**4. Managing Holiday or Closure Conflicts**
+- CAFB may be closed for holidays. Orders scheduled on such days will be proactively rescheduled.
+- If an incorrect holiday flag causes partner confusion (e.g., system error marking a wrong date), CAFB will reach out to resolve scheduling issues.
+
+_Template:_  
+“We apologize for the confusion caused by a system error. Your order has been moved to an available slot that aligns with your preferred schedule.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Request changes at least 3 business days in advance whenever possible  
+- Include Sales Order (SO) number in rescheduling requests  
+- Communicate any access constraints (e.g., site closures, limited hours)  
+- Confirm with onsite staff to be present during pickup/delivery windows  
+- Stack pallets neatly and store on hard, accessible surfaces for pickup  
+
+❌ DON’T:
+- Assume pickup or delivery can happen without CAFB confirmation  
+- Wait until the day of service to request a change (especially if order is locked)  
+- Leave pallets on grass or inaccessible areas  
+- Schedule overlapping deliveries or pickups without prior approval  
+
+---
+SECTION 4: FAQS
+---
+
+**Q: Can I change my pickup time the day before?**  
+A: If your order is not locked, we may be able to reschedule. Orders lock 3 business days in advance, and we recommend notifying us as early as possible.
+
+**Q: What happens if snow is forecasted?**  
+A: CAFB evaluates weather-related risks proactively. If changes are necessary, we will work with you to reschedule. You may also reach out to request an alternate date.
+
+**Q: Can a driver pick up pallets during our regular delivery?**  
+A: It depends on the driver’s routing and schedule. We’ll coordinate with Transportation and confirm the earliest available slot.
+
+**Q: What if my volunteers can’t support back-to-back delivery days?**  
+A: We understand the operational strain. Let us know, and we’ll explore alternative delivery windows that fit your needs.
+
+**Q: Can I request a permanent change to my distribution day?**  
+A: Yes, though availability depends on overall route balancing. CAFB may offer alternatives (e.g., switching to Monday or Friday) based on delivery load.
+
+---
+SECTION 5: ESCALATION PATHWAYS
+---
+
+- **Customer Relations**: First point of contact for requests and clarifications  
+- **Transportation Team**: Final authority for scheduling pickups and routing adjustments  
+- **Operations Team**: Approval of exceptions, fulfillment lock overrides  
+- **Leadership Team**: Weather-related closures and large-scale calendar changes  
+
+---
+SECTION 6: SAMPLE RESPONSES FOR CHATBOT
+---
+
+**Partner: “Can we move our delivery from Friday to Tuesday?”**  
+Chatbot: “Thank you for reaching out! I’ll check our delivery calendar for Tuesday availability. Could you please confirm your SO number?”
+
+**Partner: “I have jury duty and can’t pick up tomorrow.”**  
+Chatbot: “Thanks for the heads up! We’ll notify the Operations team and reschedule if possible. What day works best for your reschedule?”
+
+**Partner: “We need to reschedule due to snow.”**  
+Chatbot: “Your safety is important to us. We are monitoring conditions and will contact you if your order is impacted. You can also suggest alternate days.”
+
+**Partner: “We need to pick up 5 boxes from the warehouse.”**  
+Chatbot: “You can pick up boxes Monday–Friday, 8 AM–4 PM. For best service, arrive between 8 AM and 2 PM for partner-side pickup.”
+
+---
+SECTION 7: QUICK CONTACTS
+---
+
+- **Customer Relations** – customerrelations@capitalareafoodbank.org  
+- **Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Transportation Scheduling** – Coordinated via Customer Relations  
+- **Main Line** – 202-644-9845  
+- **Partner Pick-Up Hours** – 8 AM to 4 PM, Mon–Fri  
+- **Warehouse Location** – 4900 Puerto Rico Ave NE, Washington, DC

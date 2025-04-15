@@ -1,0 +1,104 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Delivery Issues – Delivery Confirmation Issues
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base is focused on helping partners confirm the status of their deliveries, address confusion over whether an order was received, and clarify situations where deliveries were completed without documentation or partner awareness. These issues often occur when deliveries are made outside of a partner's operating hours, signed for by someone else, or dropped without a signature. CAFB’s chatbot can support these situations by offering status checks, documentation help, and escalation to Transportation or Operations.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Partner Unsure if Order Was Delivered**  
+- Confirm delivery with Transportation team or check signature logs.
+- Check if another staff member received the order.
+
+_Template:_  
+“Thank you for your message. Our records show your order [SO#] was delivered at [time] and signed by [recipient]. Please confirm with your team, and let us know if you need proof of delivery.”
+
+**2. Partner Arrives and Finds Food Already Put Away**  
+- Delivery may have been received by someone else and stored.
+- Confirm receipt with internal site staff before logging a missing delivery.
+
+_Template:_  
+“We’re glad your order arrived! If you have any concerns about what was delivered, let us know and we’ll review the order receipt and packing list.”
+
+**3. Partner Confused About Order Status After Requesting Cancellation**  
+- Orders may appear active in the system even after a cancellation request.
+- Confirm whether cancellation was successful and if a new order has replaced it.
+
+_Template:_  
+“We see that SO# was initially cancelled but later reactivated when a new order was placed using the same slot. You are scheduled for [DATE, TIME]. Please confirm.”
+
+**4. Driver Delivered But No One Was Available to Sign**  
+- Drivers may leave the order and mark as completed, especially under policy allowances.
+- If this occurs repeatedly, escalation to Transportation may be needed.
+
+_Template:_  
+“Our system shows the order was delivered on time. If no one was available, it may have been dropped as scheduled. Please let us know if anything was missing or damaged.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Assign a staff member or volunteer to monitor delivery windows  
+- Double-check with team before assuming an order was missed  
+- Contact Customer Support promptly if confirmation is unclear  
+- Request proof of delivery if unsure about delivery time or recipient  
+
+❌ DON’T:
+- Assume delivery did not happen based only on internal miscommunication  
+- Delay reporting delivery concerns—timely follow-up ensures better resolution  
+- Rely solely on automated delivery emails for confirmation  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: How can I confirm if my order was delivered?**  
+A: CAFB can check the delivery logs and confirm time, location, and signature. You can also check with your onsite staff to confirm.
+
+**Q: My order shows as delivered but no one told me. What do I do?**  
+A: It’s possible someone else received the order. We recommend asking your team. If you still can’t locate it, contact us and we’ll review with Transportation.
+
+**Q: Can I get proof of delivery for my records?**  
+A: Yes! We can provide the delivery time and name of the person who signed for the order. Let us know which SO number you’re referencing.
+
+**Q: My order was marked delivered but wasn’t received. What now?**  
+A: We take this seriously. We’ll escalate to Transportation for an investigation. You may also want to check your site’s cameras if available.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Did my order get delivered today?”**  
+Chatbot: “Let me check that for you. Can you confirm the Sales Order number or the agency name?”
+
+**Partner: “Nobody told me our delivery came.”**  
+Chatbot: “Our records show it was delivered and signed by [name] at [time]. Please check with your team and let me know if you’re still missing anything.”
+
+**Partner: “Can you resend our delivery? We didn’t get it.”**  
+Chatbot: “I’m so sorry to hear that! I’ll escalate this to our Transportation team. Can you confirm if anyone was available during your delivery window?”
+
+**Partner: “I saw a delivery notice, but the order’s not here.”**  
+Chatbot: “Thank you for flagging that. Let’s double-check with the driver logs. What’s your SO number or site address?”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support** – First line for confirmation, follow-up, and delivery questions  
+- **Transportation Team** – Confirms driver routes, proof of delivery, and scheduling  
+- **Operations Team** – Investigates inventory or missing product concerns  
+
+---
+SECTION 7: QUICK CONTACTS
+---
+
+- **Partner Support / Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Main Line** – 202-644-9845  
+- **For urgent delivery issues** – Contact within 24 hours for timely investigation  
+- **Warehouse Location** – 4900 Puerto Rico Ave NE, Washington, DC

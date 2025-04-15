@@ -1,0 +1,120 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Product Availability & Substitutions – Stock Availability Inquiries  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base enables LLMs to assist CAFB partners with questions about when specific food items will be available, whether items are shelf-stable, and how to interpret stock indicators in PartnerLink.
+
+Common inquiries in this category include:
+- Requesting return dates for staples like milk, pasta, peanut butter
+- Checking shelf-stability of specific items
+- Understanding “0 available” errors
+- Confirming expiration dates or packaging types
+- Asking for updates on produce or Ready-to-Eat (RTE) items
+
+---
+SECTION 2: FREQUENTLY REQUESTED ITEMS
+---
+
+The following items are frequently requested by partners and may have variable availability:
+- 8oz Shelf-Stable Milk
+- Vegetable Oil (24oz, 30.4oz)
+- Peanut Butter
+- Mac & Cheese (#300015)
+- Spaghetti Noodles
+- Granola Bars / Oatmeal Packets
+- Applesauce / Fruit Cups (4oz)
+- Bottled Water / Juice Boxes
+- Cereal (individual bowls and bulk)
+- Canned Goods (e.g., soup, green beans)
+- Frozen Meat (e.g., Ground Chicken, Turkey Breast)
+
+---
+SECTION 3: LLM RESPONSE FLOWS BY INQUIRY TYPE
+---
+
+**1. “When Will [Item] Be Back?”**  
+- If no specific ETA is available, defer to the Food Procurement Team and ask the partner to check PartnerLink regularly.
+- If ETA is known, share the approximate restock window (e.g., “by end of the week”).
+
+_Template:_  
+“We’ve reached out to our Food Procurement team and expect [item] to be back on the menu by [day]. Please check PartnerLink around that time.”
+
+**2. “Why Does It Show 0 Available?”**  
+- CAFB's inventory resets at midnight.
+- Popular items may sell out quickly after appearing on the menu.
+
+_Template:_  
+“The item may have sold out soon after it was added to the system. Inventory refreshes nightly at midnight. We recommend checking PartnerLink early in the morning.”
+
+**3. “Is This Shelf Stable?”**  
+- Confirm with product details if available, especially for RTE (Ready-to-Eat) items.
+
+_Template:_  
+“Yes, this item is shelf-stable and does not require refrigeration. RTE stands for Ready-to-Eat.”
+
+**4. “Can I Get [Substitute Item] Instead?”**  
+- Substitutions may not be possible unless directed internally.
+- Encourage checking for similar products (e.g., other pasta shapes).
+
+**5. “What’s the Expiration or Packaging Type?”**  
+- Provide expiration dates and packaging type when requested.
+- Offer photos if they are available.
+
+_Template:_  
+“The item is packaged in [plastic cups / cans] and has a best-by date of [MM/DD/YYYY].”
+
+---
+SECTION 4: LLM DO’S AND DON’TS
+---
+
+✅ DO:
+- Confirm shelf-stability when asked  
+- Check and communicate upcoming restock info if available  
+- Redirect requests to Food Procurement when item status is unclear  
+- Empathize with partners who mention supply shortages  
+
+❌ DON’T:
+- Guarantee restock unless confirmed by Procurement  
+- Confirm substitutions unless approved  
+- Assume product types without reference  
+- Overpromise on timeline for high-demand staples (e.g., milk, peanut butter)
+
+---
+SECTION 5: HELPFUL DEFINITIONS
+---
+
+- **RTE**: Ready to Eat  
+- **Shelf-Stable**: Product does not require refrigeration  
+- **TEFAP**: The Emergency Food Assistance Program; items may have unique inventory rules  
+- **PartnerLink**: Web portal where partners place orders and view availability  
+- **Menu**: The list of currently available food items  
+
+---
+SECTION 6: INTERNAL ESCALATION PATHWAYS
+---
+
+- **Food Procurement Team**: For restock timelines and sourcing updates  
+- **Food Resources Team**: For partner item needs and DC ↔ VA warehouse transfers  
+- **Customer Relations**: For all front-line communication and troubleshooting  
+- **Warehouse Ops**: For availability across distribution locations  
+
+---
+SECTION 7: PROACTIVE TIPS FOR PARTNERS
+---
+
+- Check PartnerLink early in the morning for best inventory visibility  
+- If a critical item is unavailable, ask about alternate forms (e.g., 1% milk instead of whole)  
+- Monitor emails from CAFB for menu updates or feature announcements  
+- If an item is missing from the menu for an extended time, reach out for direct support  
+
+---
+SECTION 8: SPECIAL NOTE ON PRODUCE
+---
+
+Produce availability varies based on seasonality, donations, and delivery schedules. Advise partners to:
+- Check early in the week
+- Act fast, as produce is high-demand
+- Use “Office Hours” or ticketing if they serve high-volume events (300+ families)  

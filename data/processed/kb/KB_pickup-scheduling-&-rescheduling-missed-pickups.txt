@@ -1,0 +1,94 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Pickup Scheduling & Rescheduling – Missed Pickups  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports the LLM in helping partners who experience issues with missed pickups or need to reschedule existing ones. Scenarios include:
+- CAFB-scheduled pickups that did not occur
+- Partner-initiated rescheduling requests
+- Coordination of access windows due to facility hours or locked gates
+- Miscommunications about availability or time slots
+
+Missed pickups most often relate to:
+- Pallet or item pickups scheduled but not executed
+- Incompatible partner availability (e.g., closed gate)
+- Short notice or lack of confirmation
+
+---
+SECTION 2: COMMON SCENARIOS & RESOLUTION WORKFLOWS
+---
+
+**Scenario 1: Scheduled Pickup Missed**
+- Partner reports CAFB never arrived on scheduled date.
+- Steps:
+  - Acknowledge issue and apologize.
+  - Confirm original pickup request and date.
+  - Notify Transportation Manager for re-scheduling.
+  - Ask partner for updated available pickup windows.
+- Resolution:
+  _“We’ve re-added your site to our schedule. The driver will arrive between [X time range] on [new date].”_
+
+**Scenario 2: Pickup Re-Scheduled Outside Partner Hours**
+- Example: Driver is set to arrive before partner opens (e.g., 7am when the site opens at 9am).
+- Steps:
+  - Confirm the partner’s site hours or access limitations (e.g., locked gates).
+  - Relay restrictions to the Transportation Team.
+- Resolution:
+  _“Thank you for the update. We’ve notified our team about your access hours and will adjust accordingly.”_
+
+**Scenario 3: Item/Pallet Unavailable for Pickup on Selected Date**
+- Example: A partner attempts to request pickup for a specific item but sees “0 available”.
+- Steps:
+  - Explain that items may sell out before the calendar updates.
+  - Clarify that CAFB’s system resets inventory at midnight.
+- Resolution:
+  _“The item was likely sold out by the time your request was submitted. Inventory resets nightly and may be replenished before the next pickup cycle.”_
+
+---
+SECTION 3: RESPONSE TEMPLATES FOR LLM USE
+---
+
+**Missed Pickup Apology + Re-Schedule Inquiry**  
+“We’re sorry to hear the scheduled pickup did not occur. We’re reaching out to our Transportation Team to confirm availability and will follow up shortly. Could you confirm your available hours this week?”
+
+**Rescheduling Due to Site Access**  
+“Thanks for letting us know about your hours and gate access. We’ve shared this with our Transportation Team and will adjust your pickup window accordingly.”
+
+**Item Not Available for Pickup**  
+“The item may have sold out before your order was processed. Our system updates inventory at midnight. We recommend checking early the next business day for restock availability.”
+
+---
+SECTION 4: LLM BEHAVIOR GUIDELINES
+---
+
+✓ Always confirm if the issue was a missed pickup, a scheduling error, or an inventory issue  
+✓ Ask for operational hours if access is a concern (e.g., locked gates, restricted entry)  
+✓ Avoid confirming new pickup dates without verification from the Transportation Team  
+✓ Be empathetic and proactive — partners rely on timely pickups to manage inventory  
+
+---
+SECTION 5: INTERNAL CONTACTS & COORDINATION
+---
+
+- **Transportation Manager**: Primary contact for scheduling/rescheduling missed pickups  
+- **Customer Relations**: Interface with partners and log ticket resolution  
+- **Technical Support**: For inventory availability or website feature issues  
+- **Warehouse Ops**: Coordination for physical pickup of pallets or donations  
+
+---
+SECTION 6: SYSTEM & LOGISTICS NOTES
+---
+
+- CAFB’s pickup scheduling system resets inventory views at **midnight** daily  
+- Time windows for pickups typically range from **7:00 a.m. to 2:00 p.m.** unless customized  
+- Partners must specify locked entry points, restricted access, or business hours during scheduling  
+
+---
+SECTION 7: PROACTIVE RECOMMENDATIONS
+---
+
+- Encourage partners to confirm their availability when submitting pickup requests  
+- Suggest placing orders or scheduling pickups early in the day to avoid item unavailability  
+- Always confirm if a follow-up or specific point of contact is required (e.g., "Please reach out to X if the driver is delayed again.")  

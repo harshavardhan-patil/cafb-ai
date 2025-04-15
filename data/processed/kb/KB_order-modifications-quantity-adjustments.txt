@@ -1,0 +1,122 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Order Modifications – Quantity Adjustments
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base assists CAFB partners with quantity adjustments and item modifications on active Sales Orders (SOs). Quantity edits may be requested due to inventory limitations, overordering, misclicks during order placement, or operational constraints at the partner site. Additionally, Customer Support may modify orders based on availability or produce limits.
+
+The LLM chatbot will guide partners on how and when these changes can be made, and help escalate requests appropriately based on order lock status, produce restrictions, or technical errors.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Partner Requests to Increase or Decrease Quantity of Items**
+- Requests must be submitted before order lock (typically 3 business days before pickup/delivery).
+- Partner should include SO number and updated item quantities.
+
+_Template:_  
+“Thanks for reaching out! I’ll review your order and update the quantities for you. Please allow some time for the system to reflect these changes.”
+
+**2. Order Locked – Quantity Cannot Be Modified**
+- If the SO is locked, edits may only be approved through escalation to Operations.
+- Some late-stage adjustments may be managed internally (e.g., removing excess items before delivery).
+
+_Template:_  
+“Your order is already locked for fulfillment. I’ll check with our Operations team to see if we can make the requested changes manually.”
+
+**3. Item Removed or Reduced Due to Inventory Constraints**
+- Items may be adjusted automatically if they are out of stock or over-allocated.
+- CAFB may substitute similar items or notify partners of shorted items via email.
+
+_Template:_  
+“We had to remove [item] from your order due to limited inventory. We apologize for the inconvenience and appreciate your understanding.”
+
+**4. Partner Reaches Produce Limit**
+- Produce quantity may be restricted by pound limits per month.
+- Partners are notified when nearing or exceeding the cap.
+
+_Template:_  
+“We can’t add this item because it would exceed your monthly produce limit. You may check back later in the month or adjust other produce items.”
+
+**5. Wrong Item Removed or Miscommunication in Modifications**
+- Miscommunication between partner requests and fulfillment can lead to incorrect removals.
+- CAFB will prioritize correction if caught before order lock.
+
+_Template:_  
+“Thank you for pointing that out. We’ve corrected the item mix as per your request. Please review your order in PartnerLink for confirmation.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Include full item codes and quantities when making requests  
+- Use clear subject lines (e.g., “Change to SO189902”)  
+- Submit changes before the order locks  
+- Be mindful of monthly produce caps and item weight  
+- Confirm changes via PartnerLink order history tab  
+
+❌ DON’T:
+- Rely on memory for item numbers—always double-check codes  
+- Submit last-minute requests after order is locked without understanding limitations  
+- Attempt to edit PartnerLink orders repeatedly without waiting for system refresh (30-minute intervals)  
+- Exceed produce limits expecting manual override unless preapproved  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: How do I know if my order is locked?**  
+A: Orders typically lock 3 business days before fulfillment. You can confirm in PartnerLink or ask Customer Support.
+
+**Q: Can I cancel an item after the order is locked?**  
+A: Not always, but we can escalate to the Operations team to try and catch it during pulling.
+
+**Q: Why can’t I edit my order even though it shows “in progress”?**  
+A: If your agency has reached produce limits or recently made edits, the system may require a 30-minute delay to refresh before accepting changes.
+
+**Q: What happens if I request more than my limit?**  
+A: CAFB will notify you and either reduce the quantity or suggest substitutes that fall within the limit.
+
+**Q: My order was changed, but I didn’t request it. Why?**  
+A: Occasionally, system errors or miscommunications result in unexpected modifications. Contact us immediately so we can investigate and correct it.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Can you change my order to add 3 more cases of beans?”**  
+Chatbot: “Sure! Can you confirm your SO number and the item code for the beans?”
+
+**Partner: “I want to cancel 20 cases of pork chops.”**  
+Chatbot: “Got it. If your order isn’t locked yet, I’ll submit the request. If it is, I’ll check with the Operations team.”
+
+**Partner: “Why was my item removed? I didn’t ask for that.”**  
+Chatbot: “Thanks for letting us know. Sometimes items are removed due to low inventory or incorrect item codes. Let me look into it.”
+
+**Partner: “The system won’t let me change anything.”**  
+Chatbot: “This may be due to produce limits or the time needed between edits. Please wait 30 minutes and try again, or I can assist manually.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Relations** – Handles quantity changes, order edits, and availability questions  
+- **Operations Team** – Reviews fulfillment and item adjustments for locked orders  
+- **Food Resources** – Oversees produce procurement and limit enforcement  
+- **Regional Coordinators** – Assist with policy exceptions or recurring barriers to access  
+
+---
+SECTION 7: KEY CONTACTS
+---
+
+- **Customer Support** – partnersupport@capitalareafoodbank.org  
+- **Operations & Fulfillment** – Coordinated internally via Customer Relations  
+- **Main Line** – 202-644-9845  
+- **PartnerLink Portal** – View/Edit SOs and check lock status  
+- **Food Resources / Produce Cap Issues** – Contact your Regional Coordinator  
+  - *Augusta Fricke* – 771-209-4611  
+  - *Grace Fricke* – 202-644-9824

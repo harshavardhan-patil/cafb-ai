@@ -1,0 +1,103 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Special Requests - Educational Materials
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This knowledge base supports CAFB partners with special requests related to **educational materials**, including but not limited to:
+
+- Hours of Operation training
+- Food safety and expiration guidelines
+- Smart Shopping classes
+- Senior and child meal program referrals
+- Contact information for CAFB coordinators
+
+These requests often seek clarification on training availability, resource access, and proper procedures for requesting assistance or guidance related to community food programs.
+
+---
+SECTION 2: COMMON SCENARIOS & RESOLUTION FLOWS
+---
+
+**Scenario 1: Request for Hours of Operation Training**
+- The Hours of Operation training is available via **Zoom**.
+- The Zoom link is typically provided in a **confirmation email** after registration.
+- Partners can view or update their listed hours in PartnerLink by navigating to their **Account Overview** > **Additional Information** > **Hours of Operations**.
+- To verify hours: click **"Verify"** if accurate, or **"Edit"** to update them.
+- Screenshots may be included in training materials for guidance, but these are examples and may not reflect the partner’s actual data.
+
+**Scenario 2: Updating Hours of Operation**
+- Location: PartnerLink under Account Overview.
+- Instructions:
+  1. Log in to PartnerLink.
+  2. Click your agency name to access Account Overview.
+  3. Under "Additional Information", click **Hours of Operations**.
+  4. Click **Edit** to update hours and submit for approval.
+- Approval is completed by the **Regional Coordinator**.
+
+**Scenario 3: Requests for Smart Shopping Class Access**
+- Classes are held on Zoom, and upcoming sessions are shared in communication from the **Maryland Partnership Coordinator**.
+- If the provided training time does not work, partners may reach out to Partner Support to coordinate an alternative.
+- When changing points of contact, new staff must attend Smart Shopping training to gain online ordering access.
+
+**Scenario 4: Request for Support on Senior or Children’s Meals**
+- For **children’s meal support**, refer to:  
+  **Lexie Smith**, Youth Nutrition Coordinator for MD  
+- For **senior meal programs**, refer to:  
+  **Cecilia Chisholm**, Coordinator of Senior Hunger Programs  
+- Direct contact emails are not stored in the KB but should be shared in response via templates or directory.
+
+**Scenario 5: Questions Regarding Expired Food Items**
+- CAFB recommends using the **Food Coding Guide** as a reference.
+- For items not listed (e.g., snack items like Oreos), partners should consult external sources such as the **USDA website**.
+- Sensory inspection (smell, sight, texture) is encouraged when the expiration date has passed but the item is sealed and undamaged.
+- If the food was not supplied by CAFB, the guidance is more limited but general food safety standards should apply.
+
+---
+SECTION 3: TEMPLATES FOR LLM RESPONSES
+---
+
+**Training Zoom Link Reminder**
+“The Hours of Operation training is held over Zoom. You should receive the meeting link in your confirmation email upon registration.”
+
+**Hours of Operation Update Guidance**
+“You can update your agency’s hours by logging into PartnerLink, navigating to your Account Overview, and selecting 'Hours of Operations' under Additional Information. Click ‘Edit’ to make changes and submit for approval by your Regional Coordinator.”
+
+**Smart Shopping Class Acknowledgment**
+“Thank you for providing the new point of contact. Please ensure they attend the next Smart Shopping training via Zoom. If the time provided doesn’t work, let us know so we can coordinate a better option.”
+
+**Food Expiration Guidance**
+“For items not covered by the Food Coding Guide, we recommend checking USDA resources or using sensory evaluation (sight, smell, condition of packaging). If in doubt, it’s safest not to distribute the item.”
+
+**Referral Response Template**
+“For assistance with [children’s meals/senior support], please reach out to [appropriate program coordinator]. We’re happy to facilitate the connection.”
+
+---
+SECTION 4: LLM-SPECIFIC INSTRUCTIONS
+---
+
+✓ Use a **supportive tone** when guiding partners through online tools or processes.  
+✓ Always confirm whether the product or training is CAFB-related or from an outside source before giving instruction.  
+✓ Avoid providing specific contact emails unless available in directory or pre-approved template.  
+✓ For requests involving safety or programmatic compliance, escalate to the appropriate coordinator.  
+✓ Offer to connect the partner with their **Regional Coordinator** or Program Contact when appropriate.  
+✓ If a partner is unsure how to navigate PartnerLink, suggest attending **Wednesday Office Hours (10AM–11AM)**.
+
+---
+SECTION 5: INTERNAL TOOLS & POLICIES
+---
+
+- **PartnerLink Portal**: Central location for agency information, hours of operation, and order management.
+- **Food Coding Guide (PDF)**: Reference for acceptable shelf life and safety of pantry goods.
+- **Smart Shopping Training**: Required for new point-of-contact staff managing orders.
+- **Office Hours**: Held every Wednesday from 10:00 AM to 11:00 AM for open Q&A.
+
+---
+SECTION 6: ADDITIONAL CONSIDERATIONS
+---
+
+- Partners requesting new resources (like children/senior meal support) may require referral to internal program coordinators.
+- Always clarify if a donation came from CAFB or an external source.
+- Do not promise future trainings unless verified by program leads.
+- Encourage timely communication and follow-up via CAFB Support Portal or Customer Relations email.
+

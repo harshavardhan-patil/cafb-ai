@@ -1,0 +1,120 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Delivery Issues – Late Deliveries
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base provides detailed guidance for managing partner concerns about late deliveries, unannounced early arrivals, missed courtesy calls, missing items, and driver coordination. These issues are common among small pantries and partners with volunteer-based unloading operations. The goal is to help the LLM-backed chatbot provide accurate, empathetic, and policy-informed responses while escalating critical matters to the appropriate CAFB teams.
+
+---
+SECTION 2: COMMON ISSUES AND BEST RESPONSES
+---
+
+**1. Delivery Arrived Earlier Than Scheduled Without Notice**  
+- Drivers are expected to contact the partner prior to arrival, even if within the scheduled window.
+- If arriving early, drivers must confirm with the partner that early delivery is acceptable.
+- Volunteers should not be expected to wait without prior confirmation.
+
+_Template:_  
+“We apologize for the inconvenience. Drivers are instructed to call before arriving. We’ll inform our Transportation team and follow up with training reinforcement.”
+
+**2. No Courtesy Call from Driver Before Arrival**  
+- Drivers must check delivery notes and call the partner when departing the warehouse.
+- Partners are encouraged to include call request notes in every sales order.
+
+_Template:_  
+“Thank you for letting us know. We will reiterate to our drivers that courtesy calls are mandatory. We appreciate your feedback and will follow up internally.”
+
+**3. Delivery Arrived Late or Missed Delivery Window**  
+- Unforeseen delays may occur due to traffic or route issues.
+- CAFB can often confirm a driver’s status if contacted during the delivery window.
+
+_Template:_  
+“We’re sorry your order arrived later than expected. We’ll notify our Transportation team and review the delivery logs to prevent future delays.”
+
+**4. Missing Items in the Delivery**  
+- Occasionally, inventory miscounts or mispicks may result in missing items.
+- CAFB Operations investigates and updates partners once the issue is validated.
+- Missed items generally cannot be redelivered.
+
+_Template:_  
+“Thank you for reporting missing items. We’ve alerted our Operations team to investigate and will follow up shortly. Unfortunately, items may not be redelivered once the route is complete.”
+
+**5. Driver Left Before Delivery Window Began**  
+- Drivers are expected to wait until the start of the delivery window if the partner cannot accept early deliveries.
+- Feedback about this behavior should be logged and escalated to the Transportation Manager.
+
+_Template:_  
+“We’re sorry our driver didn’t wait for your scheduled time. This has been reported to our Transportation Manager for coaching and correction.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Always enter delivery instructions or call requests in the notes section when placing an order  
+- Ensure a staff member or volunteer is available for the full delivery window  
+- Contact CAFB immediately if a delivery is late or incomplete  
+- Confirm full delivery at the time of receipt when possible  
+- Document and report rotten or damaged produce with photos and item numbers  
+
+❌ DON’T:
+- Assume early deliveries will be accompanied by a phone call  
+- Allow drivers to leave without verifying contents unless unavoidable  
+- Accept damaged goods without documentation if possible  
+- Delay reporting of late/missing deliveries—timeliness helps resolution  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: Why didn’t I get a call before my delivery arrived?**  
+A: Drivers are instructed to call before all deliveries. If this didn’t happen, we will report it and reinforce the expectation with our Transportation team.
+
+**Q: My order arrived early, but I wasn’t ready. Can I reschedule?**  
+A: If you can’t accommodate an early delivery, the driver is supposed to wait until your scheduled window. We recommend making this clear in your order notes.
+
+**Q: My delivery arrived late and some items were missing. What should I do?**  
+A: Contact us immediately. We will log the issue, investigate with Operations, and provide an explanation or resolution when available.
+
+**Q: Can I change my delivery time slot if delays are frequent?**  
+A: Availability may vary by day. We can explore moving you to a different time or day that better fits your needs—please contact us in advance.
+
+**Q: Who should I talk to about recurring delivery problems?**  
+A: Customer Support is your first point of contact. Repeated issues are escalated to the Transportation and Operations teams as needed.
+
+---
+SECTION 5: SAMPLE RESPONSES FOR CHATBOT
+---
+
+**Partner: “Our delivery came too early and no one was there to receive it.”**  
+Chatbot: “We’re sorry for the inconvenience. Drivers are instructed to call ahead and confirm early arrivals. I’ll notify our Transportation team about this.”
+
+**Partner: “I didn’t get a call before the truck arrived.”**  
+Chatbot: “Thank you for letting us know. We’ll remind drivers that courtesy calls are required. Let me also flag this with the Transportation team.”
+
+**Partner: “My order was missing multiple items.”**  
+Chatbot: “Thanks for reporting that. I’ll submit this to our Operations team for review. Can you list the missing items or share a photo if available?”
+
+**Partner: “This keeps happening—we keep getting late deliveries.”**  
+Chatbot: “That’s frustrating, and we appreciate your patience. I’ll record this and escalate to ensure our team investigates and finds a solution.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support** – Logs delivery feedback, files incident reports  
+- **Transportation Team** – Manages driver behavior, call compliance, routing  
+- **Operations Team** – Handles inventory discrepancies, mispicks, and missing items  
+- **Direct Distribution (Mobile Markets)** – For delivery issues related to Mobile Markets, contact Jessica Arias (Manager of Community-Based Markets)  
+
+---
+SECTION 7: QUICK CONTACTS
+---
+
+- **Customer Relations / Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Main Line** – 202-644-9845  
+- **Direct Distribution (Mobile Market)** – directdistributionsupport@capitalareafoodbank.org  
+- **Jessica Arias, Community Markets** – 202-644-9837  
+- **Delivery Window Reminder** – Partners are expected to be available for their scheduled window. If unsure, confirm with Customer Support.

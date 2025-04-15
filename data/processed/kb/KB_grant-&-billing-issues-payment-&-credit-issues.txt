@@ -1,0 +1,87 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Grant & Billing Issues – Payment & Credit Issues  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base helps LLMs assist CAFB partners with issues related to:
+- Credit card or invoice payments
+- Needing to edit paid orders
+- Switching payment methods post-order
+- Clarifying payment method restrictions
+- General confusion around payment, editing permissions, and credit application
+
+These scenarios often involve time-sensitive edits or confusion around payment workflows.
+
+---
+SECTION 2: COMMON PAYMENT & CREDIT SCENARIOS
+---
+
+**Scenario 1: Order Placed with Credit Card – Needs Editing**
+- CAFB’s system restricts edits on orders paid by card.
+- Steps:
+  - Ask for Sales Order (SO) number.
+  - Forward request to the Customer Relations team to change payment method from “credit card” to “invoice”.
+- Resolution: Once changed to invoice, the partner can edit the order.
+
+**Scenario 2: Mistaken Payment Method**
+- Example: Partner accidentally selects credit card but prefers invoice billing.
+- Steps:
+  - Confirm whether the order has already been processed.
+  - If not yet fulfilled, the finance team can switch the payment method.
+- Resolution: Payment type updated; partner notified.
+
+**Scenario 3: Need to Apply Credit**
+- Credits issued via memo (e.g., due to damaged goods or overcharges).
+- Credits must be manually applied or automatically deducted in future invoices.
+- LLM Guidance:
+  - Refer to PartnerLink for applied credit balance.
+  - Escalate if memo isn’t reflected after 3 business days.
+
+---
+SECTION 3: PARTNER COMMUNICATION TEMPLATES
+---
+
+**Credit Card Edit Blocked Template**  
+“Currently, orders placed with a credit card cannot be edited directly. We can update your payment method to invoice so you can make changes. Would you like us to proceed?”
+
+**Payment Method Update Confirmation**  
+“We’ve changed your payment method from credit card to invoice. You should now be able to edit your order in PartnerLink.”
+
+**Credit Application Clarification**  
+“Any credits issued will be reflected in your PartnerLink account and can be used on future invoices. If you don’t see a recent credit memo applied, we can follow up with our finance team.”
+
+---
+SECTION 4: LLM INSTRUCTIONS & DO’S/DON’TS
+---
+
+✓ Always confirm the Sales Order (SO) number before processing  
+✓ Do not assume credit or refunds without confirmation  
+✓ Avoid telling partners to cancel and re-order unless they cannot edit at all  
+✓ Never guarantee refunds or credit application timelines unless verified  
+
+---
+SECTION 5: INTERNAL RESOLUTION PATHWAYS
+---
+
+- **Customer Relations**: Can change payment method and provide editing access  
+- **Finance/Accounting**: Handles credit application and refunds  
+- **PartnerLink**: Used for confirming payment type, editing availability, and checking credit balances  
+
+---
+SECTION 6: ADDITIONAL CONSIDERATIONS
+---
+
+- Payment method changes must happen **before** order fulfillment begins  
+- Orders paid via credit card often lock editing due to immediate billing  
+- Encourage partners to double-check payment selection before finalizing orders  
+
+---
+SECTION 7: PARTNER EDUCATION TIPS
+---
+
+- Suggest invoice payment if they anticipate needing to edit orders later  
+- Recommend checking “My Orders” tab in PartnerLink for real-time visibility on credit memos  
+- Remind them that switching from credit card to invoice requires CAFB staff assistance  
+

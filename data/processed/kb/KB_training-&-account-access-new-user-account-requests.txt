@@ -1,0 +1,114 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Training & Account Access – New User Account Requests
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base helps support new and existing partners of CAFB with account setup on PartnerLink and access to related systems like MealConnect and Smart Shopper. It also covers training attendance, onboarding processes, and access troubleshooting.
+
+Partners often reach out for:
+- Creating or updating PartnerLink accounts
+- Gaining access to MealConnect
+- SMART Shopper training requirements
+- Receiving or resending Zoom invites for mandatory training
+- Troubleshooting login credentials or incorrect email invites
+- Clarifying participation requirements for mandatory trainings
+
+---
+SECTION 2: ACCOUNT CREATION & ACCESS GUIDELINES
+---
+
+**1. New PartnerLink Account Requests**
+- New users must attend SMART Shopper training (or state-specific variant like Smart Shop VA).
+- Account invitations are typically sent after training completion.
+- Email addresses must be verified and correct—missing characters (e.g., “dc” in domain) are a common error.
+
+_Template:_  
+“Thank you for reaching out. To gain access to PartnerLink, please attend one of our SMART Shopper training sessions. Once completed, we’ll send your login credentials to the verified email address.”
+
+**2. Incorrect or Missing Email Invites**
+- Confirm whether the email domain and spelling is correct.
+- If user never received credentials, resend with corrected information.
+
+_Template:_  
+“It looks like there was a small typo in your email address. We’ve updated it and sent a new invitation. Please try using the credentials below.”
+
+**3. Training Completion but No Access**
+- Ensure the training attendance was recorded.
+- Contact Service Insights or Partner Direct teams if the issue is MealConnect-specific.
+
+---
+SECTION 3: MEALCONNECT ACCESS
+---
+
+**Eligibility & Setup**
+- MealConnect is a separate system managed by the Partner Direct Team.
+- To access MealConnect, users may need additional credentials and guidance.
+
+_Template:_  
+“For MealConnect access, please contact retailprogramsupport@capitalareafoodbank.org. Our Partner Direct Team will guide you further.”
+
+**Escalation Contacts:**
+- **Ellie Proffitt** | eproffitt@capitalareafoodbank.org | (202) 644-9810  
+- **Kimberly Chanchavac** | kchanchavac@capitalareafoodbank.org | (202) 921-7464
+
+---
+SECTION 4: TRAINING COMMUNICATION & SUPPORT
+---
+
+**1. Zoom Invite Troubleshooting**
+- Many users report not receiving Zoom details or being unable to open `.ics` calendar attachments.
+- Recommend partners to check inbox and spam folders and verify they received both invite link and Zoom credentials.
+
+_Template:_  
+“If you haven’t received your Zoom link, please check your spam folder or calendar invite. If it’s missing, we can resend it. The session should appear in your inbox from Partner Support.”
+
+**2. Mandatory Training Requirements**
+- Trainings on system features like Hours of Operation updates are mandatory for all partners.
+- Recordings and slides may be available, but live attendance is expected.
+- Only one representative per agency is required, but more are encouraged.
+
+**3. Office Hours**
+- Held every Wednesday, typically from 10 AM – 11 AM.
+- Useful for real-time troubleshooting and direct access to the Customer Relations Team.
+
+---
+SECTION 5: TROUBLESHOOTING TEMPLATES
+---
+
+**Issue: Didn’t Get Login Credentials**
+“We’ve confirmed your training completion. Please check your email (including spam folder) for an invite from PartnerLink. If it’s still missing, we can resend it.”
+
+**Issue: Training Zoom Link Missing or Incomplete**
+“The invite is usually sent via calendar invite (.ics). Please make sure your system can open this file type. If needed, we’ll send the Zoom link separately.”
+
+**Issue: Can't Attend Training – Is Recording Available?**
+“Live attendance is required to fulfill training requirements. While slides and recordings are available, we recommend rescheduling if you’re unable to attend your original session.”
+
+---
+SECTION 6: INTERNAL ESCALATION PATHWAYS
+---
+
+- **Customer Relations**: Front-line support for login, invites, and system navigation  
+- **Service Insights Team**: For questions about training completion and account eligibility  
+- **Partner Direct Team**: For MealConnect-related requests  
+- **Training Coordination**: For Zoom access, session schedules, and rescheduling  
+
+---
+SECTION 7: PROACTIVE TIPS FOR PARTNERS
+---
+
+- Double-check email addresses when requesting access
+- Register early for mandatory trainings and save the invite link
+- Use Office Hours to clarify access issues or questions after sessions
+- If transferring responsibilities (e.g., new Pantry Manager), notify CAFB ASAP and register new staff for training
+
+---
+SECTION 8: COMMON CONTACTS
+---
+
+- **Customer Relations** – customerrelations@capitalareafoodbank.org  
+- **Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Retail Program Support** – retailprogramsupport@capitalareafoodbank.org  
+- **Training Questions** – Check CAFB calendar or use provided Zoom invites  

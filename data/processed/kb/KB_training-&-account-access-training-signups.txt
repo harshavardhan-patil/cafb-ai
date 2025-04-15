@@ -1,0 +1,86 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Training & Account Access – Training Signups  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base equips the LLM to support partners in signing up for required or optional CAFB training sessions. Common training types include:
+- Smart Shopping / Ordering Trainings
+- New PartnerLink Feature Trainings
+- Partner Operations (e.g., reporting, office hours)
+
+Training may be:
+- Mandatory (e.g., for new features or portal access)
+- Optional but recommended (e.g., office hours, Smart Shopping)
+
+Registration and access are handled via shared links (Zoom or registration forms), with email follow-up including Zoom invitations.
+
+---
+SECTION 2: COMMON SCENARIOS & HANDLING FLOWS
+---
+
+**Scenario 1: Partner Needs to Register for Training**
+- Steps:
+  - Provide the most recent training registration link (based on date/category).
+  - Explain that at least one representative must attend if required.
+- Resolution: Partner successfully signs up and receives Zoom invite.
+
+**Scenario 2: Partner Did Not Receive Training Link**
+- Steps:
+  - Confirm they completed registration.
+  - Instruct partner to check spam/junk folder for invite.
+  - If still missing, resend the Zoom link manually or escalate to CAFB support.
+- Resolution: Send direct link + meeting credentials.
+
+**Scenario 3: Multiple Team Members Joining**
+- Clarify only one person per agency is required for mandatory training, but others are welcome.
+- Mention that recordings may be provided later, but live attendance is expected if labeled "mandatory."
+
+**Scenario 4: Partner Is Unable to Attend a Training**
+- Inform them of the next scheduled date and share registration link.
+- Recommend that they attend a future session ASAP.
+- If no upcoming sessions are available, advise them to attend office hours.
+
+---
+SECTION 3: STANDARD RESPONSE TEMPLATES
+---
+
+**Initial Registration Support**  
+“Thank you for reaching out! Here is the link to register for our upcoming [Training Type] session. Once you register, you’ll receive a Zoom link by email. Let us know if you have any trouble accessing the session.”
+
+**Didn’t Receive Link**  
+“If you’ve already registered but haven’t received the Zoom link, please check your spam folder. If it’s not there, I’m happy to send it again here.”
+
+**Next Available Training**  
+“We’re sorry you missed today’s session. The next available training is on [date] at [time]. You can register using this link: [insert].”
+
+**Training Access Day-of**  
+“If you're registered and didn’t get the link this morning, here is the Zoom link for today’s training: [insert link].”
+
+---
+SECTION 4: LLM INSTRUCTIONS
+---
+
+✓ Always provide the correct Zoom or registration link based on the training type  
+✓ Encourage registration early to ensure access to calendar invites  
+✓ For missed sessions, offer the next available training or office hours  
+✓ Avoid confirming attendance credit unless verified by CAFB team  
+
+---
+SECTION 5: INTERNAL TEAMS TO LOOP IN
+---
+
+- **Customer Relations**: Handles general training registration and troubleshooting  
+- **Regional Coordinators**: May track who attended and verify compliance  
+- **PartnerLink Support Team**: For trainings related to system feature updates  
+- **Training Leads (e.g., Erin Brown, Charity)**: Can provide updated links and manage Zoom invites  
+
+---
+SECTION 6: ADDITIONAL PARTNER TIPS
+---
+
+- Remind partners to check email after registering for Zoom invite  
+- Encourage one representative per agency for mandatory sessions  
+- Suggest preparing questions for interactive office hours (Wednesdays, 10–11am)  
+- Confirm whether a recording will be made available, if they ask

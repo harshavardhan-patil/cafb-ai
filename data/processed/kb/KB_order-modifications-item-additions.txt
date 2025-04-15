@@ -1,0 +1,118 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Order Modifications – Item Additions
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports CAFB partners seeking to add items to orders after initial submission. This includes adding available inventory before the order locks, responding to site-specific food preferences, navigating produce limits, and understanding system behaviors like cart resets or product shortages.
+
+Partners often request added quantities or new items, especially before major events or holidays. The LLM-backed chatbot should facilitate timely and empathetic assistance, confirm item availability, and escalate when necessary.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Adding Available Items Before Order Lock**
+- Partners can request additions up until the order locks (3 business days prior to fulfillment).
+- Requests must include Sales Order number and item codes/quantities.
+
+_Template:_  
+“Thanks for your request! I’ve added [quantity + item name] to your order [SO#]. Let us know if there’s anything else.”
+
+**2. Item Unavailable or Out of Stock**
+- Items may appear available but run out quickly.
+- Cart contents do not reserve inventory. Orders are not guaranteed until checkout.
+
+_Template:_  
+“Unfortunately, the item you requested is no longer available. Inventory updates rapidly and carts reset nightly. We recommend checking back or exploring alternatives.”
+
+**3. Partner Over Produce Limit**
+- Produce is restricted by monthly pound caps.
+- Exceptions are rare and must be approved by the Food Resources team.
+
+_Template:_  
+“You’ve exceeded your produce limit for the month, so we’re unable to add more produce. You may review your limits or wait until next month.”
+
+**4. Order Locked – Item Cannot Be Added**
+- Orders that are locked require manual override or cannot be modified.
+- Exceptions may be made for high-need or misbehaving system cases.
+
+_Template:_  
+“Your order is currently locked for fulfillment. I’ll check with our Operations team to see if we can make a one-time change.”
+
+**5. Items Dropped from Cart or Order Suddenly**
+- This may happen due to expired carts, cart resets, or system limitations.
+- IT may investigate persistent issues.
+
+_Template:_  
+“Items in carts are not reserved and may disappear if not checked out in time. I understand this is frustrating—let’s see what we can still add to your order.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Include SO numbers and item codes in all requests  
+- Confirm item availability in real-time through PartnerLink  
+- Submit requests before the order lock window  
+- Monitor your produce cap regularly if adding fruits/vegetables  
+
+❌ DON’T:
+- Assume saved items will stay in the cart overnight  
+- Request last-minute additions without acknowledging potential inventory impact  
+- Attempt repeated edits without waiting 30 minutes between changes  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: Can I add more items to my order after it’s been submitted?**  
+A: Yes, if the order is still editable. If locked, support may try to help based on warehouse status.
+
+**Q: I saw items on the menu, but I couldn’t add them—why?**  
+A: Inventory may have changed between viewing and checkout. The system doesn’t hold items in carts.
+
+**Q: Why did my cart reset overnight?**  
+A: Carts reset at midnight daily. Items must be checked out to reserve them.
+
+**Q: Can I combine two orders instead of creating a new one?**  
+A: It’s not recommended due to produce tracking and routing issues, but support may assist in some cases.
+
+**Q: What if I requested something that’s not available anymore?**  
+A: We’ll do our best to find an equivalent. Let us know your priority items.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Can I add 5 more boxes of pancake mix?”**  
+Chatbot: “Sure! Please share the Sales Order number and item code so I can update your order.”
+
+**Partner: “I couldn’t add chicken to my order, but it was showing as available.”**  
+Chatbot: “That can happen when items sell out while you’re checking out. Can you let me know the item number so I can double-check inventory?”
+
+**Partner: “Why does my cart keep clearing out?”**  
+Chatbot: “Carts reset every night at midnight. Be sure to finalize your order during the day to secure items.”
+
+**Partner: “I’m over my produce limit. Can I still get apples?”**  
+Chatbot: “Thanks for checking. You’re currently over your produce limit, so we can’t add more items right now. You can try again next month.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Relations** – First line for adding items to open orders, cart troubleshooting, and delivery edits  
+- **Operations Team** – Final decision on locked order changes and produce allocation  
+- **IT Team** – Investigates cart resets, bugs, and PartnerLink functionality issues  
+- **Food Resources** – Manages produce limits, substitutions, and inventory prioritization  
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Partner Support / Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Main Office Line** – 202-644-9845  
+- **Produce Allocation / Food Resources** – coordinated via Customer Relations or Regional Coordinators  
+- **IT Support (internal use only)** – Escalate via internal CAFB system for PartnerLink bugs or inventory issues  
+- **Regional Coordinators** – Approvals and escalation for ongoing food access challenges
