@@ -41,3 +41,50 @@ CATEGORIES = {'order-modifications': ['item-additions',
   'data-entry-mistakes',
   'general-it-assistance'],
  'other': ['miscellaneous']}
+
+JIRA_FIELD_MAPPING = {
+    # Standard fields
+    "issue_key": "key",
+    "summary": "summary",
+    "description": "description",
+    "status": "status",
+    "created_at": "created",
+    "updated_at": "updated",
+    "resolved_at": "resolutiondate",
+    "assignee": "assignee",
+    "reporter": "reporter",
+    "reporter_email": "reporter.emailAddress",
+    "issue_type": "issuetype",
+    "priority": "priority",
+    "labels": "labels",
+    "project": "project",
+    "components": "components",
+    "affects_versions": "versions",
+    "fix_versions": "fixVersions",
+    "resolution": "resolution",
+    "votes": "votes.votes",
+    "remaining_estimate": "timeestimate",
+    "time_spent": "timespent",
+    "original_estimate": "timeoriginalestimate",
+    "rank": "customfield_10019",
+    
+    # Custom fields based on your extract_and_load_issues function
+    "region": "customfield_10103",
+    "main_category": "customfield_10101",
+    "sub_category": "customfield_10096",
+    "request_category": "customfield_10098",
+    "partner_names": "customfield_10108",
+    "request_language": "customfield_10109",
+    "source": "customfield_10111",
+    "time_to_first_response": "customfield_10094",
+    "relevant_departments": "customfield_10104",
+    "resolution_action": "customfield_10106",
+    "time_to_resolution": "customfield_10107",
+    "status_category_changed": "customfield_10100",
+    "date_of_first_response": "customfield_10095",
+    "request_type": "customfield_10099"
+}
+
+# Reverse mapping (useful for parsing responses)
+JIRA_FIELD_REVERSE_MAPPING = {v: k for k, v in JIRA_FIELD_MAPPING.items()}
+
