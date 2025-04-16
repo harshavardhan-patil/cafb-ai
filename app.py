@@ -8,5 +8,5 @@ import plotly.graph_objects as go
 
 st.set_page_config(layout="wide")
 
-pg = st.navigation([st.Page("src/pages/Overview.py"), st.Page("src/pages/support.py"), st.Page("src/pages/Trends.py"), st.Page("src/pages/filters_streamlit.py"), st.Page("src/pages/Categories Specific Complaint.py"), st.Page("src/pages/Complaints Information.py")])
+pg = st.navigation([st.Page("src/pages/Overview.py"), st.Page("src/pages/Support.py"), st.Page("src/pages/Trends.py"),  st.Page("src/pages/Topic Modelling.py"), st.Page("src/pages/Complaints Information.py")])
 pg.run()

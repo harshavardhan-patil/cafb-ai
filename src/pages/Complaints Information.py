@@ -24,31 +24,9 @@ logger.info("Read File")
 df = preprocess(df)
 ####
 
-# Monthly Complaints
-top_bar_style = """
-    <style>
-        .top-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            background-color: green;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: bold;
-            z-index: 1000;
-        }
-        .main {
-            margin-top: 60px; /* Adjust content to avoid overlap with the top bar */
-        }
-    </style>
-"""
 
-st.markdown('<div class="top-bar">Dashboard Header</div>', unsafe_allow_html=True)
+
+st.title('🛃 Complaints Detailed Information')
 ### Single Selection Filters 
 # add_selectbox = st.sidebar.selectbox(
 #     "Priority",

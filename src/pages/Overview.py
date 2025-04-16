@@ -142,26 +142,25 @@ with col2:
 col1, col2 = st.columns([3, 2])
 
 with col1:
-    st.markdown("""
-    <div class="feature-card">
-        <h2>Our Support Team is Here For You</h2>
-        <p>At our company, we believe in providing exceptional customer service 24 hours a day, 7 days a week. 
-        Our dedicated team of support specialists is ready to assist you with any questions or issues you may encounter.</p>
-        
-        <h3>What We Offer:</h3>
-        <ul>
-            <li>24/7 availability through multiple channels</li>
-            <li>Expert technical assistance</li>
-            <li>Quick response times</li>
-            <li>Personalized solutions to your problems</li>
-            <li>Follow-up to ensure your satisfaction</li>
-        </ul>
-    </div>
+    st.markdown(""" 
+        <div class="feature-card">
+            <h2>Our Support Team is Here For You</h2>
+            <p>At our company, we believe in providing exceptional customer service 24 hours a day, 7 days a week. 
+            Our dedicated team of support specialists is ready to assist you with any questions or issues you may encounter.</p> 
+            <h3>What We Offer:</h3>
+            <ul>
+                <li>24/7 availability through multiple channels</li>
+                <li>Expert technical assistance</li>
+                <li>Quick response times</li>
+                <li>Personalized solutions to your problems</li>
+                <li>Follow-up to ensure your satisfaction</li>
+            </ul>
+        </div>
     """, unsafe_allow_html=True)
 
 with col2:
     # Use a placeholder image for the customer support representative
-    # st.image(get_placeholder_image_url(400, 300, text="Customer+Support"), 
+    # st.image(get_placeholder_image_url(500, 400, text="Customer+Support"), 
     #          caption="Our dedicated support team is ready to help", 
     #          use_column_width=True)
 

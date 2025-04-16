@@ -110,14 +110,14 @@ def yearly_trends(df: pd.DataFrame) -> go.Figure:
 
     df['Resolved Year'] = df['Resolved Year'].astype(int)
     df['Created Year'] = df['Created Year'].astype(int)
-    st.write(df["Resolved Year"].drop_duplicates())
-    st.write(df["Created Year"].drop_duplicates())
+    # st.write(df["Resolved Year"].drop_duplicates())
+    # st.write(df["Created Year"].drop_duplicates())
 
     yearly_resolved_complaints = df.groupby(df['Resolved Year'])['Issue id'].count()
     yearly_created_complaints = df.groupby(df['Created Year'])['Issue id'].count()
 
-    st.write(yearly_resolved_complaints)
-    st.write(yearly_created_complaints)
+    # st.write(yearly_resolved_complaints)
+    # st.write(yearly_created_complaints)
 
     # Create a plotly figure
     fig = go.Figure()
@@ -243,15 +243,15 @@ def test_monthly(df):
         st.markdown('</div>', unsafe_allow_html=True)
     
     # Debug information
-    st.write(f"Selected Created Year: {created_ticket_filter}")
-    st.write(f"Selected Resolved Year: {resolved_ticket_filter}")
+    # st.write(f"Selected Created Year: {created_ticket_filter}")
+    # st.write(f"Selected Resolved Year: {resolved_ticket_filter}")
     
     # Display data types to help with debugging
-    st.write("Data types in dataframe:")
-    st.write(f"Created Year column type: {df['Created Year'].dtype}")
-    st.write(f"Resolved Year column type: {df['Resolved Year'].dtype}")
-    st.write(f"Created Year filter type: {type(created_ticket_filter)}")
-    st.write(f"Resolved Year filter type: {type(resolved_ticket_filter)}")
+    # st.write("Data types in dataframe:")
+    # st.write(f"Created Year column type: {df['Created Year'].dtype}")
+    # st.write(f"Resolved Year column type: {df['Resolved Year'].dtype}")
+    # st.write(f"Created Year filter type: {type(created_ticket_filter)}")
+    # st.write(f"Resolved Year filter type: {type(resolved_ticket_filter)}")
     
     # Correctly spelled month names
     month_names = {
@@ -272,27 +272,27 @@ def test_monthly(df):
     
     # Convert both the dataframe column and filter value to string for reliable comparison
     resolved_df = df_month[df_month["Resolved Year"].astype(str) == resolved_ticket_filter]
-    st.write(f"Filtered Resolved Tickets (found {len(resolved_df)} rows):")
-    st.write(resolved_df)
+    # st.write(f"Filtered Resolved Tickets (found {len(resolved_df)} rows):")
+    # st.write(resolved_df)
     
     created_df = df_month[df_month["Created Year"].astype(str) == created_ticket_filter]
-    st.write(f"Filtered Created Tickets (found {len(created_df)} rows):")
-    st.write(created_df)
+    # st.write(f"Filtered Created Tickets (found {len(created_df)} rows):")
+    # st.write(created_df)
     
     # If filters still don't work, let's add a more direct debugging test
     st.subheader("Testing filtering directly:")
     # Check first 5 values in each column
-    st.write("First 5 Created Year values:", df_month["Created Year"].head().tolist())
-    st.write("First 5 Resolved Year values:", df_month["Resolved Year"].head().tolist())
+    # st.write("First 5 Created Year values:", df_month["Created Year"].head().tolist())
+    # st.write("First 5 Resolved Year values:", df_month["Resolved Year"].head().tolist())
     
     # Try manual filtering for debugging
     test_created_year = df_month["Created Year"].iloc[0]  # Get first value
     test_created_df = df_month[df_month["Created Year"] == test_created_year]
-    st.write(f"Test filter with exact first value ({test_created_year}): {len(test_created_df)} rows found")
+    # st.write(f"Test filter with exact first value ({test_created_year}): {len(test_created_df)} rows found")
     
     # Try string conversion for debugging
     test_created_df_str = df_month[df_month["Created Year"].astype(str) == str(test_created_year)]
-    st.write(f"Test filter with string conversion ({str(test_created_year)}): {len(test_created_df_str)} rows found")
+    # st.write(f"Test filter with string conversion ({str(test_created_year)}): {len(test_created_df_str)} rows found")
 
 
 

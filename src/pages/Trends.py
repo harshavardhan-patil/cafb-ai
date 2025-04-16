@@ -17,39 +17,50 @@ from src.dashboard.metrics import category_bubble
 from streamlit_dynamic_filters import DynamicFilters
 
 
+
+
 print(f"{RAW_DATA_DIR}")
 stats_path = RAW_DATA_DIR / "cafb_data_case2.xlsx"
 df = pd.read_excel(str(stats_path))
 logger.info("Read File")
 
 df = preprocess(df)
+
+
+st.title("📊 Trends Monitoring System")
+
 ####
 
 # Monthly Complaints
-top_bar_style = """
-    <style>
-        .top-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            background-color: green;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: bold;
-            z-index: 1000;
-        }
-        .main {
-            margin-top: 60px; /* Adjust content to avoid overlap with the top bar */
-        }
-    </style>
-"""
+# top_bar_style = """
+#     <style>
+#         .top-bar {
+#             position: fixed;
+#             top: 0;
+#             left: 0;
+#             width: 100%;
+#             height: 200px;
+#             background-color: green;
+#             color: white;
+#             display: flex;
+#             align-items: center;
+#             justify-content: center;
+#             font-size: 10px;
+#             font-weight: bold;
+#             z-index: 1000;
+#         }
+#         .main {
+#             margin-top: 60px; /* Adjust content to avoid overlap with the top bar */
+#         }
+#     </style>
+# """
 
-st.markdown('<div class="top-bar">Dashboard Header</div>', unsafe_allow_html=True)
+# st.markdown('<div class="top-bar">Dashboard Header</div>', unsafe_allow_html=True)
+
+# st.markdown("<span style='color: yellow;'>This text is yellow</span>", unsafe_allow_html=True)
+
+
+
 ### Single Selection Filters 
 # add_selectbox = st.sidebar.selectbox(
 #     "Priority",
