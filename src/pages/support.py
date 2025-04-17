@@ -11,76 +11,44 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_ollama import ChatOllama
 from src.data.jira import check_ticket_exists, get_issue_context, get_issue_kb, classify_issue, create_and_store_issue
-from src.utils.helpers import prettify_category
+from src.utils.helpers import prettify_category, prettify_tool
 from src.utils.constants import CATEGORIES
 from src.utils.constants import JIRA_FIELD_MAPPING
 from langchain.tools import Tool
-from src.data.jira import (
-    update_ticket_priority, 
-    add_order_information, 
-    add_conversation_summary,
-    extract_order_number,
-    close_ticket
-)
+from src.agents.tools import close_ticket
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from src.agents.agent import State, Assistant
+from src.agents.tools import create_tool_node_with_fallback
+from langgraph.graph import StateGraph
+from langgraph.graph import StateGraph, START, END
+from langgraph.prebuilt import ToolNode, tools_condition
+from langgraph.checkpoint.memory import MemorySaver
+from langchain_core.messages import ToolMessage
+from langchain_core.tools import tool
+from src.agents.tools import close_ticket, update_ticket_priority, add_order_number_to_ticket, add_conversation_summary_to_ticket
+import uuid
+import logging
+
+
+# Set logging level (DEBUG, INFO, WARNING, ERROR)
+logging.basicConfig(level=logging.INFO)
+
 
 load_dotenv()
 
 model = os.getenv("MODEL")
 project_key = os.getenv("PROJECT_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
+def get_llm():
+    return ChatOpenAI(model="gpt-3.5-turbo", 
+                api_key=OPENAI_API_KEY,
+                timeout=5,
+                max_retries=2,)
 
 placeholder_option = "-- Select Issue Category --"
 category_list = [placeholder_option] + list(CATEGORIES.keys())
-
-def setup_jira_tools(issue_key):
-    """
-    Create tools for updating JIRA tickets.
-    
-    Args:
-        issue_key: The JIRA issue key to operate on
-        
-    Returns:
-        A list of tools for the agent to use
-    """
-    escalate_tool = Tool(
-        name="EscalateTicket",
-        func=lambda x: update_ticket_priority(
-            issue_key=issue_key,
-            new_priority="High",
-            reason=x
-        ),
-        description="Use this when the partner requests escalation or the issue is urgent. Input should be the reason for escalation."
-    )
-    
-    add_order_tool = Tool(
-        name="AddOrderInfo",
-        func=lambda x: add_order_information(
-            issue_key=issue_key,
-            order_number=extract_order_number(x) or "Unknown",
-            additional_details=x
-        ),
-        description="Use this when the partner provides order number or order details. Input should be the complete text with order information."
-    )
-    
-    add_summary_tool = Tool(
-        name="AddConversationSummary",
-        func=lambda x: add_conversation_summary(
-            issue_key=issue_key,
-            conversation_summary=x
-        ),
-        description="Use this at the end of the conversation to add a summary to the ticket. Input should be the summary text."
-    )
-    
-    close_ticket_tool = Tool(
-        name="CloseTicket",
-        func=lambda x: close_ticket(
-            issue_key=issue_key,
-            resolution_reason=x
-        ),
-        description="Use this when the partner's issue has been resolved and they confirm the ticket can be closed. Input should be the resolution reason."
-    )
-    
-    return [escalate_tool, add_order_tool, add_summary_tool, close_ticket_tool]
-
 
 # Initialize session states if they don't exist
 if 'selected_option' not in st.session_state:
@@ -91,6 +59,12 @@ if 'issue_description' not in st.session_state:
     st.session_state.issue_description = ""
 if 'chat_started' not in st.session_state:
     st.session_state.chat_started = False
+if 'setup_graph' not in st.session_state:
+    st.session_state.setup_graph = False
+if 'graph' not in st.session_state:
+    st.session_state.graph = None
+if 'memory' not in st.session_state:
+    st.session_state.memory = None
 
 # Function to handle option selection
 def handle_option_selection(option):
@@ -100,6 +74,7 @@ def handle_option_selection(option):
 # Function to start chat session
 def start_chat():
     st.session_state.chat_started = True
+    st.session_state.setup_graph = True
     # Clear previous chat messages
     st.session_state.messages = []
 
@@ -216,15 +191,27 @@ elif st.session_state.selected_option == "new":
         # Force refresh the page
         st.rerun()
 
-# Chat interface - only show when a chat has been started
-if st.session_state.chat_started:
-    llm = ChatOllama(
-        model="gemma3",
-    )
-    
-    # Set up memory
-    msgs = StreamlitChatMessageHistory(key="langchain_messages")
-    
+
+# Set a unique key for the button to avoid conflicts
+APPROVE_BUTTON_KEY = "approve_tool_button"
+DENY_BUTTON_KEY = "deny_tool_button"
+
+
+if 'awaiting_tool_confirmation' not in st.session_state:
+    st.session_state.awaiting_tool_confirmation = False
+if 'tool_call_id' not in st.session_state:
+    st.session_state.tool_call_id = None
+if 'tool_description' not in st.session_state:
+    st.session_state.tool_description = ""
+if 'tool_approved' not in st.session_state:
+    st.session_state.tool_approved = False
+if 'tool_denied' not in st.session_state:
+    st.session_state.tool_denied = False
+
+# Setup LangGraph and Memory as session variables for persistence
+if st.session_state.chat_started and st.session_state.setup_graph:
+    llm = get_llm()  
+    # If a partner confirms that the ticket has been resolved, you should invoke the close_ticket tool
     # Create appropriate system prompt based on context
     if st.session_state.selected_option == "existing":
         issue_context = get_issue_context(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
@@ -239,9 +226,16 @@ if st.session_state.chat_started:
         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question. 
         DO NOT MAKE UP OR SIMULATE INFORMATION.
 
+        You also have access to tools. 
+        1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
+        2. If you need to update the ticket with the order number, use add_order_number_to_ticket
+        3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
+        4. Regardless of the outcome, you should call add_conversation_summary_to_ticket tool at the end of the conversation.
+        
+        #############
         Ticket Context: {issue_context}
          
-        ##############
+        #############
         Knowledge Base: {issue_kb}
         """
         
@@ -256,41 +250,177 @@ if st.session_state.chat_started:
         The Knowledege Base provides helpful examples but does not have LIVE data (for example, Kowledge Base does not have current schedules, simply examples)
         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question.
 
+        You also have access to tools. 
+        1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
+        2. If you need to update the ticket with the order number, use add_order_number_to_ticket
+        3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
+        4. Regardless of the outcome, you should call add_conversation_summary_to_ticket tool at the end of the conversation.
+        
         ##############
         Knowledge Base: {issue_kb}
         """
     
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ("system", system_prompt),
-            MessagesPlaceholder(variable_name="history"),
-            ("human", "{question}"),
-        ]
-    )
-    
-    chain = prompt | llm
-    chain_with_history = RunnableWithMessageHistory(
-        chain,
-        lambda session_id: msgs,
-        input_messages_key="question",
-        history_messages_key="history",
+    assistant_prompt = ChatPromptTemplate.from_messages([
+        ("system",
+        system_prompt),
+        ("placeholder", 
+         "{messages}"),
+    ])
+
+    # Add tools
+    tools = [close_ticket, update_ticket_priority, add_order_number_to_ticket, add_conversation_summary_to_ticket]
+    # Assistant for LLM Node
+    assistant_runnable = assistant_prompt | llm.bind_tools(tools)
+
+    # Build Graph
+    builder = StateGraph(State)
+    builder.add_node("assistant", Assistant(assistant_runnable))
+    builder.add_edge(START, "assistant")
+    builder.add_node("tools", create_tool_node_with_fallback(tools))
+    builder.add_conditional_edges("assistant", tools_condition)
+    builder.add_edge("tools", "assistant")
+
+    # In-memory chat history persistence
+    st.session_state.memory = MemorySaver()
+    # Compile graph
+    st.session_state.graph = builder.compile(
+        checkpointer=st.session_state.memory,
+        interrupt_before=["tools"]
     )
 
+    st.session_state.setup_graph = False
+
+#################
+# Chat Inteface #
+#################
+if st.session_state.chat_started and not st.session_state.setup_graph:  
     # Display ticket/issue info at the top of chat
-    if st.session_state.selected_option == "existing":
-        st.info(f"Discussing ticket: {st.session_state.issue_key}")
-    
-    # Render current messages from StreamlitChatMessageHistory
-    for msg in msgs.messages:
-        if msg.type == 'AIMessageChunk':
-            st.chat_message('ai').write(msg.content)
-        else:
-            st.chat_message(msg.type).write(msg.content)
-    
-    # If user inputs a new prompt, generate and draw a new response
-    if user_input := st.chat_input("How can I help?"):
-        st.chat_message("human").write(user_input)
-        # New messages are saved to history automatically by Langchain during run
-        config = {"configurable": {"session_id": "any"}}
-        st.chat_message('ai').write_stream(chain_with_history.stream({"question": user_input}, config))
-         
+    st.info(f"Discussing ticket: {st.session_state.issue_key}")
+
+    config = {
+    "configurable": {
+        # Checkpoints are accessed by thread_id
+        "thread_id": "1",
+        }
+    }
+
+    # Function to process user input
+    def process_user_input(user_input):
+        # Invoke the graph with user input
+        events = st.session_state.graph.invoke(
+            {"messages": ("user", user_input)}, 
+            config, 
+            stream_mode="values"
+        )
+        
+        # Check if we need to handle tool calls
+        snapshot = st.session_state.graph.get_state(config)
+        
+        if snapshot.next and "tool_calls" in events["messages"][-1].__dict__:
+            # We have a tool call that needs confirmation
+            st.session_state.awaiting_tool_confirmation = True
+            tool_calls = events["messages"][-1].tool_calls
+            
+            if tool_calls and len(tool_calls) > 0:
+                st.session_state.tool_call_id = tool_calls[0]["id"]
+                
+                # Get tool description for user to confirm
+                tool_name = tool_calls[0]["name"]
+                tool_args = tool_calls[0]["args"]
+                
+                st.session_state.tool_description = prettify_tool(tool_name)
+                
+                # Don't add the assistant's message yet since we're waiting for confirmation
+                return None
+        
+        # If we're not handling a tool call, return the assistant's message
+        return events["messages"][-1].content
+    # Callback functions that directly update the UI without a page refresh
+    def handle_tool_approval():
+        """Callback function for approving tool usage without page refresh"""
+        try:
+            # Get the current state snapshot
+            snapshot = st.session_state.graph.get_state(config)
+            
+            # Continue the graph execution with empty input (since the state already has what it needs)
+            # But we need to make sure we pass the expected 'messages' input even if it's empty
+            tool_result = st.session_state.graph.invoke(None, config)
+            
+            assistant_response = tool_result["messages"][-1].content
+            
+            # Update the chat history
+            st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Reset approval state
+            st.session_state.awaiting_tool_confirmation = False
+            st.session_state.tool_call_id = None
+            st.session_state.tool_description = ""
+        except Exception as e:
+            st.error(f"Error during tool execution: {str(e)}")
+
+    def handle_tool_denial():
+        """Callback function for denying tool usage without page refresh"""
+        try:
+            # Continue the graph but with a denial message
+            # We need to include both the required 'messages' input and our tool message
+            tool_result = st.session_state.graph.invoke(
+                {
+                    "messages": [
+                        ToolMessage(
+                            tool_call_id=st.session_state.tool_call_id,
+                            content="API call denied by user. Continue assisting without using the tool.",
+                        )
+                    ]
+                },
+                config
+            )
+            
+            assistant_response = tool_result["messages"][-1].content
+            
+            # Update chat history
+            st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Reset state
+            st.session_state.awaiting_tool_confirmation = False
+            st.session_state.tool_call_id = None
+            st.session_state.tool_description = ""
+        except Exception as e:
+            st.error(f"Error handling tool denial: {str(e)}")
+
+
+    # Initialize or get chat history from session state
+    if 'messages' not in st.session_state:
+        st.session_state.messages = []
+
+    # Display existing chat messages
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.write(message["content"])
+
+
+    if st.session_state.awaiting_tool_confirmation:
+        st.info(f"The assistant wants to {st.session_state.tool_description}")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Approve", key=APPROVE_BUTTON_KEY, on_click=handle_tool_approval):
+                pass
+        
+        with col2:
+            if st.button("Deny", key=DENY_BUTTON_KEY, on_click=handle_tool_denial):
+                pass
+    else:
+        # Get user input if not awaiting tool confirmation
+        if user_input := st.chat_input("How can I help?"):
+            # Add user message to chat history
+            st.session_state.messages.append({"role": "human", "content": user_input})
+            
+            # Process the user input
+            assistant_response = process_user_input(user_input)
+            
+            # Add assistant response to chat history if not awaiting tool confirmation
+            if assistant_response and not st.session_state.awaiting_tool_confirmation:
+                st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Force refresh to show new messages
+            st.rerun()

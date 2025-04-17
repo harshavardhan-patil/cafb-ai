@@ -22,4 +22,5 @@ ollama
 langchain_openai
 langchain_community
 langchain_google
+langgraph
 -e .
