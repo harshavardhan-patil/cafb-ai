@@ -230,7 +230,6 @@ if st.session_state.chat_started and st.session_state.setup_graph:
         1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
         2. If you need to update the ticket with the order number, use add_order_number_to_ticket
         3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
-        4. Regardless of the outcome, you should call add_conversation_summary_to_ticket tool at the end of the conversation.
         
         #############
         Ticket Context: {issue_context}
@@ -243,7 +242,8 @@ if st.session_state.chat_started and st.session_state.setup_graph:
         issue_kb = get_issue_kb(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
         system_prompt = f"""
         You are a frontdesk assistant for Capital Area Food Bank (CAFB). 
-        A partner has created a new issue with the initial description: {st.session_state.issue_description}
+        A partner has just create a new ticket with ID: {st.session_state.issue_key}
+        The initial description of the ticket is: {st.session_state.issue_description}
         
         Help them by gathering more information about their issue so it can be properly addressed.
         Use the Ticket Context and Knowledge Base to answer questions.
@@ -254,8 +254,7 @@ if st.session_state.chat_started and st.session_state.setup_graph:
         1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
         2. If you need to update the ticket with the order number, use add_order_number_to_ticket
         3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
-        4. Regardless of the outcome, you should call add_conversation_summary_to_ticket tool at the end of the conversation.
-        
+
         ##############
         Knowledge Base: {issue_kb}
         """
@@ -268,7 +267,7 @@ if st.session_state.chat_started and st.session_state.setup_graph:
     ])
 
     # Add tools
-    tools = [close_ticket, update_ticket_priority, add_order_number_to_ticket, add_conversation_summary_to_ticket]
+    tools = [close_ticket, update_ticket_priority, add_order_number_to_ticket]
     # Assistant for LLM Node
     assistant_runnable = assistant_prompt | llm.bind_tools(tools)
 
