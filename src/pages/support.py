@@ -31,6 +31,12 @@ import uuid
 import logging
 
 
+st.set_page_config(layout='wide', initial_sidebar_state='expanded')
+
+#converting static image and setting as website background
+st.title("CAFB Support System")
+
+
 # Set logging level (DEBUG, INFO, WARNING, ERROR)
 logging.basicConfig(level=logging.INFO)
 
@@ -42,7 +48,7 @@ project_key = os.getenv("PROJECT_KEY")
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 def get_llm():
-    return ChatOpenAI(model="gpt-3.5-turbo", 
+    return ChatOpenAI(model="gpt-4.1", 
                 api_key=OPENAI_API_KEY,
                 timeout=5,
                 max_retries=2,)
@@ -221,18 +227,18 @@ if st.session_state.chat_started and st.session_state.setup_graph:
         A partner is inquiring about an existing ticket with ID: {st.session_state.issue_key}.
         
         Try to provide helpful context and solutions related to this ticket.
-        Use the Ticket Context and Knowledge Base to answer questions.
+        Use the Ticket Information and Knowledge Base to answer questions.
         The Knowledege Base provides helpful examples but does not have LIVE data (for example, Kowledge Base does not have current schedules, simply examples)
         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question. 
         DO NOT MAKE UP OR SIMULATE INFORMATION.
 
         You also have access to tools. 
         1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
-        2. If you need to update the ticket with the order number, use add_order_number_to_ticket
+        2. For some issues, you will specifically need to ask the partner for their order number. Only AFTER the partner has provided you with their order number (e.g SO1234) you need to update the ticket with the order number using add_order_number_to_ticket
         3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
         
         #############
-        Ticket Context: {issue_context}
+        Ticket Information: {issue_context}
          
         #############
         Knowledge Base: {issue_kb}
@@ -252,7 +258,7 @@ if st.session_state.chat_started and st.session_state.setup_graph:
 
         You also have access to tools. 
         1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
-        2. If you need to update the ticket with the order number, use add_order_number_to_ticket
+        2. For some issues, you will specifically need to ask the partner for their order number. Only AFTER the partner has provided you with their order number (e.g SO1234) you need to update the ticket with the order number using add_order_number_to_ticket
         3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
 
         ##############
