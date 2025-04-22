@@ -1,0 +1,74 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Order Cancellations - Urgent Cancellations  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports handling urgent order cancellations by CAFB partners. These requests typically arise when partners are unable to cancel orders via the PartnerLink system or need cancellations processed immediately due to schedule conflicts or unexpected issues.
+
+Urgent cancellations are typically made:
+- Within 72 hours of scheduled delivery
+- When the PartnerLink system does not allow manual cancellation
+- Outside business hours
+
+---
+SECTION 2: URGENT CANCELLATION PROTOCOL
+---
+
+**Step-by-Step Partner Assistance Flow:**
+
+1. **Initial Acknowledgment**
+   - Use empathetic and prompt acknowledgment:  
+     _“Thank you for reaching out. We're reviewing your request and will act as soon as possible.”_
+
+2. **Check Order Validity**
+   - Confirm the Sales Order (SO) number is valid and active.
+   - Look for cutoff times: cancellations requested less than 24 hours prior may not be guaranteed.
+
+3. **Action & Response**
+   - If within business hours: Notify internal operations to halt processing.
+   - If outside hours: Assure partner that the request will be reviewed promptly when staff return.
+
+4. **Resolution Confirmation**
+   - Once canceled, confirm clearly to the partner:  
+     _“Your order [SO#] has been successfully canceled.”_
+
+---
+SECTION 3: COMMON PARTNER MESSAGES & LLM RESPONSE TEMPLATES
+---
+
+**Urgent Cancellation Request**  
+“Thank you for contacting CAFB. We understand the urgency and are working to cancel your order. Please allow a moment while we confirm.”
+
+**Post-Cancellation Confirmation**  
+“Your order SO[#######] has been canceled. You can verify the update in your PartnerLink account shortly.”
+
+**After-Hours Response Template**  
+“We’ve received your cancellation request. Our team will review and act on it by 10 AM the next business day.”
+
+---
+SECTION 4: BEST PRACTICES FOR LLM INTERACTION
+---
+
+✓ Always confirm the SO number  
+✓ Do not guarantee cancellation without checking internal system status  
+✓ Never assume the reason — ask if additional support is needed  
+✓ Use PartnerLink as the reference system for order validation  
+✓ Tag Customer Relations for internal follow-up if high urgency is mentioned  
+
+---
+SECTION 5: INTERNAL RESOURCES
+---
+
+- **PartnerLink**: For order tracking and partner visibility  
+- **Customer Relations Team**: For coordinating cancellations internally  
+- **Operations Team**: For blocking order fulfillment if already scheduled  
+
+---
+SECTION 6: ADDITIONAL NOTES
+---
+
+- Encourage partners to make changes as early as possible in the week for Friday deliveries  
+- Partners should include email/phone contact for swift clarification  
+- Common cancellation times: 24–72 hours before delivery  

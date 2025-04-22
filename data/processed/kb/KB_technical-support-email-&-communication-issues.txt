@@ -1,0 +1,115 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Technical Support – Email & Communication Issues
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports CAFB partners experiencing email-related issues, miscommunications, or confusion surrounding order confirmations, expiration dates, and customer service responses. It covers troubleshooting undelivered or delayed responses, clarifies refund protocols for expired or misrepresented products, and outlines proper communication channels for resolving technical or product-related concerns.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Partner Did Not Receive Expected Response or Email**  
+- Emails may be filtered to spam folders or blocked by firewalls.
+- Partners should whitelist CAFB emails and regularly check spam/junk folders.
+
+_Template:_  
+“We’re sorry you didn’t receive our previous messages. Please add us to your safe sender list and check your spam folder. Let us know if you'd like us to resend.”
+
+**2. Questions About Refund Eligibility for Expired or Incorrectly Labeled Items**  
+- Purchased items that are past expiration may be eligible for credit/refund.
+- Donated items are subject to “Best By” standards and may not qualify for refund unless spoiled.
+
+_Template:_  
+“Thank you for the details and photos. Purchased items past expiration may be eligible for a refund. Donated items may be past their ‘Best By’ date and still safe for use.”
+
+**3. Incomplete Orders or Issues with Product Information**  
+- If a partner receives the wrong product (e.g., prunes instead of plums), CAFB investigates the discrepancy and may issue credit or substitute.
+
+_Template:_  
+“We apologize for the product mislabeling. We’ve shared this with our Food Resources and will issue credit if applicable.”
+
+**4. Missing or Failed PDF Generation on Order Confirmation**  
+- System glitches can prevent order PDFs from appearing or being printable.
+- If the cart clears or errors appear, item availability may have changed mid-process.
+
+_Template:_  
+“Sometimes items in the cart may sell out during checkout. We recommend submitting high-priority orders promptly. Sorry for the inconvenience!”
+
+**5. Difficulty Accessing or Switching Between Agency Accounts**  
+- CAFB provides separate logins for each site; passwords must not be changed.
+- Forgotten password tools affect *all* linked accounts; manual resets must go through support.
+
+_Template:_  
+“We’ve granted you access to all eligible agency sites. Please use the provided login credentials separately for each. Reach out if you encounter access errors.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Include SO or invoice numbers in all emails  
+- Add partnersupport@capitalareafoodbank.org to your safe senders list  
+- Attach photos when reporting expired or mislabeled products  
+- Mention affected item numbers when inquiring about replacements or refunds  
+- Clarify whether items were purchased or donated when requesting credits  
+
+❌ DON’T:
+- Expect refunds on “Best By” dated donated items unless visibly spoiled  
+- Forward screenshots without including context or SO number  
+- Assume system-generated emails reflect real-time stock or eligibility  
+- Edit cart repeatedly after error messages without clearing browser cache  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: Can I receive a refund for expired tortillas I ordered?**  
+A: If they were purchased, yes—send a photo and SO number. If they were donated, refunds generally aren’t issued unless the item is unsafe.
+
+**Q: Why didn’t I get a confirmation email after submitting an order?**  
+A: It may have been flagged as spam or blocked. Add our email to your approved sender list and let us know so we can confirm receipt.
+
+**Q: How do I regain access to multiple site accounts?**  
+A: Each site has a separate login and password. Contact us to reset your credentials. Do not use “forgot password” tools if you're linked to multiple sites.
+
+**Q: What should I do if my order PDF won’t download or print?**  
+A: This may happen due to inventory updates during checkout. Save orders promptly, and contact support if the cart clears or errors appear.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “I never got an email confirming my order.”**  
+Chatbot: “Sorry about that! Please check your spam folder and add us to your approved senders list. I can confirm your order if you share the SO number.”
+
+**Partner: “My purchased tortillas were expired. Can I get a refund?”**  
+Chatbot: “Thank you for bringing this up. Please send a photo and the SO number so we can review and request a credit if eligible.”
+
+**Partner: “I can’t log into our new site’s account.”**  
+Chatbot: “Each site has its own login. I can resend your credentials. Please don’t use the ‘forgot password’ tool, as it may reset all linked accounts.”
+
+**Partner: “I tried to add items, but my cart cleared.”**  
+Chatbot: “It sounds like those items may have sold out during checkout. That can cause cart resets. I’m happy to look into alternatives if you tell me what was missing.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Relations** – Primary contact for communication issues, site logins, and expired item claims  
+- **Food Resources / Operations** – For damaged, mislabeled, or unsafe food reports  
+- **IT Support** – Website errors, portal bugs, or account access resolution  
+- **Accounting** – For refunds, credits, and billing record updates  
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Partner Support / Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Main Line** – 202-644-9845  
+- **Accounts Receivable** – For financial documentation: accounting@capitalareafoodbank.org  
+- **Regional Coordinators** – For site support and policy help  
+  - *Grace Fricke*: 202-644-9824  
+  - *Augusta Fricke*: 771-209-4611

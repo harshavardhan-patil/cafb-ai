@@ -1,0 +1,131 @@
+**Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base**  
+**Category: Training & Account Access - Login Issues**
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This category addresses support requests related to:
+- Gaining login access to **PartnerLink**
+- Verifying **SMART Shopper Training** completion
+- Troubleshooting account lockouts or missing access credentials
+- Assistance with creating accounts for new shoppers
+- Updating hours of operation for system access
+
+---
+
+### SECTION 2: COMMON SCENARIOS & TROUBLESHOOTING
+
+---
+
+**Scenario 1: Missing Login Access After SMART Shopper Training**
+- **Example**: “I attended the SMART Shopper training but did not receive login credentials.”
+- **Possible Causes**:
+  - Attendance not officially recorded (e.g., participated as a guest or unregistered attendee)
+  - Email filter issues preventing delivery of login info
+- **Steps to Resolve**:
+  1. Verify if the user was listed as an attendee.
+  2. Check if user was an existing contact in NetSuite.
+  3. If training was attended informally, confirm participation via trainer or colleague.
+  4. If qualified, manually issue PartnerLink (PL) access via NetSuite.
+- **Important Note**: An automatic email will be sent from NetSuite titled **“Access to Capital Area Food Bank”**. Ask the partner to check spam/junk folders.
+
+---
+
+**Scenario 2: Creating Login for a New User**
+- **Example**: “I need help creating a login with my account.”
+- **Steps**:
+  1. Search the partner’s agency contact list in NetSuite.
+  2. If the requester is not listed, verify whether they’ve completed SMART Shopper training.
+  3. If not trained, provide them with upcoming training session options (date, time, Zoom ID/passcode).
+  4. Upon training completion, their agency coordinator or CAFB support can enable access.
+- **Best Practice**: Encourage partners to attend **SMART Shopper Training** before requesting login credentials.
+
+---
+
+**Scenario 3: Account Lockout / Trouble Logging In**
+- **Example**: “We are locked out of the CAFB website.”
+- **Steps**:
+  1. Ask for confirmation of their login credentials and if a password reset was attempted.
+  2. Provide instructions to reset the password via PartnerLink.
+  3. If login remains inaccessible, escalate to **Customer Relations** or **IT**.
+  4. Check if the lockout is related to unverified **Hours of Operation (HOO)**.
+- **Resolution**:
+  - Once hours are verified or corrected, PartnerLink access is typically restored.
+
+---
+
+**Scenario 4: Account Access Blocked Due to Distribution Details**
+- **Example**: “Our site was mistakenly marked as a distribution location.”
+- **Steps**:
+  1. Confirm current HOO data in PartnerLink.
+  2. Clarify with the partner whether they distribute food.
+  3. If incorrectly listed, notify the **Regional Coordinator** to remove from public resource listings.
+  4. Once corrected, update system status to allow order placement.
+- **Reminder**: Always confirm agency classification to prevent public misrepresentation.
+
+---
+
+### SECTION 3: FREQUENTLY ASKED QUESTIONS (FAQ)
+
+---
+
+**Q1: I attended SMART Shopper training but never received login access. What do I do?**  
+A: Please confirm if you were officially registered for the session. Sometimes, participants join as guests and are not captured in the attendance record. If you were present, we can verify and grant you access manually.
+
+**Q2: How do I sign up for SMART Shopper training?**  
+A: Upcoming trainings are shared by CAFB Customer Support. Partners must attend one before receiving PartnerLink access. Sessions are typically one hour long and held via Zoom. You will receive a Meeting ID and Passcode.
+
+**Q3: What should I do if my PartnerLink account says my hours need verification?**  
+A: Log in, go to your agency profile, and under "Hours of Operation", click **"Verify"** if the hours are correct. If changes are needed, click **"Edit"** and submit. Once approved, your account will be re-enabled.
+
+**Q4: I’m not listed as a contact for my agency. Can I still get login credentials?**  
+A: You must be listed as a contact and must complete SMART Shopper training. Once confirmed, CAFB staff will add you as an authorized shopper and grant you access.
+
+**Q5: Will I receive an email after account access is granted?**  
+A: Yes, you will receive an automated email from NetSuite with the subject “Access to Capital Area Food Bank.” This contains your login credentials and access instructions.
+
+---
+
+### SECTION 4: BEST PRACTICES FOR PARTNERS
+
+---
+
+- Always register officially for SMART Shopper training. Unregistered guests may not be issued access.
+- Double-check email spam/junk folders for system emails (e.g., NetSuite access).
+- Verify distribution hours in PartnerLink quarterly, even if unchanged.
+- Inform CAFB immediately if your site is mistakenly listed as a distribution location.
+- Join **Office Hours (Wednesdays 10am–11am)** for hands-on support with PartnerLink or account issues.
+
+---
+
+### SECTION 5: RESPONSE TEMPLATES FOR LLM
+
+---
+
+**Login Missing After Training**  
+“Thanks for reaching out! Can you confirm whether you officially registered for the SMART Shopper training? If you joined as a guest or weren't listed, we may need to verify with the facilitator. If confirmed, we’ll ensure your login credentials are sent.”
+
+**New Login Request**  
+“To create a login, your name must be listed on your agency’s contact list, and SMART Shopper training must be completed. I can share upcoming training dates and get you on the right track.”
+
+**Account Locked Out**  
+“If you’re seeing a login error, have you tried the ‘Forgot Password’ option? If you’ve already reset your password and still cannot log in, I can escalate this to our IT support team.”
+
+**Distribution Site Status Correction**  
+“Thank you for letting us know. I’ve flagged this with your Regional Coordinator to remove your agency from the public-facing resource map. Your ordering access should be restored shortly.”
+
+---
+
+### SECTION 6: KEY SYSTEMS & CONTACTS
+
+---
+
+- **PartnerLink**: Portal for ordering, hours management, and account settings
+- **NetSuite**: System that generates login credentials for authorized contacts
+- **SMART Shopper Training**: Mandatory onboarding for new shoppers
+- **Regional Coordinator**: Responsible for approving account setup and HOO changes
+- **Office Hours (Wednesdays, 10–11am)**: Open Q&A for training and access issues
+- **Customer Relations**: Primary escalation point for unresolved account/login problems
+
+---

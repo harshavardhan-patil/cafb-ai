@@ -1,0 +1,114 @@
+---
+
+**Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base**  
+**Category: Standard Order Cancellations**
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This Knowledge Base equips the LLM to assist CAFB partners in managing **standard order cancellations** that do not fall under urgent, last-minute, or emergency categories. These typically involve requests made well in advance of the scheduled delivery date and within the standard editing window provided in PartnerLink.
+
+Standard cancellations often happen due to:
+- Schedule changes
+- Volunteer shortages
+- Facility conflicts
+- Over-ordering
+
+This KB also distinguishes standard cancellation procedures from urgent requests or system-locked cancellations.
+
+---
+
+### SECTION 2: ORDER CANCELLATION WINDOW
+
+- **Orders may be canceled directly by partners via PartnerLink** up to **3 business days before delivery**.
+- After this window, orders are **locked** and require internal assistance for manual cancellation.
+- If cancellation is requested **after lockout but not within 24 hours**, it's considered a **manual (non-urgent) cancellation** and should be escalated internally.
+
+---
+
+### SECTION 3: CANCELLATION FLOW FOR LLM
+
+1. **Acknowledge Request**  
+   “Thanks for reaching out. I can help you cancel that order—could you please confirm the Sales Order (SO) number?”
+
+2. **Check Eligibility**  
+   - Ask the partner if the cancellation is due to schedule, weather, or resource issues.
+   - Check the order date to ensure it is **not locked**.
+   - If the request falls outside of the PartnerLink cancellation window, flag for internal review.
+
+3. **Process or Escalate**  
+   - If within the allowed timeframe: confirm cancellation and remind the partner they can reorder if needed.
+   - If outside of the cancellation window (but not urgent): note that internal teams will process the request and follow up.
+
+4. **Confirm Outcome**  
+   “Your order SO[XXXXXXX] has been canceled. You should see the change reflected in PartnerLink shortly.”
+
+---
+
+### SECTION 4: RESPONSE TEMPLATES
+
+**Standard Cancellation (Pre-Lock Window)**  
+“Your order has been canceled per your request. If you’d like to submit a new one, you can do so through PartnerLink.”
+
+**Manual Cancellation Needed (Post-Lock, Not Urgent)**  
+“Your order is currently locked in the system, but I’ve submitted a request to our internal team to cancel it manually. We’ll follow up once confirmed.”
+
+**Partner Requests Reorder After Cancellation**  
+“You can submit a new order at your convenience through PartnerLink. Let me know if you'd like help with the process!”
+
+**Unable to Cancel (Too Late)**  
+“Unfortunately, the cancellation window has passed. If you're unable to receive the delivery, we recommend contacting our team directly at [partner support contact].”
+
+---
+
+### SECTION 5: BEST PRACTICES & LLM GUIDELINES
+
+✅ Always:
+- Confirm the SO number before processing
+- Distinguish between “standard” and “urgent” cancellations
+- Let the partner know if the order is locked
+- Encourage early communication, especially for high-volume or specialty orders
+
+❌ Never:
+- Assume the cancellation is successful without system or staff confirmation
+- Cancel orders without verifying partner identity and SO number
+- Offer fixed reschedule windows unless confirmed by internal teams
+
+---
+
+### SECTION 6: FAQS
+
+**Q: When can a partner cancel an order themselves?**  
+A: Up to 3 business days before delivery via PartnerLink.
+
+**Q: What if the order is locked but still needs to be canceled?**  
+A: The LLM should escalate this for manual intervention. Include the SO number and partner agency name.
+
+**Q: Can a partner cancel and then reorder?**  
+A: Yes, as long as the new order fits within the inventory and schedule availability.
+
+**Q: Can items from a canceled order be transferred to a new one?**  
+A: Possibly. This depends on inventory availability and internal processing. Refer to the Food Resourcing or Operations Team for confirmation.
+
+---
+
+### SECTION 7: INTERNAL ESCALATION PATHWAYS
+
+Use these when a partner’s cancellation request falls outside of standard flow:
+
+- **Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Operations Team** – For warehouse pull cancellations or fulfillment holds  
+- **Transportation Team** – If the order is on a delivery truck and needs rerouting  
+- **PartnerLink System Support** – For technical issues with cancellation access  
+
+---
+
+### SECTION 8: REMINDERS TO PARTNERS
+
+- Cancel early in the week if your order is scheduled for Thursday/Friday
+- Include contact information for quick follow-up
+- Monitor PartnerLink for cancellation confirmation
+- If uncertain, reach out—CAFB teams are happy to assist!
+
+---

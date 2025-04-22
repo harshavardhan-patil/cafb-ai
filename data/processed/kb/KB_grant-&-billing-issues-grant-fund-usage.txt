@@ -1,0 +1,108 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Grant & Billing Issues – Grant Fund Usage
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports Capital Area Food Bank (CAFB) partners with questions or issues related to grant fund usage, billing discrepancies, invoice payments, and order financing. Partners frequently reach out for help with applying grant balances to orders, resolving invoice errors, clarifying balances, and understanding system behavior when multiple grants are involved.
+
+Topics covered:
+- Applying grant funds to specific line items or invoices
+- Requesting grant extensions or fund reallocation
+- Clarifying invoice balances or payment status
+- Addressing system limitations (e.g., editing orders with saved credit cards)
+- Billing contact paths and escalation
+
+---
+SECTION 2: KEY PRINCIPLES
+---
+
+✅ GRANT APPLICATION RULES:
+- Only one grant can be applied per line item.
+- Grants must have sufficient balance to cover the full cost of a line item.
+- If multiple grants exist, the system will apply one with sufficient funds regardless of expiration.
+- CAFB’s IT or Finance team may manually reallocate funds upon request.
+
+✅ BILLING RULES:
+- Invoices not appearing in the portal may still be processed; reach out to Customer Support for a PDF.
+- Invoice issues due to "Unapproved Payment" errors typically stem from system restrictions or credit card settings.
+- Orders placed under credit card status may restrict editing of pending orders.
+- Delivery fees may apply even if all items are grant-funded, depending on the item category (e.g., TEFAP-related logistics).
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+DO:
+- Include Sales Order (SO) or Invoice # when contacting support.
+- Request grant fund reallocation before editing the order further.
+- Regularly review grant balances on PartnerLink under “Account Overview”.
+- Contact CAFB Accounting directly for payment confirmations or unresolved checks.
+
+DON’T:
+- Assume a grant will automatically apply to any eligible product without checking balance coverage.
+- Edit a pending order after a manual grant change—this will reset the applied grant.
+- Send checks without referencing the invoice or agency name.
+
+---
+SECTION 4: FAQS
+---
+
+**Q: Why wasn’t my full grant applied to an order?**
+A: It’s likely that the grant didn’t have enough to fully cover the line item. The system only applies a grant to a line item if it can fully fund it.
+
+**Q: Can I use multiple grants on the same line item?**
+A: No. The system allows only one grant per line item. Manual reassignment may be possible—contact support.
+
+**Q: Can expired grants be extended?**
+A: Extensions are not guaranteed. Partners must contact their Regional Partnership Coordinator with justification.
+
+**Q: Who do I contact if my payment hasn’t posted?**
+A: Reach out directly to CAFB’s Accounting Department at 202-644-9800. Ask for the Senior Accounts Receivable Accountant or Accounting Manager.
+
+**Q: Why can’t I edit my order even though I selected 'invoice' as the payment method?**
+A: This issue may be caused by having saved credit cards in your account. Customer Support can remove them upon request.
+
+**Q: Can a grant be applied after an order is placed?**
+A: Yes, but only if the order hasn't been edited after requesting the grant adjustment. Edits may reset applied grants.
+
+**Q: Why do I still see a grant balance even though I used all the funds?**
+A: This may be a display issue. Customer Support can verify and manually update the account view if needed.
+
+---
+SECTION 5: SAMPLE RESPONSES FOR CHATBOT
+---
+
+**Partner: “Can I use a different grant on my order?”**  
+Chatbot: “Yes! Please let me know which grant you'd like applied. Note that only one grant can be used per line item.”
+
+**Partner: “Why is there a balance if all items are grant-eligible?”**  
+Chatbot: “A grant must fully cover a line item to apply. Let’s review your grant balances and reassign if needed.”
+
+**Partner: “Can you extend my grant?”**  
+Chatbot: “Extensions must be approved by your Regional Coordinator. I can help you contact them.”
+
+**Partner: “I paid my balance. Can I go back to invoice status?”**  
+Chatbot: “Thanks for your payment! I’ll notify Accounting to re-enable your invoice access. We’ll follow up shortly.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support** – First point of contact for fund application, grant issues, and editing limitations  
+- **Finance / Accounting** – Payment processing, invoice adjustments, missing checks  
+- **IT Support** – Manual adjustments to grant fund application logic (when requested)  
+- **Regional Partnership Coordinators** – Grant extension approval and strategic funding questions  
+
+---
+SECTION 7: KEY CONTACTS
+---
+
+- **Customer Relations / Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Finance / Accounting** – 202-644-9800 (ask for Accounting Manager or A/R Accountant)  
+- **Main Office** – 4900 Puerto Rico Ave NE, Washington, DC  
+- **PartnerLink Portal** – View grants, invoices, and account balance  
+- **Regional Coordinators**:  
+  - *Erin Brown*: 202-769-5614  
+  - *Augusta Fricke*: 771-209-4611

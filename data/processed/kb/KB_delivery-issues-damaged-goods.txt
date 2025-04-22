@@ -1,0 +1,129 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base
+Category: Delivery Issues - Damaged Goods
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This knowledge base is specifically structured to help the LLM understand and support CAFB partners who are reporting issues related to receiving damaged goods as part of their food deliveries.
+
+“Damaged Goods” include:
+- Leaking or dented cans (e.g., peaches, tuna)
+- Rotten or moldy fresh produce
+- Expired or near-expiry non-perishables (e.g., peanut butter)
+- Contaminated packaging (e.g., rodent bite, visible mold)
+- Physical damage due to weather, storage, or handling
+- Foreign presence (e.g., rodents under pallets)
+
+The CAFB standard resolution processes typically involve credit issuance, item pickups, or internal escalation.
+
+---
+SECTION 2: COMMON SCENARIOS & RESOLUTION FLOWS
+---
+
+**Scenario 1: Leaking/Damaged Cans**
+- Example: 17 out of 24 cans of peaches were punctured or leaking.
+- Steps:
+  - Ask user to provide clear photos of affected items.
+  - Confirm item details: quantity damaged, item number, and sales order.
+  - Submit for credit processing.
+- Resolution: Issue Credit Memo (visible on PartnerLink in 2-3 days).
+
+**Scenario 2: Spoiled Produce**
+- Example: Moldy tomatoes or squished produce.
+- Steps:
+  - Ask partner to send clear photos and quantity affected.
+  - If unable to dispose: Ask if pickup coordination is needed.
+  - If TEFAP-related: Request documentation and photos for state agency compliance.
+- Resolution: Transportation team retrieves items if requested; Credit memo possible.
+
+**Scenario 3: Delivered Expired Product**
+- Example: Boxes of peanut butter labeled past “Best By” date.
+- Key Info: CAFB policy states that food past the “Best By” date may still be safe.
+- Steps:
+  - Ask partner to refer to CAFB’s Food Coding Guide.
+  - Confirm if food is actually expired (not just past best by).
+- Resolution: Reassure the partner if food is safe. If unusable, escalate for refund.
+
+**Scenario 4: Contamination (Rodents, Mold, Pests)**
+- Example: Masa Harina bag with rodent bite; mold on tuna cans.
+- Steps:
+  - Confirm presence of contamination.
+  - Request sales order, item number, and photos.
+- Resolution: Report to leadership and issue partial/full credit as applicable.
+
+**Scenario 5: Weather-Affected or Delayed Delivery**
+- Steps:
+  - Confirm if rescheduling is possible (e.g., Wednesday availability).
+  - Document and coordinate with Transportation Team.
+- Resolution: Delivery rescheduled; confirmation sent to partner.
+
+**Scenario 6: Unreported Item Recall**
+- CAFB recall policy states affected inventory is removed from menus immediately.
+- CAFB informs:
+  - DDP partners = CAFB coordinates outreach.
+  - Agency partners = Responsible for notifying end-clients.
+- Resolution: LLM should mention recall monitoring and that affected partners will be contacted.
+
+---
+SECTION 3: KEY ACTION TEMPLATES FOR LLM RESPONSES
+---
+
+**Photo Request Template**
+"Could you please upload clear photos of the affected items so we can verify the issue and process the necessary credit or action?"
+
+**Sales Order & Item Info Template**
+"Please provide the Sales Order number and item number(s) for the damaged goods. This helps us escalate the issue internally."
+
+**Credit Memo Acknowledgment**
+"Thank you for reporting the issue. A credit memo will be issued within 2-3 business days and reflected in your PartnerLink account."
+
+**Food Safety Clarification Template**
+"Items past the 'Best By' date are still safe to consume per our Food Coding Guide, unless you observe visible spoilage or damage."
+
+**Pickup Coordination Template**
+"If you’re unable to dispose of the damaged items, we can coordinate a pickup during your next scheduled delivery. Would you like to proceed with this?"
+
+---
+SECTION 5: LLM-SPECIFIC INSTRUCTIONS
+---
+
+✓ Always start with empathy and assurance (e.g., “We’re sorry to hear about this and appreciate you bringing it to our attention.”)
+
+✓ Avoid assuming the severity of the issue without photos or item counts — always **request** supporting details.
+
+✓ Do not instruct the partner to dispose of food unless:
+  - They indicate they can handle disposal.
+  - The product poses a clear health risk (e.g., mold, pests).
+
+✓ For “Best By” or expired food claims, **remind** the partner of CAFB’s Food Coding Policy.
+
+✓ If pickup is needed, **suggest scheduling it with the Transportation Team** and confirm delivery/pickup dates.
+
+✓ Offer to **connect with their regional coordinator** or appropriate CAFB team if needed.
+
+✓ Mark any issue involving rodents, mold, or biohazards as **high priority** internally.
+
+---
+SECTION 6: INTERNAL POLICIES & TOOLS
+---
+
+- **Credit Memo Processing**: Typically takes 2–3 business days. Memo IDs like #8311 or #8283 are associated with PartnerLink invoices.
+
+- **Food Coding Guide**: PDF document available to clarify shelf-stable goods. Explain “Best By” ≠ “Use By”.
+
+- **Escalation Contacts**:
+   - Operations Team (Warehouse-related issues)
+   - Transportation Team (pickup/logistics)
+   - Food Resourcing Team (menu updates)
+   - Customer Relations (case tracking)
+
+- **PartnerLink**: All credits and delivery updates are reflected here.
+
+---
+SECTION 7: ADDITIONAL CONSIDERATIONS
+---
+
+- Encourage reporting within 48 hours of delivery for best resolution outcomes.
+- Include instructions on uploading photos or replying via email if needed.
+

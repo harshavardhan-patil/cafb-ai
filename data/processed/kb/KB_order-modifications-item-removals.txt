@@ -1,0 +1,118 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Order Modifications – Item Removals
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base helps the LLM support partners who need to remove items from orders. Common reasons include overstocking, space constraints, changing client needs, produce limits, or receiving contaminated/expired/damaged goods. In some cases, item removals are triggered by CAFB’s Operations team due to shortages, quality control issues, or TEFAP eligibility updates.
+
+This KB includes handling of locked orders, special considerations for produce and TEFAP items, communication templates, and escalation workflows.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Partner Requests to Remove Items Before Order Locks**
+- Requests must be made at least 3 business days before delivery/pickup.
+- Include SO number and specific item codes or descriptions.
+
+_Template:_  
+“Thanks for your request! I’ve removed the specified items from your order. Please allow some time for the system to reflect these changes.”
+
+**2. Order Is Locked – Item Cannot Be Removed**
+- If an order is already staged or pulled, items cannot be removed.
+- Delivery team may be able to return items if partner declines delivery (with proper notice).
+
+_Template:_  
+“Your order is locked and in fulfillment. If you’re unable to accept a specific item, let the driver know or contact us to schedule a return.”
+
+**3. Emergency or Health-Related Item Removal (e.g. pest contamination)**
+- Items posing health risks should be reported with documentation (photos, timeline).
+- CAFB may remove items from inventory and investigate warehouse sanitation.
+
+_Template:_  
+“We’re very sorry to hear about this. Thank you for sharing your experience and photos. We’ve escalated this to Operations and scheduled a facility inspection. We’ll be in touch regarding compensation or next steps.”
+
+**4. TEFAP Status Changes (e.g. partner becomes ineligible)**
+- TEFAP items must be removed from affected SOs.
+- CAFB must cancel orders containing ineligible TEFAP items.
+
+_Template:_  
+“Since your agency is currently ineligible for TEFAP items, we’ve removed those items from your order. Please let us know if you'd like help adding non-TEFAP alternatives.”
+
+**5. CAFB-Initiated Removals (e.g. out of stock, fulfillment issue)**
+- Items may be removed during staging if inventory changes or errors arise.
+- Notification emails explain the issue and offer alternatives if available.
+
+_Template:_  
+“Unfortunately, item [XXXXXX] was removed due to low inventory or a warehouse error. We understand this is disruptive and are happy to explore alternative options.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Submit removal requests before the 3-business-day lock window  
+- Reference item codes and SO numbers  
+- Communicate specific concerns (e.g. contamination, space limits)  
+- Notify CAFB immediately if issues arise after delivery  
+
+❌ DON’T:
+- Wait until delivery day to request removals unless it’s an emergency  
+- Accept delivery of items you plan to discard—coordinate return if possible  
+- Expect credits or returns without photographic documentation when needed  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: Can I remove items from my order once it’s submitted?**  
+A: Yes, if your order hasn’t been locked yet. We can help you remove items with the correct SO and item info.
+
+**Q: My order was locked early. Why?**  
+A: Lock dates are based on business days. Holidays and warehouse blackouts may lead to earlier-than-usual locking.
+
+**Q: An item was removed from my order—why didn’t I know earlier?**  
+A: If the item was removed during fulfillment, it’s often due to inventory shortages. CAFB sends automated notifications to alert partners.
+
+**Q: Can I get a refund or credit for items I removed after lock?**  
+A: Typically, no. Once orders are staged, items cannot be credited unless they are rejected on delivery for a valid reason (e.g. damage).
+
+**Q: What if my item removal is due to food safety concerns?**  
+A: We take those cases very seriously. Please submit photos and details so we can investigate and ensure no other partners are affected.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Please remove the turkey from our order.”**  
+Chatbot: “Sure! Can you provide the Sales Order number and the item code or name of the turkey so I can submit the removal?”
+
+**Partner: “I tried to remove an item but my order was locked.”**  
+Chatbot: “Locked orders are in fulfillment, so edits are limited. If you’re unable to accept the item, let us know and we may be able to schedule a return.”
+
+**Partner: “One of our items came with signs of contamination.”**  
+Chatbot: “I’m so sorry to hear that. Please send photos and the SO number, and I’ll escalate this to our Operations and Food Safety teams.”
+
+**Partner: “Why was a TEFAP item removed?”**  
+Chatbot: “That may be due to a TEFAP eligibility change. I’ll double-check for you, and we can help find alternatives.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support** – Primary team for edits, cancellations, and documentation  
+- **Operations Team** – Handles fulfillment, inventory issues, and facility inspections  
+- **Transportation Team** – Coordinates returns and pallet refusals  
+- **Food Resources** – Approves TEFAP status changes and produce caps  
+- **IT Team** – For technical errors preventing edits  
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Partner Support / Customer Service** – partnersupport@capitalareafoodbank.org  
+- **Operations Director (for health or safety concerns)** – escalated internally  
+- **Main Line** – 202-644-9845  
+- **Regional Coordinators** – For TEFAP guidance, produce caps, and special exemptions

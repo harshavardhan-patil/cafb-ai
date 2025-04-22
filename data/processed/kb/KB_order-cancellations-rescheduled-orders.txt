@@ -1,0 +1,112 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Order Cancellations & Rescheduled Orders
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base is built to assist CAFB’s support system in managing partner requests related to cancelling and rescheduling orders. These include proactive cancellations by partners, weather-related service disruptions, inventory issues, and rescheduling due to operational or volunteer constraints. The information herein provides clear, accurate guidance to empower a chatbot to effectively communicate with CAFB partners and escalate when needed.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Partner Requests to Cancel an Order**
+- Partners may request order cancellations due to staffing, weather, or operational needs.
+- Orders must be cancelled before they lock (generally 3 business days before the scheduled date).
+- If locked, cancellations may need manual intervention by CAFB staff.
+
+_Template:_  
+“Thank you for your message. We’ve cancelled your order as requested. Please allow an hour for the system to reflect this.”
+
+**2. Rescheduling Due to Inclement Weather or Emergencies**
+- CAFB may proactively cancel or postpone orders when safety is a concern.
+- Partners can select a new date from available options.
+- Orders may be merged or items transferred to minimize disruption.
+
+_Template:_  
+“Due to the weather, your order was impacted. We’ve rescheduled it to the next available window on [DATE, TIME]. Please confirm if that works for you.”
+
+**3. Orders Affected by CAFB Holiday or Closure**
+- Orders may be rescheduled during bank holidays or snow closures.
+- Communication includes options for alternate fulfillment or combining orders.
+
+_Template:_  
+“Your order was impacted by our closure. It has been rescheduled to [NEW DATE]. If that does not work for you, we can discuss alternate options.”
+
+**4. Partner Requests to Merge or Modify Orders**
+- Partners may want to combine multiple orders to avoid multiple deliveries.
+- Requests to add/remove items may require SO numbers and review of fulfillment status.
+
+_Template:_  
+“We’ve merged your orders to reduce the delivery burden. Please allow time for the system to update. Let us know if changes are still needed.”
+
+---
+SECTION 3: BEST PRACTICES FOR PARTNERS
+---
+
+✅ DO:
+- Include Sales Order (SO) numbers in all requests
+- Contact support as early as possible (preferably before the order locks)
+- Clearly state preferred reschedule dates/times and any constraints
+- Confirm weather-related closures proactively
+
+❌ DON’T:
+- Edit orders that have been manually changed (e.g., reassigned items)
+- Assume cancellation is processed without confirmation
+- Rely solely on system auto-messages—reach out if unsure
+- Request cancellation after scheduled date without CAFB approval
+
+---
+SECTION 4: FAQS
+---
+
+**Q: Can I cancel an order after it’s locked?**  
+A: Orders are generally locked 3 business days prior. Cancellation may still be possible with manual override—contact support immediately.
+
+**Q: I missed the chance to edit before the deadline. Can I cancel and reorder?**  
+A: Yes, you may cancel and submit a new order, pending inventory and delivery slot availability.
+
+**Q: Why was my order rescheduled without me asking?**  
+A: CAFB may reschedule orders due to weather, closures, or routing changes. You’ll be notified and can request alternate options.
+
+**Q: Can I reschedule to a specific time window?**  
+A: Yes, pending availability. Let us know your preferred delivery window (e.g., 8–10 AM, 10–12 PM, etc.).
+
+**Q: Can I transfer items from a cancelled order to a new one?**  
+A: Some items may be re-added if inventory allows. Be sure to list the item codes and desired quantities.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Can I cancel my order for this Friday?”**  
+Chatbot: “Sure! Please confirm your Sales Order number so I can process the cancellation.”
+
+**Partner: “We are closing early due to weather. Can you move our delivery?”**  
+Chatbot: “Absolutely. I’ll check for available windows and reschedule your order accordingly. Do you have a preferred date?”
+
+**Partner: “I didn’t get to edit my order. Can I cancel and resubmit?”**  
+Chatbot: “Yes. I can help cancel your current order, and you may submit a new one with updated items.”
+
+**Partner: “I want to combine two orders into one delivery.”**  
+Chatbot: “Great idea to streamline delivery! Please provide both SO numbers, and I’ll check if we can merge them.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support / Partner Support** – Main point of contact for all cancellation/rescheduling requests  
+- **Operations** – Coordinates warehouse pulling schedule and final order fulfillment  
+- **Transportation** – Assists with routing feasibility for newly scheduled deliveries  
+- **Leadership** – Approval for exceptions or emergency rerouting
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Main Line** – 202-644-9845  
+- **Warehouse** – 4900 Puerto Rico Ave NE, Washington, DC  
+- **Senior Program Contacts** – For Grocery To Go or senior-related orders: shs@capitalareafoodbank.org or 202-644-9880  
+- **Mobile Market (Community-Based)** – directdistributionsupport@capitalareafoodbank.org

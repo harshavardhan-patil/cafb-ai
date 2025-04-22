@@ -1,0 +1,116 @@
+**Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base**  
+**Category: Special Requests – Large Event Orders**
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This Knowledge Base assists the LLM in addressing partner requests for **large-scale distributions or special events**, such as **holiday pop-ups**, **community giveaways**, and **seasonal outreach initiatives**.
+
+These requests typically involve:
+- High-volume food orders (e.g., 500+ boxes)
+- Specific food categories like meats, produce, and canned items
+- Coordination for events with a defined distribution date
+- Requests outside of standard ordering or delivery windows
+
+These events may require support from multiple internal teams (e.g., Programs, Operations, or Food Sourcing).
+
+---
+
+### SECTION 2: COMMON SCENARIOS & RESOLUTION FLOWS
+
+---
+
+**Scenario 1: Requesting Bulk Food for Holiday or Community Event**
+- **Example**: “We want to distribute 500+ boxes on specific dates. Can we get extra food?”
+- **Steps**:
+  - Ask partner for:
+    - Target distribution dates
+    - Quantity of households/boxes
+    - Preferred product categories (e.g., protein, canned goods)
+  - Determine whether the event is a **registered pop-up or outreach event**.
+  - Check if the partner is set up to order via PartnerLink.
+  - Coordinate internally with **Programs Team** or **Partner Relations** if special allocations are needed.
+- **Resolution**:
+  - Partner may be granted **temporary access to additional inventory** or a **custom ordering window**.
+  - Note: Approval is required for inventory prioritization and coordination with sourcing and delivery schedules.
+
+---
+
+**Scenario 2: Order Setup for PartnerLink**
+- **Example**: “I need to place a bulk order for an event but don’t see the right items in PartnerLink.”
+- **Steps**:
+  - Confirm if the partner is already registered for PartnerLink.
+  - If not:
+    - Contact internal support (e.g., Customer Relations or Programs) to create or activate a temporary ordering profile.
+    - Set up a special ordering window and guide them through the ordering process.
+- **Resolution**:
+  - Partner successfully places a bulk order in PartnerLink tied to the event date.
+  - Communicate next steps (pickup, delivery scheduling, item availability).
+
+---
+
+**Scenario 3: Short-Notice or Unscheduled Special Requests**
+- **Example**: “We’re hosting an event next weekend — can we get extra items?”
+- **Steps**:
+  - Inform the partner that **CAFB needs adequate lead time** for special order fulfillment.
+  - Encourage submitting large-event requests **at least 2 weeks in advance**.
+- **Resolution**:
+  - If possible, process a manual allocation or connect with the Programs Team for support.
+  - Otherwise, offer next-available standard menu options.
+
+---
+
+### SECTION 3: KEY RESPONSE TEMPLATES FOR LLM
+
+---
+
+**Request for Event Details**
+"Thank you for your request! Could you please confirm the date(s) of your event, the number of households you're serving, and any specific product types you’re requesting (e.g., meats, produce, shelf-stable items)?"
+
+**PartnerLink Setup Confirmation**
+"You’ve been set up on PartnerLink to place a special order for your upcoming event. Please log in to view available items and place your order for the selected distribution date."
+
+**Lead Time Reminder**
+"To help us fulfill your request, please submit large event requests at least **2 weeks in advance** whenever possible. This helps ensure product availability and proper coordination."
+
+**Unavailable Item or Custom Needs**
+"If you don’t see the items you need on PartnerLink, we can check with our internal team to explore alternative options. Would you like us to escalate this request?"
+
+---
+
+### SECTION 4: LLM-SPECIFIC INSTRUCTIONS
+
+---
+
+✓ Always respond with encouragement and gratitude for outreach efforts  
+✓ Confirm the **event scope** and **timeline** before making assumptions on product availability  
+✓ Only commit to order fulfillment if the partner has been explicitly set up via PartnerLink or authorized by internal CAFB teams  
+✓ For short-notice requests, acknowledge limitations but offer to help within available menu constraints  
+✓ Mention coordination with the **Programs**, **Food Resourcing**, or **Operations Team** when appropriate  
+✓ Never provide fixed delivery dates or guarantee availability unless confirmed internally
+
+---
+
+### SECTION 5: CAFB POLICIES & TEAM INVOLVEMENT
+
+---
+
+- **PartnerLink**: Used to place orders. Special ordering windows may be configured.
+- **Customer Relations / Programs Team**: Responsible for coordinating access and guidance.
+- **Food Resourcing Team**: Manages inventory availability for large distributions.
+- **Transportation Team**: May assist with delivery/pickup scheduling if needed.
+- **Holiday/Pop-Up Events**: Often need advance approval and coordination.
+
+---
+
+### SECTION 6: BEST PRACTICES
+
+---
+
+- Encourage partners to **plan ahead** for large distributions and contact CAFB early.
+- Offer to walk partners through the ordering process if they are unfamiliar with PartnerLink.
+- For high-impact events, recommend they **document their impact** for potential support in the future.
+- Be mindful of **seasonal inventory constraints** (e.g., holidays, closures, warehouse moves).
+
+---

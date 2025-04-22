@@ -1,0 +1,142 @@
+**Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base**  
+**Category: Pickup Scheduling & Rescheduling / Pickup Policy Clarifications**  
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This Knowledge Base supports the LLM in assisting CAFB Partners with inquiries related to:
+
+- Scheduling pickups for donations or returns (e.g., pallets, supplies)
+- Rescheduling existing pickups or order collections
+- Clarifications about pickup procedures, logistics, and policy restrictions
+- Pickup time window updates and missed pickup responses
+
+Pickup coordination involves timely collaboration between the Partner, Customer Relations, and the Transportation Team. The LLM is expected to help partners navigate CAFB logistics efficiently and empathetically.
+
+---
+
+### SECTION 2: COMMON PARTNER SCENARIOS & STANDARD RESPONSES
+
+#### **Scenario 1: Scheduling a Pallet Pickup (e.g., donation returns)**  
+- **Example**: Partner wants 10 pallets picked up from a location.  
+- **Steps**:  
+  1. Confirm address and pallet readiness (e.g., stacked properly).  
+  2. Notify the Transportation Team.  
+  3. If pickup fails (e.g., inaccessible or disorganized pallets), inform the partner of corrective actions (flat surface, stacked).  
+  4. Coordinate a new pickup date based on partner availability.
+
+- **LLM Response Template**:  
+  _“Thanks for your pickup request! Could you please confirm the pallets are stacked on a flat, accessible surface? Once ready, we’ll coordinate with our Transportation Team and confirm the next available pickup day.”_
+
+---
+
+#### **Scenario 2: Pickup Time Change Requests**  
+- **Example**: Partner requests a pickup to be moved from afternoon to morning.  
+- **Steps**:  
+  1. Identify order number (Sales Order ID).  
+  2. Review delivery windows availability.  
+  3. Offer time options (e.g., 9 AM or 10 AM).  
+  4. Update schedule and confirm with partner.
+
+- **LLM Response Template**:  
+  _“We’ve reviewed your request to reschedule to a morning pickup. We can accommodate either 9 AM or 10 AM on the same day. Which time works best for you?”_
+
+---
+
+#### **Scenario 3: Missed or Incomplete Pickup Follow-ups**  
+- **Example**: Partner wasn’t present or items weren’t prepared for pickup.  
+- **Steps**:  
+  1. Inform partner of unsuccessful attempt.  
+  2. Explain the issue (e.g., pallets not accessible, incorrect stacking).  
+  3. Request confirmation once the site is ready again.  
+  4. Coordinate new pickup time.
+
+- **LLM Response Template**:  
+  _“We attempted a pickup but couldn’t access the items. Please ensure pallets are stacked and accessible on a flat surface (e.g., not near trash bins or uneven ground). Once confirmed, we’ll reschedule your pickup.”_
+
+---
+
+#### **Scenario 4: Delivery Slot Unavailability & Waitlisting**  
+- **Example**: Partner wanted a Friday delivery but only earlier slots were available.  
+- **Steps**:  
+  1. Inform partner that the delivery schedule is full.  
+  2. Offer alternative dates.  
+  3. Recommend placing orders early or contacting support for critical deliveries.  
+  4. If no openings arise, order remains as scheduled.
+
+- **LLM Response Template**:  
+  _“Unfortunately, all Friday delivery slots are filled. Your order is scheduled for Thursday. If an opening appears, we’ll try to move your order and notify you immediately.”_
+
+---
+
+### SECTION 3: PICKUP BEST PRACTICES & LOGISTICS GUIDELINES
+
+- Pallets must be **stacked flat and uniformly** for safe and efficient pickup.
+- Ensure pickup site is **accessible by pallet jack or liftgate truck** (e.g., paved surface).
+- For safety reasons, CAFB drivers cannot enter narrow or obstructed paths.
+- Communicate **clearly labeled locations** (e.g., behind pavilion, near dumpster).
+- Notify CAFB **at least 2 business days** in advance for rescheduling.
+- For recurring pickups (weekly or monthly), partners should coordinate with their **Regional Coordinator** or **Transportation Contact**.
+
+---
+
+### SECTION 4: KEY LLM TEMPLATES
+
+#### **Pickup Confirmation Template**  
+“Thank you! We've received your pickup request. Once the items are stacked and accessible, we’ll notify our Transportation Team and confirm your pickup date.”
+
+#### **Readiness Reminder Template**  
+“To help our drivers, please ensure all pallets are stacked on a flat, paved area. Once ready, let us know so we can proceed with the pickup.”
+
+#### **Pickup Reschedule Offer Template**  
+“We’re happy to move your pickup to an earlier/later time. Would a window between 9–10 AM work for your team?”
+
+#### **Slot Unavailability Clarification**  
+“We understand your preference for a Friday pickup, but all available slots are currently booked. Your order will remain scheduled for Thursday unless an opening occurs.”
+
+---
+
+### SECTION 5: LLM BEHAVIOR GUIDELINES
+
+✓ Begin with gratitude and clear understanding: “Thank you for reaching out…”  
+✓ Reassure the partner that their request is being processed.  
+✓ Promptly request any **missing information**: order ID, location, date/time.  
+✓ Never guarantee a pickup without Transportation Team confirmation.  
+✓ Offer flexibility where possible but explain limitations based on slot capacity.  
+✓ Loop in Customer Relations or escalate to Transportation when uncertain.
+
+---
+
+### SECTION 6: INTERNAL PROCESSES & ESCALATION PATHS
+
+- **Pickup Coordination**: Managed by Transportation Team based on availability and readiness.  
+- **Order Window Management**: Pickup times are locked **3 business days** in advance.  
+- **Communication Channels**:  
+  - Customer Relations Team (general inquiries)  
+  - Transportation Coordinator (pickup logistics)  
+  - PartnerLink Portal (view/edit order and pickup windows)  
+- **Documentation Tools**:  
+  - Partners receive confirmation emails with Sales Orders and scheduled windows.  
+  - Automated reminders prompt partners to review status and provide updates.
+
+---
+
+### SECTION 7: FREQUENTLY ASKED QUESTIONS (FAQs)
+
+**Q: Can I reschedule a pickup after the window has closed?**  
+A: Rescheduling is only possible if done at least 2–3 business days in advance. For urgent cases, please contact Customer Relations immediately.
+
+**Q: Where should I place the pallets for pickup?**  
+A: Place them on a flat surface (e.g., pavement), stacked neatly and safely accessible to our drivers with pallet jacks.
+
+**Q: What if no one shows up to pick up the pallets?**  
+A: Let us know as soon as possible. We’ll confirm what happened with our Transportation Team and coordinate a follow-up pickup.
+
+**Q: I don’t see the pickup slot I want. What should I do?**  
+A: Once all slots are full, we cannot guarantee changes. However, we will do our best to notify you if an opening occurs.
+
+**Q: Can I request recurring pickups?**  
+A: Yes, recurring pickups can be coordinated through your Regional Coordinator for smoother operations.
+
+---

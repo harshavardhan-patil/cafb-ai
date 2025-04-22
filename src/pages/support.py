@@ -1,29 +1,60 @@
 import os
 import streamlit as st
 import openai
-import json
-import psycopg2
-from psycopg2 import sql
 from openai import OpenAI
 import ollama
-import requests
-from requests.auth import HTTPBasicAuth
 from src.utils.constants import MODEL_OPENAI
 from dotenv import load_dotenv
-from pathlib import Path
 from src.data.rag import retrieve_relevant_context
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_ollama import ChatOllama
-from src.data.jira import check_ticket_exists, get_issue_context
+from src.data.jira import check_ticket_exists, get_issue_context, get_issue_kb, classify_issue, create_and_store_issue
+from src.utils.helpers import prettify_category, prettify_tool
+from src.utils.constants import CATEGORIES
+from src.utils.constants import JIRA_FIELD_MAPPING
+from langchain.tools import Tool
+from src.agents.tools import close_ticket
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from src.agents.agent import State, Assistant
+from src.agents.tools import create_tool_node_with_fallback
+from langgraph.graph import StateGraph
+from langgraph.graph import StateGraph, START, END
+from langgraph.prebuilt import ToolNode, tools_condition
+from langgraph.checkpoint.memory import MemorySaver
+from langchain_core.messages import ToolMessage
+from langchain_core.tools import tool
+from src.agents.tools import close_ticket, update_ticket_priority, add_order_number_to_ticket, add_conversation_summary_to_ticket
+import uuid
+import logging
 
-# Please set the path to your .env file 
-env_path = Path("/Users/pragatirao/AI_Food_Insecurity_Case/cafb-ai/.env")
-load_dotenv(dotenv_path=env_path, override=True)
+
+st.set_page_config(layout='wide', initial_sidebar_state='expanded')
+
+#converting static image and setting as website background
+st.title("CAFB Support System")
+
+
+# Set logging level (DEBUG, INFO, WARNING, ERROR)
+logging.basicConfig(level=logging.INFO)
+
+
+load_dotenv()
 
 model = os.getenv("MODEL")
+project_key = os.getenv("PROJECT_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
+def get_llm():
+    return ChatOpenAI(model="gpt-4.1", 
+                api_key=OPENAI_API_KEY,
+                timeout=5,
+                max_retries=2,)
+
+placeholder_option = "-- Select Issue Category --"
+category_list = [placeholder_option] + list(CATEGORIES.keys())
 
 # Initialize session states if they don't exist
 if 'selected_option' not in st.session_state:
@@ -34,163 +65,24 @@ if 'issue_description' not in st.session_state:
     st.session_state.issue_description = ""
 if 'chat_started' not in st.session_state:
     st.session_state.chat_started = False
+if 'setup_graph' not in st.session_state:
+    st.session_state.setup_graph = False
+if 'graph' not in st.session_state:
+    st.session_state.graph = None
+if 'memory' not in st.session_state:
+    st.session_state.memory = None
 
 # Function to handle option selection
 def handle_option_selection(option):
     st.session_state.selected_option = option
     st.session_state.chat_started = False  # Reset chat when option changes
 
-def store_ticket_postgres(jira_data):
-    try:
-        conn = psycopg2.connect(
-            dbname=os.getenv("POSTGRES_DB"),
-            user=os.getenv("POSTGRES_USER"),
-            password=os.getenv("POSTGRES_PASSWORD"),
-            host=os.getenv("POSTGRES_HOST"),
-            port=os.getenv("POSTGRES_PORT", "5432")
-        )
-        cursor = conn.cursor()
-
-        insert_query = """
-            INSERT INTO jira_issues (
-                issue_key, summary, status, created_at, updated_at, issue_type, project
-            ) VALUES (
-                %s, %s, %s, %s, %s, %s, %s
-            )
-        """
-
-        cursor.execute(insert_query, (
-            jira_data["key"],
-            jira_data["fields"]["summary"],
-            jira_data["fields"]["status"]["name"],
-            jira_data["fields"]["created"],
-            jira_data["fields"]["updated"],
-            jira_data["fields"]["issuetype"]["name"],
-            jira_data["fields"]["project"]["key"]
-        ))
-
-        conn.commit()
-        cursor.close()
-        conn.close()
-        print(f"✅ Jira issue '{jira_data['key']}' stored in DB.")
-
-    except Exception as e:
-        import traceback
-        print("❌ Failed to insert into DB:")
-        traceback.print_exc()
-
-# Helper function to extract fields from ADF description
-def extract_from_description(adf, label):
-    try:
-        for block in adf["content"]:
-            if "text" in block["content"][0]:
-                text = block["content"][0]["text"]
-                if text.startswith(f"{label}:"):
-                    return text.split(f"{label}:")[1].strip()
-    except:
-        pass
-    return None
-
-# Function to classify issue
-def classify_issue(issue_description):
-    # Set up a simple rule-based system to determine priority
-    high_priority_keywords = ['emergency', 'urgent', 'critical', 'immediate', 'shutdown']
-    low_priority_keywords = ['inquiry', 'clarification', 'educational', 'optional']
-    
-    description_lower = issue_description.lower()
-    priority = "Medium"  # Default priority
-
-    if any(word in description_lower for word in high_priority_keywords):
-        priority = "High"
-    elif any(word in description_lower for word in low_priority_keywords):
-        priority = "Low"
-
-    return priority
-
-# Function to create a Jira issue
-def create_jira_issue(summary, description, category, subcategory, priority, order_number):
-    """Creates a Jira issue in ADF format with classification info"""
-
-    # Load environment variables
-    jira_domain = os.getenv("JIRA_DOMAIN")
-    project_key = os.getenv("PROJECT_KEY")
-    jira_user = os.getenv("JIRA_EMAIL")
-    jira_token = os.getenv("JIRA_API_TOKEN")
-    
-    url = f"{jira_domain}/rest/api/3/issue"
-
-    headers = {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-    }
-
-    description_adf = {
-        "type": "doc",
-        "version": 1,
-        "content": [
-            {"type": "paragraph", "content": [{"type": "text", "text": f"Issue Description: {description}"}]},
-            {"type": "paragraph", "content": [{"type": "text", "text": f"Category: {category}"}]},
-            {"type": "paragraph", "content": [{"type": "text", "text": f"Subcategory: {subcategory}"}]},
-            {"type": "paragraph", "content": [{"type": "text", "text": f"Priority: {priority}"}]},
-            {"type": "paragraph", "content": [{"type": "text", "text": f"Order Number: {order_number}"}]}
-        ]
-    }
-
-    payload = {
-        "fields": {
-            "project": {"key": project_key},
-            "summary": summary,
-            "description": description_adf,
-            "issuetype": {"name": "Story"},
-            "priority": {"name": priority}
-        }
-    }
-
-    response = requests.post(
-        url,
-        headers=headers,
-        auth=HTTPBasicAuth(jira_user, jira_token),
-        json=payload,
-    )
-
-    if response.status_code == 201:
-        issue_key = response.json().get("key")
-        issue_url = f"{jira_domain}/browse/{issue_key}"
-
-        full_issue_response = requests.get(
-            f"{jira_domain}/rest/api/3/issue/{issue_key}",
-            headers=headers,
-            auth=HTTPBasicAuth(jira_user, jira_token)
-        )
-        full_issue_data = full_issue_response.json()
-        store_ticket_postgres(full_issue_data)
-
-        return f"✅ Jira issue created successfully: [{issue_key}]({issue_url})"
-    else:
-        return f"❌ Failed to create issue: {response.status_code} - {response.text}"
-
 # Function to start chat session
 def start_chat():
     st.session_state.chat_started = True
+    st.session_state.setup_graph = True
     # Clear previous chat messages
     st.session_state.messages = []
-
-categories = {
-    'order-modifications': ['item-additions', 'item-removals', 'quantity-adjustments', 'late-modification-requests'],
-    'order-cancellations': ['standard-cancellations', 'urgent-cancellations', 'rescheduled-orders'],
-    'delivery-issues': ['late-deliveries', 'missed-deliveries', 'incomplete-deliveries', 'damaged-goods', 'delivery-confirmation-issues'],
-    'pickup-scheduling-&-rescheduling': ['new-pickup-requests', 'rescheduling-pickup', 'missed-pickups', 'pickup-policy-clarifications'],
-    'product-availability-&-substitutions': ['stock-availability-inquiries', 'out-of-stock-notifications', 'product-substitution-requests', 'special-item-requests'],
-    'grant-&-billing-issues': ['grant-fund-usage', 'incorrect-grant-deduction', 'billing-discrepancies', 'payment-&-credit-issues'],
-    'training-&-account-access': ['training-signups', 'missed-training-sessions', 'login-issues', 'new-user-account-requests'],
-    'emergency-situations': ['weather-related-disruptions', 'personal/organization-emergencies', 'food-safety-concerns', 'unexpected-facility-closures'],
-    'special-requests': ['educational-materials', 'large-event-orders', 'holiday-&-seasonal-adjustments'],
-    'technical-support': ['website-&-ordering-system-errors', 'email-&-communication-issues', 'data-entry-mistakes', 'general-it-assistance'],
-    'other': ['miscellaneous']
-}
-
-placeholder_option = "-- Select Issue Category --"
-category_list = [placeholder_option] + list(categories.keys())
 
 # Main selection interface
 if st.session_state.selected_option is None:
@@ -220,42 +112,31 @@ elif st.session_state.selected_option == "existing":
     
     # Button to go back to main menu
     if st.button("Back to Main Menu"):
-        st.session_state.selected_option = None
-        st.rerun()
-
-# todo Handle new issue workflow
-elif st.session_state.selected_option == "existing":
-    st.markdown("### Ticket Information")
-    
-    with st.form("ticket_form"):
-        st.session_state.issue_key = st.text_input("Enter Ticket ID/Key (e.g., CAFBSS-123)")
-        submit_button = st.form_submit_button("Find Ticket")
+        # Clear all relevant session state variables
+        for key in list(st.session_state.keys()):
+            if key in ['selected_option', 'issue_key', 'issue_description', 'chat_started', 
+                    'langchain_messages', 'messages']:
+                del st.session_state[key]
         
-        if submit_button and st.session_state.issue_key:
-            if not check_ticket_exists(st.session_state.issue_key):
-                st.warning('Please enter a valid/existing ticket', icon="⚠️")
-            else:    
-                start_chat()
-    
-    # Button to go back to main menu
-    if st.button("Back to Main Menu"):
+        # Initialize them with default values
         st.session_state.selected_option = None
+        st.session_state.issue_key = ""
+        st.session_state.issue_description = ""
+        st.session_state.chat_started = False
+        
+        # Force refresh the page
         st.rerun()
 
 # Handle new issue workflow
 elif st.session_state.selected_option == "new":
-    st.markdown("### New Issue Details")
-    st.markdown("### Please enter the following details:")
+    st.markdown("#### Please enter the following details to get started:")
 
-    customer_name = st.text_input("Customer Name")
-    order_number = st.text_input("Order Number")
-
-    # ✅ Category selection outside the form
+    partner_name = st.text_input("Partner Name")
+    
     selected_category = st.selectbox("Issue Category", category_list, key="category_selection")
-
     selected_subcategory = None
     if selected_category != placeholder_option:
-        selected_subcategory = st.selectbox("Issue Subcategory", categories[selected_category], key="subcategory_selection")
+        selected_subcategory = st.selectbox("Issue Specifics", CATEGORIES[selected_category], key="subcategory_selection")
     else:
         st.info("Please select an issue category to continue.")
 
@@ -266,105 +147,285 @@ elif st.session_state.selected_option == "new":
 
         if submit_button:
             if selected_category == placeholder_option or not selected_subcategory:
-                st.warning("🚨 Please select both an issue category and subcategory.")
+                st.warning("Please select both an issue category and subcategory.")
             elif not st.session_state.issue_description:
-                st.warning("🚨 Please enter a brief description.")
+                st.warning("Please enter a brief description.")
             else:
                 try:
-                    category, subcategory = selected_category, selected_subcategory
+                    category, subcategory = prettify_category(selected_category), prettify_category(selected_subcategory)
                     priority = classify_issue(st.session_state.issue_description)
 
-                    response_msg = create_jira_issue(
-                        summary=f"{category}: {subcategory}",
-                        description=st.session_state.issue_description,
-                        category=category,
-                        subcategory=subcategory,
-                        priority=priority,
-                        order_number=order_number
-                        )
+                    issue_dict = {
+                        "project": project_key,
+                        "summary": f"{category}/{subcategory}",
+                        "description": st.session_state.issue_description,
+                        "issue_type": "Story",
+                        "priority": priority,
+                        "main_category": selected_category,
+                        "sub_category": selected_subcategory,
+                        "partner_names": partner_name,
+                    }
+                    response_dict = create_and_store_issue(issue_dict)
 
-                    st.success(response_msg)
-                    start_chat()
+                    if response_dict['status'] == 200 or response_dict['status'] == 201:    
+                        st.success(response_dict['display'])
+                        st.session_state.issue = response_dict["new_issue"]
+                        st.session_state.issue_key = st.session_state.issue.key
+                        start_chat()
+                    else:
+                        st.error(response_dict['display'])
 
                 except Exception as e:
-                    st.error(f"❌ Failed to classify or create issue: {str(e)}")
+                    st.error(f"Failed to classify or create issue: {str(e)}")
                     import traceback
                     st.text(traceback.format_exc())
-
+    
+    # Button to go back to main menu
     if st.button("Back to Main Menu"):
+        # Clear all relevant session state variables
+        for key in list(st.session_state.keys()):
+            if key in ['selected_option', 'issue_key', 'issue_description', 'chat_started', 
+                    'langchain_messages', 'messages']:
+                del st.session_state[key]
+        
+        # Initialize them with default values
         st.session_state.selected_option = None
+        st.session_state.issue_key = ""
+        st.session_state.issue_description = ""
+        st.session_state.chat_started = False
+        
+        # Force refresh the page
         st.rerun()
 
-# Chat interface - only show when a chat has been started
-if st.session_state.chat_started:
-    llm = ChatOllama(
-        model="gemma3",
-    )
-    
-    # Set up memory
-    msgs = StreamlitChatMessageHistory(key="langchain_messages")
-    
+
+# Set a unique key for the button to avoid conflicts
+APPROVE_BUTTON_KEY = "approve_tool_button"
+DENY_BUTTON_KEY = "deny_tool_button"
+
+
+if 'awaiting_tool_confirmation' not in st.session_state:
+    st.session_state.awaiting_tool_confirmation = False
+if 'tool_call_id' not in st.session_state:
+    st.session_state.tool_call_id = None
+if 'tool_description' not in st.session_state:
+    st.session_state.tool_description = ""
+if 'tool_approved' not in st.session_state:
+    st.session_state.tool_approved = False
+if 'tool_denied' not in st.session_state:
+    st.session_state.tool_denied = False
+
+# Setup LangGraph and Memory as session variables for persistence
+if st.session_state.chat_started and st.session_state.setup_graph:
+    llm = get_llm()  
+    # If a partner confirms that the ticket has been resolved, you should invoke the close_ticket tool
     # Create appropriate system prompt based on context
     if st.session_state.selected_option == "existing":
         issue_context = get_issue_context(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
+        issue_kb = get_issue_kb(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
         system_prompt = f"""
         You are a frontdesk assistant for Capital Area Food Bank (CAFB). 
         A partner is inquiring about an existing ticket with ID: {st.session_state.issue_key}.
         
         Try to provide helpful context and solutions related to this ticket.
-        Use the information retrieved from the Jira database to answer questions.
+        Use the Ticket Information and Knowledge Base to answer questions.
+        The Knowledege Base provides helpful examples but does not have LIVE data (for example, Kowledge Base does not have current schedules, simply examples)
         If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question. 
         DO NOT MAKE UP OR SIMULATE INFORMATION.
 
-        Ticket Context: {issue_context}
+        You also have access to tools. 
+        1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
+        2. For some issues, you will specifically need to ask the partner for their order number. Only AFTER the partner has provided you with their order number (e.g SO1234) you need to update the ticket with the order number using add_order_number_to_ticket
+        3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
+        
+        #############
+        Ticket Information: {issue_context}
+         
+        #############
+        Knowledge Base: {issue_kb}
         """
-    else:
+        
+    else: 
+        issue_kb = get_issue_kb(st.session_state.issue_key).replace("{", "{{").replace("}", "}}")
         system_prompt = f"""
         You are a frontdesk assistant for Capital Area Food Bank (CAFB). 
-        A partner is creating a new issue of type: {selected_category}.
-        Their initial description is: {st.session_state.issue_description}
+        A partner has just create a new ticket with ID: {st.session_state.issue_key}
+        The initial description of the ticket is: {st.session_state.issue_description}
+        
+        Help them by gathering more information about their issue so it can be properly addressed.
+        Use the Ticket Context and Knowledge Base to answer questions.
+        The Knowledege Base provides helpful examples but does not have LIVE data (for example, Kowledge Base does not have current schedules, simply examples)
+        If the answer cannot be found in the context or if no context is given, say so clearly and suggest how the user might refine their question.
 
-        This issue has been classified as:
-        - Category: {selected_category}
-        - Subcategory: {selected_subcategory}
-        - Priority: {priority}
+        You also have access to tools. 
+        1. If the customer want to escalate the issue, or if they say its urgent, you should call the update_ticket_priority tool.
+        2. For some issues, you will specifically need to ask the partner for their order number. Only AFTER the partner has provided you with their order number (e.g SO1234) you need to update the ticket with the order number using add_order_number_to_ticket
+        3. At the end of the conversation, you should ask the partner if their issue is resolved and if they would like to close the ticket. If their issue is resolved you should call close_ticket tool.
 
-        Help them by gathering more information or helping resolve it.
+        ##############
+        Knowledge Base: {issue_kb}
         """
     
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ("system", system_prompt),
-            MessagesPlaceholder(variable_name="history"),
-            ("human", "{question}"),
-        ]
+    assistant_prompt = ChatPromptTemplate.from_messages([
+        ("system",
+        system_prompt),
+        ("placeholder", 
+         "{messages}"),
+    ])
+
+    # Add tools
+    tools = [close_ticket, update_ticket_priority, add_order_number_to_ticket]
+    # Assistant for LLM Node
+    assistant_runnable = assistant_prompt | llm.bind_tools(tools)
+
+    # Build Graph
+    builder = StateGraph(State)
+    builder.add_node("assistant", Assistant(assistant_runnable))
+    builder.add_edge(START, "assistant")
+    builder.add_node("tools", create_tool_node_with_fallback(tools))
+    builder.add_conditional_edges("assistant", tools_condition)
+    builder.add_edge("tools", "assistant")
+
+    # In-memory chat history persistence
+    st.session_state.memory = MemorySaver()
+    # Compile graph
+    st.session_state.graph = builder.compile(
+        checkpointer=st.session_state.memory,
+        interrupt_before=["tools"]
     )
-    
-    chain = prompt | llm
-    chain_with_history = RunnableWithMessageHistory(
-        chain,
-        lambda session_id: msgs,
-        input_messages_key="question",
-        history_messages_key="history",
-    )
-    
+
+    st.session_state.setup_graph = False
+
+#################
+# Chat Inteface #
+#################
+if st.session_state.chat_started and not st.session_state.setup_graph:  
     # Display ticket/issue info at the top of chat
-    if st.session_state.selected_option == "existing":
-        st.info(f"Discussing ticket: {st.session_state.issue_key}")
+    st.info(f"Discussing ticket: {st.session_state.issue_key}")
+
+    config = {
+    "configurable": {
+        # Checkpoints are accessed by thread_id
+        "thread_id": "1",
+        }
+    }
+
+    # Function to process user input
+    def process_user_input(user_input):
+        # Invoke the graph with user input
+        events = st.session_state.graph.invoke(
+            {"messages": ("user", user_input)}, 
+            config, 
+            stream_mode="values"
+        )
+        
+        # Check if we need to handle tool calls
+        snapshot = st.session_state.graph.get_state(config)
+        
+        if snapshot.next and "tool_calls" in events["messages"][-1].__dict__:
+            # We have a tool call that needs confirmation
+            st.session_state.awaiting_tool_confirmation = True
+            tool_calls = events["messages"][-1].tool_calls
+            
+            if tool_calls and len(tool_calls) > 0:
+                st.session_state.tool_call_id = tool_calls[0]["id"]
+                
+                # Get tool description for user to confirm
+                tool_name = tool_calls[0]["name"]
+                tool_args = tool_calls[0]["args"]
+                
+                st.session_state.tool_description = prettify_tool(tool_name)
+                
+                # Don't add the assistant's message yet since we're waiting for confirmation
+                return None
+        
+        # If we're not handling a tool call, return the assistant's message
+        return events["messages"][-1].content
+    # Callback functions that directly update the UI without a page refresh
+    def handle_tool_approval():
+        """Callback function for approving tool usage without page refresh"""
+        try:
+            # Get the current state snapshot
+            snapshot = st.session_state.graph.get_state(config)
+            
+            # Continue the graph execution with empty input (since the state already has what it needs)
+            # But we need to make sure we pass the expected 'messages' input even if it's empty
+            tool_result = st.session_state.graph.invoke(None, config)
+            
+            assistant_response = tool_result["messages"][-1].content
+            
+            # Update the chat history
+            st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Reset approval state
+            st.session_state.awaiting_tool_confirmation = False
+            st.session_state.tool_call_id = None
+            st.session_state.tool_description = ""
+        except Exception as e:
+            st.error(f"Error during tool execution: {str(e)}")
+
+    def handle_tool_denial():
+        """Callback function for denying tool usage without page refresh"""
+        try:
+            # Continue the graph but with a denial message
+            # We need to include both the required 'messages' input and our tool message
+            tool_result = st.session_state.graph.invoke(
+                {
+                    "messages": [
+                        ToolMessage(
+                            tool_call_id=st.session_state.tool_call_id,
+                            content="API call denied by user. Continue assisting without using the tool.",
+                        )
+                    ]
+                },
+                config
+            )
+            
+            assistant_response = tool_result["messages"][-1].content
+            
+            # Update chat history
+            st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Reset state
+            st.session_state.awaiting_tool_confirmation = False
+            st.session_state.tool_call_id = None
+            st.session_state.tool_description = ""
+        except Exception as e:
+            st.error(f"Error handling tool denial: {str(e)}")
+
+
+    # Initialize or get chat history from session state
+    if 'messages' not in st.session_state:
+        st.session_state.messages = []
+
+    # Display existing chat messages
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.write(message["content"])
+
+
+    if st.session_state.awaiting_tool_confirmation:
+        st.info(f"The assistant wants to {st.session_state.tool_description}")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Approve", key=APPROVE_BUTTON_KEY, on_click=handle_tool_approval):
+                pass
+        
+        with col2:
+            if st.button("Deny", key=DENY_BUTTON_KEY, on_click=handle_tool_denial):
+                pass
     else:
-        st.info(f"Creating new {selected_category} issue: {st.session_state.issue_description[:50]}...")
-    
-    # Render current messages from StreamlitChatMessageHistory
-    for msg in msgs.messages:
-        if msg.type == 'AIMessageChunk':
-            st.chat_message('ai').write(msg.content)
-        else:
-            st.chat_message(msg.type).write(msg.content)
-    
-    # If user inputs a new prompt, generate and draw a new response
-    if user_input := st.chat_input("How can I help?"):
-        st.chat_message("human").write(user_input)
-        # New messages are saved to history automatically by Langchain during run
-        config = {"configurable": {"session_id": "any"}}
-        st.chat_message('ai').write_stream(chain_with_history.stream({"question": user_input}, config))
-         
+        # Get user input if not awaiting tool confirmation
+        if user_input := st.chat_input("How can I help?"):
+            # Add user message to chat history
+            st.session_state.messages.append({"role": "human", "content": user_input})
+            
+            # Process the user input
+            assistant_response = process_user_input(user_input)
+            
+            # Add assistant response to chat history if not awaiting tool confirmation
+            if assistant_response and not st.session_state.awaiting_tool_confirmation:
+                st.session_state.messages.append({"role": "assistant", "content": assistant_response})
+            
+            # Force refresh to show new messages
+            st.rerun()

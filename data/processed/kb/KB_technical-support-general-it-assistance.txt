@@ -1,0 +1,140 @@
+
+**Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base**  
+**Category: Technical Support - General IT Assistance**
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This Knowledge Base provides guidance for handling general IT support inquiries from CAFB partners using systems like **PartnerLink** or CAFB's digital tools for operations such as check-ins, inventory updates, and hours of operation management.
+
+Topics in this category commonly include:
+- PartnerLink login/access issues
+- Client intake data entry questions (Service Insights)
+- Hours of Operation updates
+- System training resources
+- Understanding platform error messages or warnings
+
+---
+
+### SECTION 2: COMMON SCENARIOS & RESOLUTION FLOWS
+
+---
+
+**Scenario 1: PartnerLink Login Issues**
+- **Example**: “We are not able to sign into our account with our credentials.”
+- **Steps**:
+  - Confirm the username being used.
+  - Ask if the partner has attempted a password reset.
+  - If reset failed, confirm if the issue still persists or was resolved.
+- **Resolution**:
+  - If a duplicate or resolved case, close the ticket.
+  - If unresolved, escalate to Customer Relations or IT team for further investigation.
+
+---
+
+**Scenario 2: Client Intake using PartnerLink / Service Insights**
+- **Example**: “What information is required to check people in at the pantry?”
+- **Steps**:
+  - Inform that client intake includes: First and Last Name, Age, Address, Household Members, Dietary Considerations, and Participation in Assistance Programs.
+  - Clarify that the “etc.” refers to demographic and programmatic details (e.g., contact info, household composition).
+- **Resolution**:
+  - Direct complex intake system questions to the **Service Insights team** via their designated email.
+
+---
+
+**Scenario 3: Updating Hours of Operation in PartnerLink**
+- **Example**: “Our hours haven’t changed. Do we still need to do anything?”
+- **Steps**:
+  - Direct them to log into PartnerLink.
+  - Click on the agency name to access Account Overview.
+  - Under **"Additional Information"**, click **"Hours of Operation"**.
+  - If hours are unchanged, they must still click **“Verify”**.
+  - If hours need changing, click **“Edit”**, submit changes, and wait for **Regional Coordinator approval** (up to 24 hours).
+- **Resolution**:
+  - Once verified or approved, partners can proceed with order placements.
+  - If a red banner or warning appears, verification is still pending.
+
+---
+
+**Scenario 4: Unable to Place an Order Due to HOO Verification Prompt**
+- **Example**: “I see a prompt to verify my Hours of Operation. Is action required?”
+- **Steps**:
+  - Explain the verification banner is standard if HOO is not recently confirmed.
+  - Ask the partner to go into PartnerLink and click **“Verify”** even if no changes are needed.
+- **Resolution**:
+  - Once verified, ordering capability is restored.
+
+---
+
+**Scenario 5: Training and Documentation Requests**
+- **Example**: “I missed the training, where can I learn how to update my agency hours?”
+- **Steps**:
+  - Point them to the **Partner Resource Tab** on PartnerLink.
+  - Locate the **“Hours of Operation Guide (PDF)”**.
+  - Encourage attendance at weekly **Office Hours** (Wednesdays 10–11am).
+- **Resolution**:
+  - If further support is needed, connect them with their **Regional Coordinator** or invite them to the next Office Hours.
+
+---
+
+### SECTION 3: KEY RESPONSE TEMPLATES FOR LLM
+
+---
+
+**Login Issue Template**  
+"We're sorry you're experiencing login issues. Could you please confirm the username you're using? Have you tried using the 'Forgot Password' option? If that doesn’t work, we can escalate this to our technical team."
+
+**Client Intake Clarification (Service Insights)**  
+"Client intake through PartnerLink involves collecting First Name, Last Name, Age, Address, Household Members, Dietary Considerations, and details on assistance programs. For more specific information, we recommend contacting the Service Insights team."
+
+**Hours of Operation Update Template**  
+"To update or verify your hours, log into PartnerLink, click your agency name, then 'Hours of Operation' under Additional Information. Click 'Verify' if hours are correct, or 'Edit' to make changes. Approval by your Regional Coordinator may take up to 24 hours."
+
+**HOO Verification Reminder**  
+"The system prompts partners to verify Hours of Operation to maintain accurate information on the Get Help Map. Simply clicking 'Verify' ensures you can continue placing orders."
+
+**Training Resource Template**  
+"You can find step-by-step guides under the Partner Resources tab on PartnerLink. If you need help, join our Office Hours held every Wednesday from 10am–11am."
+
+---
+
+### SECTION 4: LLM-SPECIFIC INSTRUCTIONS
+
+---
+
+✓ Start responses with empathy (e.g., “Thanks for reaching out! We understand how important this is.”)
+
+✓ For system-specific issues, do not speculate—refer users to appropriate CAFB departments like **Service Insights**, **IT**, or **Customer Relations**.
+
+✓ Avoid giving specific dates for system availability or trainings unless clearly stated in PartnerLink.
+
+✓ Remind partners to **check their Account Overview** for operational settings or status indicators (like lockouts or verification banners).
+
+✓ Refrain from implying that not attending a training is penalized — instead, encourage use of Office Hours and resources.
+
+---
+
+### SECTION 5: CAFB POLICIES & SYSTEMS REFERENCED
+
+---
+
+- **PartnerLink**: Main portal for ordering, agency information, and reporting
+- **Service Insights**: Manages the check-in and intake platform for pantry clients
+- **Office Hours**: Weekly live support for technical/process-related questions
+- **Hours of Operation Tool**: Self-service tool inside PartnerLink to manage agency hours
+- **Get Help Map**: Public-facing tool that relies on up-to-date HOO data
+- **Regional Coordinator**: Approves partner account changes (e.g., hours, orders)
+
+---
+
+### SECTION 6: BEST PRACTICES
+
+---
+
+- Always **verify Hours of Operation** even if they have not changed.
+- Recommend partners **attend Office Hours** for walkthroughs and Q&A.
+- For login issues, request confirmation of **username** and check if they’ve attempted a reset.
+- Refer client intake queries to **Service Insights** if outside general scope.
+
+---

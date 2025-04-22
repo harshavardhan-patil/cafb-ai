@@ -1,0 +1,106 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Product Availability & Substitutions – Special Item Requests
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base addresses partner queries related to special item requests, including requests for availability of specific items (e.g., peanut butter, chicken pouches), shelf-stability and expiration information (e.g., best-by dates), item packaging clarification, and general product inquiries.
+
+Partners often seek details about:
+- Estimated availability of specific product SKUs
+- Best-by dates and shelf life
+- Whether items are shelf-stable
+- Item photos, packaging format, and unit size
+- Inventory appearance in PartnerLink
+
+While CAFB staff can support partners with current product information, it is important to **avoid speculative or inaccurate responses**, especially regarding future availability.
+
+---
+SECTION 2: FAQs AND RESPONSES
+---
+
+**Q: When will peanut butter, chicken pouches, or macaroni and cheese be available again?**  
+A: “Thank you for your inquiry. We don’t have access to our receiving calendar and cannot confirm restock dates. Please keep an eye on the PartnerLink menu, as it updates regularly with available inventory.”
+
+**Q: Can you ask the Food Procurement team about a specific product?**  
+A: “We’ve forwarded your request to our Food Procurement team and will follow up as soon as we receive an update.”
+
+**Q: What is the best-by date or shelf stability of a specific item?**  
+A: “We can provide best-by dates for items currently in inventory. For example:
+- 100773 – Shelf stable
+- 100765 – 02/28/2025
+- 100780 – 08/23/2026
+If a product does not appear in our system, it may not be in inventory at the moment.”
+
+**Q: Can I get a picture or packaging details for an item?**  
+A: “We can request packaging information or images from our inventory team. For instance, item #100751 is bulk packed and comes as one 30lb case—not individually packed.”
+
+**Q: Why is an item not showing up in inventory?**  
+A: “If an item does not appear in PartnerLink, it may be out of stock or not currently available. Inventory updates frequently, so please check back.”
+
+---
+SECTION 3: BEST PRACTICES FOR PARTNERS
+---
+
+✅ DO:
+- Use the item number (SKU) when requesting information.
+- Monitor the PartnerLink menu for the latest inventory.
+- Contact Customer Relations for product-specific inquiries, such as shelf life or packaging format.
+- Submit a follow-up request if no response has been received within 2 business days.
+
+❌ DON’T:
+- Assume item availability based on past inventory.
+- Use speculative delivery dates when planning meals or distribution.
+- Expect shelf-stability for perishable items without confirmation.
+
+---
+SECTION 4: ESCALATION FLOW
+---
+
+- **Customer Relations Team**: First point of contact for all product-related inquiries. Can provide item status, best-by dates, and consult inventory data.
+- **Inventory Team**: Responsible for providing packaging details, shelf-stability confirmation, and actual stock validation.
+- **Food Procurement Team**: Contacted via Customer Relations when partners request estimated restock timelines or availability of special products.
+
+---
+SECTION 5: RESPONSE TEMPLATES
+---
+
+**Template: No Restock Date Available**  
+“Thanks for your question. We don’t have access to restock dates for this product. Please check the PartnerLink menu periodically for updates.”
+
+**Template: Forwarded to Procurement Team**  
+“We’ve escalated your request to our Food Procurement team. We’ll follow up as soon as we hear back.”
+
+**Template: Best-by Dates Provided**  
+“Below are the best-by dates for the items you requested. Please note, availability is based on current stock and may change.”
+
+**Template: Not in Inventory**  
+“This item doesn’t appear in our inventory system, which likely means it is not currently in stock. Please check the menu again in the coming days.”
+
+**Template: Packaging Information**  
+“This product is bulk packed and comes as one 30lb case. It is not individually packed.”
+
+---
+SECTION 6: QUICK ANSWERS
+---
+
+**Q: Is item 100773 shelf-stable?**  
+A: Yes, it is shelf-stable.
+
+**Q: What is the best-by date for item 100489?**  
+A: 06/2025
+
+**Q: Can I get photos or more details on item #100751?**  
+A: It’s bulk packed as a single 30lb case.
+
+**Q: Why can’t I find item #111033 in the system?**  
+A: It is not currently in inventory. Please check the PartnerLink menu periodically.
+
+---
+SECTION 7: CONTACTS
+---
+
+- **Customer Relations** – customerrelations@capitalareafoodbank.org  
+- **Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Regional Coordinator** – For procurement escalations or persistent stock issues  

@@ -1,0 +1,107 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base
+Category: Product Availability & Substitutions - Product Substitution Requests
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This knowledge base provides LLM guidance for assisting CAFB partners requesting substitutions or asking about unavailable or ready-to-eat products, such as milk, juice boxes, applesauce cups, cereals, etc. These inquiries are often driven by the needs of guests who may be unhoused and require convenient, no-prep meals.
+
+Substitution requests commonly relate to:
+- Ready-to-eat (RTE) items
+- Storage and distribution volume constraints
+- Custom food mixes tailored for homeless or high-need populations
+- Questions about PartnerLink product availability
+
+---
+SECTION 2: COMMON SCENARIOS & RESOLUTION FLOWS
+---
+
+**Scenario 1: Request for Ready-to-Eat (RTE) Product Substitutions**
+- Example: Partner requests shelf-stable milk, juice boxes, tuna pouches, granola bars, and individual cereal bowls.
+- Steps:
+  - Acknowledge the request with empathy and appreciation.
+  - Explain current inventory limitations.
+  - Ask for specific quantities needed (e.g., cases per month).
+  - Forward the details to the Food Resourcing Team.
+  - Recommend the partner check PartnerLink regularly for updates.
+- Response Template:
+  "Thank you for highlighting the need for ready-to-eat items. While our menu may be limited currently, we are evaluating demand and will do our best to source more RTE options in the future."
+
+**Scenario 2: Bulk Needs for Homeless Outreach or Mobile Distribution**
+- Example: Partner indicates a need for 50-60 cases of milk and 12-18 cases of applesauce every few months.
+- Steps:
+  - Document specific volume and storage considerations.
+  - Share the information with Food Resourcing for forecasting.
+  - Clarify limitations on custom order fulfillment.
+- Response Template:
+  "We’ve shared your quantity estimates with our Food Resourcing Team. At this time, we recommend planning your ordering based on available inventory in PartnerLink and checking weekly menus."
+
+**Scenario 3: Substitutions for Missing or Unavailable Products**
+- Steps:
+  - Clarify what item was unavailable and what a suitable substitution might be.
+  - Let the partner know that substitutions are not guaranteed but CAFB makes every effort to meet nutritional and service needs.
+  - Offer recommendations if similar items are available on PartnerLink.
+- Response Template:
+  "We strive to provide nutritious and suitable options when an item is unavailable. Please let us know your preferences and we’ll do our best to accommodate them."
+
+---
+SECTION 3: FREQUENTLY ASKED QUESTIONS (FAQs)
+---
+
+**Q1: How can I request a specific substitution or ready-to-eat item?**
+A: You may email Customer Relations with your request. Please include approximate quantities and the reason for the substitution so our Food Resourcing Team can better evaluate the need.
+
+**Q2: Are RTE items guaranteed to be on the menu?**
+A: No, they depend on inventory and donation cycles. We encourage checking PartnerLink often, especially before placing large orders.
+
+**Q3: Can I get regular shipments of specific RTE items?**
+A: While recurring shipments are not guaranteed, sharing your needs helps inform our sourcing and menu planning decisions.
+
+**Q4: I need help accessing or navigating PartnerLink. Who can I contact?**
+A: You can reach out to the CAFB Partner Relations or Customer Relations team for assistance.
+
+---
+SECTION 4: BEST PRACTICES FOR PARTNERS
+---
+
+- **Communicate in Advance**: If your needs change seasonally or monthly, provide estimates to CAFB early.
+- **Be Specific in Requests**: Include product names, packaging sizes, and quantities.
+- **Consolidate Needs**: If multiple programs or partners in your area need similar items, consider submitting a joint request.
+- **Check PartnerLink Weekly**: Product availability updates frequently.
+- **Alternative Sourcing**: Consider combining CAFB resources with local purchases from retailers (BJ’s, Costco, Walmart) when critical items are unavailable.
+
+---
+SECTION 5: LLM RESPONSE GUIDELINES
+---
+
+✓ Start every response with acknowledgment and support (e.g., "Thank you for sharing this important need.")
+✓ When products are unavailable:
+   - Avoid definitive language.
+   - Use terms like "currently not listed," "may become available," or "subject to inventory."
+✓ Always request volume estimates and distribution frequency.
+✓ Forward specific product needs to the Food Resourcing Team.
+✓ Guide partners to check PartnerLink regularly.
+✓ For repeated requests, offer to escalate to Partner Relations for more direct coordination.
+
+---
+SECTION 6: INTERNAL POLICIES & ESCALATION PATHS
+---
+
+- **PartnerLink Menu Updates**: Refreshed weekly.
+- **Food Resourcing Team**: Handles sourcing decisions and product mix planning.
+- **Customer Relations**: First line of communication for product concerns.
+- **Partner Relations**: For broader operational or strategic concerns.
+
+---
+SECTION 7: ADDITIONAL CONSIDERATIONS
+---
+
+- Partners supporting homeless communities often need shelf-stable, ready-to-eat food.
+- Volumes vary by storage availability and distribution frequency.
+- Encourage partners to share insights on what they are sourcing externally.
+- Items like bottled water, shelf-stable milk, crackers, cereal, and tuna pouches are consistently in demand.
+
+---
+END OF KNOWLEDGE BASE
+

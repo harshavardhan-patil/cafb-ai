@@ -1,0 +1,115 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Emergency Situations – Weather-Related Disruptions
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base outlines CAFB’s protocols for managing inclement weather scenarios and emergency disruptions, such as snowstorms, ice, and dangerous road conditions. It includes cancellation and rescheduling procedures, communication protocols, refund and fee handling, and how partners should prepare for or respond to such events.
+
+This information equips the LLM chatbot to assist CAFB partners with clarity, while prioritizing safety, responsiveness, and transparency.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Weather Forecast Causes Concern Before a Scheduled Delivery**
+- CAFB does not automatically follow government closures.
+- Leadership, including Operations, determines delays or closures.
+- Notifications are sent out via email or direct contact.
+- Delays adjust time slots (e.g., 2-hour delay shifts 8–10 AM to 10–12 PM).
+
+_Template:_  
+“We’re actively monitoring the weather. If there’s a delay or closure, we’ll notify you. A 2-hour delay would push your 8–10 AM window to 10–12 PM.”
+
+**2. Order Canceled Due to Weather**
+- Orders may be canceled if conditions are unsafe.
+- Partners are offered rescheduling opportunities.
+- Some return shipping fees may be waived depending on site readiness and decision context.
+
+_Template:_  
+“Your order was canceled due to unsafe weather. Let’s reschedule. We’ll coordinate with Transportation and notify you of the new time.”
+
+**3. Partner Asks About Return Fees or Credit for Missed Orders**
+- If CAFB cancels due to weather, shipping fees may be waived.
+- If the partner was not prepared or didn’t clear the site, fees may still apply.
+
+_Template:_  
+“If a weather-related disruption occurs and your site was prepared, we typically waive return fees. If not, the fee may still be applied.”
+
+**4. Policy Clarification Requests**
+- Partners may request the Inclement Weather Policy.
+- Policy emphasizes decision-making by CAFB leadership—not federal or local closures.
+
+_Template:_  
+“Our Inclement Weather Policy is available upon request. We decide internally based on safety, staff conditions, and logistics—not external government closures.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Check email regularly before and on delivery days during inclement weather  
+- Keep delivery/pickup areas clear of snow and ice  
+- Alert CAFB if your site is inaccessible or closing early  
+- Confirm reschedule dates promptly if contacted  
+
+❌ DON’T:
+- Assume delivery will happen if roads are unsafe  
+- Skip communication if you know your site is not accessible  
+- Expect automatic fee waivers if your site was unprepared  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: Does CAFB follow government closures during snow events?**  
+A: No. CAFB determines closure or delay based on its internal review. You’ll be notified of any change to delivery schedules.
+
+**Q: How will I know if my delivery is canceled due to snow?**  
+A: You’ll receive a notification from the Customer Relations team. Orders may be rescheduled or canceled based on safety conditions.
+
+**Q: If I’m not ready and it snows, do I still get charged a fee?**  
+A: Yes, if your site wasn’t prepared or accessible, return or delivery fees may still apply.
+
+**Q: Can I get a refund for a canceled order?**  
+A: If the order was canceled by CAFB due to weather, credit or refund may be issued based on return processing.
+
+**Q: What happens if snow continues for multiple days?**  
+A: CAFB may stagger deliveries or delay routes beyond the initial day. We will communicate follow-up plans directly.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “There’s snow in the forecast. Will I still get my delivery?”**  
+Chatbot: “We’re watching the weather closely. Our team will notify you if any delay or closure is confirmed. Please ensure your site is clear.”
+
+**Partner: “The snow made our site unsafe. Can I cancel without a fee?”**  
+Chatbot: “Thanks for letting us know. If the delivery hasn’t left yet, we can cancel. Return fees depend on site readiness and delivery status.”
+
+**Partner: “What is your snow policy?”**  
+Chatbot: “CAFB evaluates conditions independently of government decisions. I can send you the full Inclement Weather Policy if you’d like.”
+
+**Partner: “We were ready, but the order was canceled. Do we get charged?”**  
+Chatbot: “If you were ready and CAFB canceled due to weather, we typically waive the shipping or return fee.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Relations** – First response for partner communications and rescheduling  
+- **Transportation Team** – Confirms route status and weather-driven cancellations  
+- **Operations Team** – Decides fulfillment holds and restocks  
+- **Leadership** – Final authority on closures or site safety determinations  
+- **Finance / Accounting** – Reviews fees for return/cancellation in weather-related cases  
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Partner Support / Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Transportation Questions** – routed through Customer Relations  
+- **Main Office** – 202-644-9845  
+- **Warehouse Address** – 4900 Puerto Rico Ave NE, Washington, DC  
+- **Accounting (Fee/Credit Inquiries)** – accounting@capitalareafoodbank.org

@@ -1,0 +1,82 @@
+**Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base**  
+**Category**: Special Requests – Holiday & Seasonal Adjustments
+
+---
+
+### SECTION 1: CONTEXTUAL OVERVIEW
+
+This KB supports the LLM in responding to partner queries related to **holiday scheduling, seasonal service disruptions, or changes in delivery patterns**. These inquiries often arise in the weeks leading up to national holidays (e.g., Thanksgiving, Christmas, New Year’s).
+
+Typical concerns include:
+- Confirming delivery dates around holidays.
+- Adjusting orders based on site closures or staff availability.
+- Understanding CAFB's operational schedule and warehouse closures.
+- Clarifying funding availability or limits on special produce boxes (e.g., Coastal Produce Boxes).
+
+LLM responses should be empathetic, informed, and guide partners toward planning effectively.
+
+---
+
+### SECTION 2: COMMON SCENARIOS & RESPONSES
+
+**Scenario 1: Thanksgiving Delivery**
+- **Example Question**: Will there be deliveries on the day before Thanksgiving?
+- **Answer Guidance**:
+  - CAFB typically **remains open the day before Thanksgiving (Wednesday)** and continues scheduled deliveries.
+  - Partners should still confirm specific delivery windows with the Transportation Team if needed.
+
+**Scenario 2: Christmas and New Year’s Closures**
+- **Example Question**: Will CAFB deliver during the week of Christmas and New Year’s?
+- **Answer Guidance**:
+  - CAFB is **closed from December 25 to January 1**.
+  - Deliveries resume on **January 2 (Thursday)**.
+  - Partners are encouraged to plan orders accordingly to ensure sufficient inventory during the break.
+
+**Scenario 3: Holiday Season Produce Boxes**
+- **Example Question**: Are Coastal Produce Boxes available during the holiday period?
+- **Answer Guidance**:
+  - Availability depends on **funding limits** and **warehouse delivery capacity**.
+  - LLM should **loop in the Food Sourcing or Warehouse Operations teams** for specifics.
+  - Avoid confirming availability without internal validation.
+
+---
+
+### SECTION 3: FAQ TEMPLATE RESPONSES
+
+**Q1: Will CAFB deliver on [Holiday Date] or [Day Before/After]?**  
+*A1*: “Thanks for checking in! CAFB’s delivery schedule may change around holidays. For Thanksgiving, we remain open the day before (Wednesday). For Christmas and New Year’s, we close from December 25–January 1. Regular deliveries resume on January 2. Let us know if you’d like help adjusting your order!”
+
+**Q2: I’m planning site closures—can I adjust my order in advance?**  
+*A2*: “Absolutely! We recommend placing any seasonal requests at least 1–2 weeks ahead. Let us know your closure dates or special needs, and we’ll coordinate with the appropriate teams.”
+
+**Q3: Will we receive special produce boxes during the holidays?**  
+*A3*: “Produce box deliveries depend on both warehouse capacity and available funding during holidays. We’re happy to check on availability for your program—should I reach out to the team on your behalf?”
+
+---
+
+### SECTION 4: LLM INSTRUCTIONAL GUIDELINES
+
+✓ **Do not speculate** on delivery dates not mentioned in this KB. Instead, offer to connect with relevant teams.  
+✓ **Acknowledge holidays** with empathy, e.g., “Hope you and your team are having a smooth holiday season.”  
+✓ **Recommend early planning** for partners making seasonal adjustments.  
+✓ **Mention closures explicitly**: CAFB is closed from **Dec 25–Jan 1**.  
+✓ If asked about **funded programs or box limits**, offer to escalate to Food Sourcing.  
+✓ **Avoid confirming availability of resources** (e.g., Coastal Boxes) unless documented or routed internally.
+
+---
+
+### SECTION 5: INTERNAL RESOLUTION & ESCALATION PATHS
+
+- **Transportation Team** – For delivery scheduling, delays, or rerouting requests.
+- **Food Sourcing/Resourcing Team** – For special produce box availability and funding-based questions.
+- **Partner Relations or Site Coordinator** – For customized support or follow-up scheduling.
+
+---
+
+### SECTION 6: BEST PRACTICES FOR PARTNER SUCCESS
+
+- Partners should report holiday-related delivery changes **at least 2 weeks in advance**.
+- CAFB should publish and update a **holiday delivery calendar** on PartnerLink.
+- Ensure all program staff are aware of **seasonal closure dates** and inform their volunteers and clients accordingly.
+
+---

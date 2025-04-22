@@ -1,0 +1,76 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Order Modifications - Late Modification Requests  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base outlines procedures for supporting partners who need to modify orders after the standard edit window has closed. This includes changes in delivery date, time, or item quantities.
+
+Late requests are often due to:
+- Schedule conflicts
+- Missed cutoff window
+- Holidays or emergencies
+- Capacity issues (e.g., ordered too much)
+
+---
+SECTION 2: TYPES OF LATE MODIFICATIONS
+---
+
+**1. Delivery Date Changes**
+- Request to move order earlier or later
+- May not be available if outside 10-business-day scheduling window
+- Response:  
+  _“We’ve processed your date change to [new date/time]” or “This date is not yet available—please check back tomorrow.”_
+
+**2. Time Slot Changes**
+- Shifting a confirmed delivery window (e.g., 8–10 to 12–2)
+- Must check CAFB calendar availability
+- If slot is full:  
+  _“Unfortunately, the requested slot is unavailable. We recommend keeping your current slot or checking again tomorrow.”_
+
+**3. Item Quantity Adjustments**
+- Usually to reduce over-ordered items
+- Requires SO# and item number  
+- TEFAP items may require additional review
+
+---
+SECTION 3: RESPONSE TEMPLATES
+---
+
+**Reschedule Confirmed**  
+“Your order [SO#] has been successfully moved to [date/time].”
+
+**Slot Unavailable Response**  
+“Thank you for your request. Due to high demand, we are unable to accommodate the requested change at this time.”
+
+**Calendar Visibility Response**  
+“That date is currently beyond our calendar’s 10-day scheduling window. Please follow up tomorrow to secure the date.”
+
+**Quantity Change Acknowledgment**  
+“Your item quantity update has been submitted. If changes affect TEFAP items, we’ll follow up with confirmation.”
+
+---
+SECTION 4: LLM BEST PRACTICES
+---
+
+✓ Always acknowledge the partner’s urgency politely  
+✓ Confirm SO# before processing any request  
+✓ If a request is not possible, provide actionable next steps (e.g., try again tomorrow)  
+✓ For holidays and high-volume weeks, proactively mention delays  
+
+---
+SECTION 5: INTERNAL HANDOFFS
+---
+
+- **Transportation Team**: For delivery time/date rescheduling  
+- **Order Management**: For quantity changes or order line edits  
+- **Customer Relations**: For final confirmation and partner notification  
+
+---
+SECTION 6: ADDITIONAL NOTES
+---
+
+- TEFAP adjustments may need compliance documentation  
+- Document change approvals in ticket comments clearly  
+- Always ask for a preferred time slot when partners request a date change  

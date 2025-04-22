@@ -1,0 +1,120 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Delivery Issues – Missed Deliveries
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base is designed to help support CAFB partners experiencing missed, delayed, or improperly fulfilled deliveries. These issues may include undelivered pallets, incorrect items received, unreported delivery failures, poor communication at delivery sites, and misrouted inventory.
+
+This guidance ensures the chatbot can validate issues, recommend corrective action, and escalate when necessary with empathy and accuracy.
+
+---
+SECTION 2: COMMON SCENARIOS & RESPONSES
+---
+
+**1. Order Was Missed Entirely (No Delivery)**
+- Delivery may have been missed due to route delays, staffing shortages, or weather disruptions.
+- Partners should report this ASAP for rescheduling or credit.
+
+_Template:_  
+“We’re sorry your order was missed. I’ll check with our Transportation team right away and see if a reschedule is possible. Could you confirm if someone was available during the delivery window?”
+
+**2. Delivery Arrived, but Items Were Missing**
+- Item shortages may be due to picking errors or inventory adjustments.
+- CAFB can issue a credit, redeliver, or explain item status.
+
+_Template:_  
+“Thanks for letting us know. I’ll check your SO and confirm whether the missing item was removed or left out in error. Please share which items were affected.”
+
+**3. Incorrect Product Delivered**
+- CAFB may accidentally swap or mislabel items (e.g., prunes instead of plums).
+- Exchanges may be possible during a future pickup.
+
+_Template:_  
+“We apologize for the mistake. I’ve informed Operations and flagged the item for review. If you’re picking up again soon, we can coordinate an exchange.”
+
+**4. Partial Delivery or Unclear Fulfillment**
+- Partners may receive only a portion of the order (e.g., 3 pallets instead of 4).
+- Driver logs and warehouse records help confirm what was loaded.
+
+_Template:_  
+“I’ll review the delivery logs and check what was shipped. It’s possible the order was split or a pallet was mistakenly left behind.”
+
+**5. Rude or Unclear Driver Communication**
+- All feedback about delivery behavior is documented and escalated.
+- Drivers should provide clear instructions and help confirm deliveries.
+
+_Template:_  
+“I’m sorry about your experience with the driver. I’ve reported this to our Transportation Supervisor. Your feedback helps us improve partner support.”
+
+---
+SECTION 3: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Review orders immediately upon delivery  
+- Report issues within 24 hours for perishable items, 72 hours for shelf-stable  
+- Share Sales Order numbers when requesting support  
+- Photograph incorrect or damaged deliveries when possible  
+- Provide clear contact info for delivery day issues  
+
+❌ DON’T:
+- Wait more than 3 days to report non-perishable issues  
+- Assume drivers can make exchanges or take returns without approval  
+- Sign for an order without verifying contents if able  
+- Leave pallets on grass or in cluttered areas (for returns/pickup)  
+
+---
+SECTION 4: FREQUENTLY ASKED QUESTIONS
+---
+
+**Q: What should I do if my order didn’t arrive?**  
+A: Contact CAFB Partner Support immediately. We’ll check with Transportation to see if it was missed or delayed, and reschedule if needed.
+
+**Q: I received the wrong item—can I return it?**  
+A: Yes, in most cases you can bring it during your next pickup or we can coordinate a swap if appropriate.
+
+**Q: Can I still be credited if I missed the reporting window?**  
+A: Credits are generally only available if reported within CAFB’s return policy: 24 hours for perishables and 72 hours for shelf-stable.
+
+**Q: Why didn’t the driver pick up the pallets?**  
+A: Drivers may skip pallet pickup due to safety concerns (e.g. wet pallets) or routing priorities. We can schedule a separate pickup when needed.
+
+**Q: How do I avoid future fulfillment issues?**  
+A: Always check the packing slip, review the order on-site if possible, and contact support promptly if something is missing or wrong.
+
+---
+SECTION 5: CHATBOT RESPONSE EXAMPLES
+---
+
+**Partner: “Our order was supposed to come this morning but didn’t.”**  
+Chatbot: “I’m so sorry! Let me check your Sales Order and confirm with our Transportation team. Was someone available during the full delivery window?”
+
+**Partner: “We received prunes instead of plums.”**  
+Chatbot: “Thanks for catching that! I’ll inform Operations. If you’re planning a visit soon, we may be able to coordinate a product exchange.”
+
+**Partner: “A whole pallet of our food is missing.”**  
+Chatbot: “I’ll review your order details and check what the driver marked as delivered. Can you tell me what items were included on the missing pallet?”
+
+**Partner: “The driver refused to pick up empty pallets.”**  
+Chatbot: “Sorry about that! Sometimes drivers can't take pallets due to food safety or route constraints. I’ll schedule a separate pickup and note your space concerns.”
+
+---
+SECTION 6: ESCALATION PATHWAYS
+---
+
+- **Customer Support** – Tracks missing deliveries, arranges credits or redelivery  
+- **Transportation Team** – Confirms driver activity, investigates missed routes  
+- **Operations Team** – Handles packing and fulfillment errors  
+- **Warehouse Managers** – Authorize pallet swaps or field-side corrections  
+- **Leadership Team** – Reviews repeated issues or poor service interactions  
+
+---
+SECTION 7: CONTACT DIRECTORY
+---
+
+- **Partner Support / Customer Relations** – partnersupport@capitalareafoodbank.org  
+- **Main Line** – 202-644-9845  
+- **Regional Managers (for persistent service concerns)** – contact via Partner Support  
+- **For Urgent Delivery Help** – Include Sales Order number and item description when emailing

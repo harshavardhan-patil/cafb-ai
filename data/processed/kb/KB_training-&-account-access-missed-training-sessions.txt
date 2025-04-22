@@ -1,0 +1,120 @@
+Capital Area Food Bank (CAFB) - Internal LLM Knowledge Base  
+Category: Training & Account Access – Missed Training Sessions  
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports the LLM in helping CAFB partners who missed mandatory or optional trainings, such as:
+- Smart Shopping Trainings (required for PartnerLink order access)
+- PartnerLink feature trainings (e.g., Hours of Operation updates)
+- Reporting protocol or regional distribution updates
+
+Common reasons partners miss sessions:
+- Didn’t receive Zoom link
+- Were unaware of the session time
+- Had scheduling conflicts or confusion about signups
+- Attended but weren’t marked as present
+
+CAFB uses Zoom for most virtual training and records attendance manually or via Zoom reports. Training attendance is required to unlock certain platform features.
+
+---
+SECTION 2: SCENARIOS & HANDLING INSTRUCTIONS
+---
+
+**Scenario 1: Partner Missed Training and Requests a Make-up**
+- Steps:
+  - Share the next available session date and Zoom registration link.
+  - Emphasize that attending **one live session** meets the requirement.
+  - If no future session is scheduled, offer access to:
+    - PDF guides
+    - Office Hours (Wednesdays 10–11 a.m.)
+
+**Scenario 2: Partner Attended but Not Recorded**
+- Steps:
+  - Thank them and verify training date and name used in registration.
+  - Update internal attendance logs and confirm via response.
+- Resolution Template:  
+  _“Thank you for confirming. We’ve updated our records to reflect your attendance on [date].”_
+
+**Scenario 3: Didn’t Receive Link After Registration**
+- Steps:
+  - Confirm registration completion.
+  - Ask them to check spam/junk folders.
+  - Provide direct Zoom link and calendar invite manually.
+
+**Scenario 4: Requests Written Instructions Instead of Attending**
+- Steps:
+  - If training is **mandatory**, written material is supplemental only.
+  - Share relevant PDF guides (e.g., "Hours of Operations").
+  - Suggest joining weekly Office Hours for walkthrough support.
+
+**Scenario 5: Partner Representing a New Staff Member**
+- Steps:
+  - Confirm Letter of Authorization (if applicable).
+  - Share registration link for next session.
+  - Make sure the new staff member is entered into the system post-attendance.
+
+---
+SECTION 3: COMMON RESPONSE TEMPLATES
+---
+
+**Missed Session + Re-registration**  
+“We’re sorry you missed the session. The next training will be held on [date/time]. You can register here: [Zoom registration link]”
+
+**Partner Attended but Not Recorded**  
+“Thank you for letting us know. We’ve now updated our records to show that you attended the training on [date].”
+
+**Did Not Receive Zoom Link**  
+“Once you complete registration, a Zoom link is sent to your email. Please check your spam folder. If you still don’t have it, here’s the direct access link: [Zoom link]”
+
+**Written Instructions as Backup**  
+“While attending the training is required, we also provide a guide for your reference. You can find the 'Hours of Operations' guide under the Partner Resource tab in PartnerLink. If you need further help, we encourage you to attend our Office Hours on Wednesdays at 10 a.m.”
+
+---
+SECTION 4: LLM INSTRUCTIONS
+---
+
+✓ Always confirm the training type when replying to “missed session” messages  
+✓ Provide the correct Zoom link or guide depending on context  
+✓ Be empathetic but firm when attendance is required (especially for mandatory trainings)  
+✓ Do not excuse a missed mandatory training unless written guides or alternative sessions are officially allowed by CAFB  
+✓ Offer Office Hours as a recovery resource if no more sessions are available  
+
+---
+SECTION 5: INTERNAL RESOLUTION TEAMS
+---
+
+- **Customer Relations**: Attendance tracking and Zoom logistics  
+- **Regional Coordinators**: Approve access to PartnerLink post-training  
+- **IT/PartnerLink Admin**: Grant system access based on verified attendance  
+- **Training Leads (e.g., Charity, Erin, “D”)**: Provide updated links and Zoom details  
+
+---
+SECTION 6: TRAINING FOLLOW-UP PRACTICES
+---
+
+- Attendance is typically captured via Zoom reports or manual logs  
+- Confirmation emails should include Zoom links and calendar invites  
+- Common training timeframes:  
+  - Smart Shopping: Bi-monthly (regionalized)  
+  - PartnerLink Hours Update: As needed  
+  - Office Hours: Weekly, Wednesday 10–11 a.m.
+
+---
+SECTION 7: PDF RESOURCES & SELF-SERVICE
+---
+
+Encourage the use of PartnerLink’s “Partner Resource” tab for:
+- “Hours of Operations” Guide (PDF)
+- Account editing walkthroughs
+- Agency overview and update tools
+
+---
+SECTION 8: TIPS FOR PARTNER SUCCESS
+---
+
+- Advise registering early for trainings  
+- Remind them to check for confirmation emails  
+- Suggest using the same name/email for training and ticketing to ensure matching  
+- Encourage participation in Office Hours if additional help is needed  

@@ -1,0 +1,152 @@
+Capital Area Food Bank (CAFB) – Internal LLM Knowledge Base  
+Category: Technical Support – Website & Ordering System Errors
+
+---
+SECTION 1: CONTEXTUAL OVERVIEW
+---
+
+This Knowledge Base supports partners experiencing technical difficulties with the CAFB ordering systems, primarily PartnerLink. It addresses common errors during login, order placement, shopping interface issues, payment errors, and account locking. It also includes troubleshooting steps and escalation flows to resolve system bugs and IT-dependent problems.
+
+Typical partner-reported issues:
+- Unable to scroll, select, or load inventory
+- Looping or blinking order pages
+- Errors placing/editing orders due to holidays or closures
+- Locked accounts due to unverified Hours of Operation
+- Issues related to payment methods (e.g., credit card vs invoice)
+- Errors related to grant balance or produce limits
+- Items disappearing from cart during checkout
+- Account access inconsistency across devices
+
+---
+SECTION 2: COMMON ERRORS AND FIXES
+---
+
+**1. Unable to Place or Edit Orders**
+- Edits are disabled 3 business days before the scheduled date.
+- Holidays and closures count as non-business days.
+- If the order locks earlier than expected, explain it may be due to early processing by CAFB Operations.
+
+_Template:_  
+“Orders are locked 3 business days in advance. Holiday closures can shorten that window. Please submit changes before that timeframe.”
+
+**2. Website Freezing, Scrolling Issues, or Page Glitches**
+These issues are most common on outdated browsers or mobile devices.
+
+✅ Troubleshooting Steps:
+- Use **Chrome** on a **desktop or laptop**
+- Clear your browser cache
+- Restart your computer
+- Try another browser (if Chrome fails)
+- Avoid iPads/tablets for editing orders
+- Update browser to the latest version
+
+_Template:_  
+“Please use Chrome on a desktop computer for the best experience. Clear your browser’s cache and restart the session. Let us know if the issue persists.”
+
+**3. Payment Method Errors**
+- Occasionally, the system defaults to “credit card” when “invoice” was selected.
+- Staff may need to manually update the order payment method.
+
+_Template:_  
+“We’ve updated your payment method to invoice. You should now be able to edit the order as needed.”
+
+**4. Locked Accounts / Uneditable Orders**
+- Orders may lock early due to operational planning.
+- Hours of Operation not being verified/updated can also lock accounts.
+
+_Template:_  
+“Please ensure your Hours of Operation are up-to-date in PartnerLink. Once submitted, allow 24 hours for approval. This is required to unlock your account.”
+
+---
+SECTION 3: PARTNERLINK BEHAVIORAL QUIRKS
+---
+
+**1. Items Disappearing or Becoming Unavailable**
+- Inventory is not reserved until checkout is complete.
+- Produce and high-demand items are often depleted quickly.
+
+**2. Looping/Reloading Shopping Interface**
+- Often caused by browser cache issues.
+- Use Chrome, avoid tablets, and clear cache.
+
+**3. “Cannot Select Date” or “Edit Not Permitted”**
+- Happens when partner selects a date within the fulfillment window.
+- Partners cannot have more than one order for the same day.
+
+**4. Order Time Slot Appears Available but Won’t Confirm**
+- May result from a backend conflict or slot being claimed seconds earlier.
+
+---
+SECTION 4: LLM RESPONSE FLOWS
+---
+
+**Partner: “Site keeps blinking and I can’t scroll or shop.”**  
+“Please clear your browser cache, switch to Google Chrome on a desktop, and avoid mobile or tablet devices. Let us know if you continue facing issues.”
+
+**Partner: “Order closed early due to a holiday?”**  
+“Yes, holidays are treated like weekends. They reduce the 3-business-day editing window. We recommend planning ahead around known closures.”
+
+**Partner: “The payment method changed to credit card by itself.”**  
+“Thank you for flagging this. We’ve corrected your order to ‘invoice’ and you can now make edits.”
+
+**Partner: “I can't edit or submit my order due to grant balance error.”**  
+“This issue may require backend support. We’ve notified the IT team, and will confirm once your order is manually completed or the balance is cleared.”
+
+---
+SECTION 5: ESCALATION PATHWAYS
+---
+
+- **Customer Relations Team**: Initial technical triage, partner communication  
+- **IT Support / ERP Team**: System bugs, grant balance issues, payment logic bugs  
+- **Operations Team**: Early order locks, closure-related constraints  
+- **Regional Coordinator**: Approval for Hours of Operation or profile issues  
+
+---
+SECTION 6: PARTNER BEST PRACTICES
+---
+
+✅ DO:
+- Use Chrome browser on desktop  
+- Clear cache regularly and update browser  
+- Submit tickets with screenshots when possible  
+- Double-check that “invoice” is selected before checkout  
+- Review and confirm Hours of Operation to avoid lockouts  
+
+❌ DON’T:
+- Use mobile/tablets for full ordering sessions  
+- Assume slots are held before completing checkout  
+- Wait until the day before fulfillment to make edits  
+
+---
+SECTION 7: SPECIAL TECHNICAL NOTES
+---
+
+- **System Timeouts**: CAFB system may timeout or lock if inactive too long  
+- **Produce Ordering**: Inventory is live and not held in carts  
+- **PartnerLink Compatibility**: Most stable on Chrome desktop/laptop  
+- **Grant Balance Bugs**: May show incorrect credit; needs backend override  
+
+---
+SECTION 8: QUICK RESPONSES & RESOLUTIONS
+---
+
+**Q: I selected “invoice” but now it says credit card.**  
+A: “We’ve updated it to invoice—please try again.”
+
+**Q: My account is locked. Why?**  
+A: “Accounts are often locked due to unverified Hours of Operation. Please log in, verify/edit them, and allow 24 hours.”
+
+**Q: Why can’t I edit my order?**  
+A: “Edits are disabled 3 business days prior. Holiday closures may reduce that further.”
+
+**Q: I keep getting kicked out while placing an order.**  
+A: “This may be due to produce inventory depleting in real-time. Please try again promptly and let us know if the issue persists.”
+
+---
+SECTION 9: CONTACTS
+---
+
+- **Customer Relations** – customerrelations@capitalareafoodbank.org  
+- **Partner Support** – partnersupport@capitalareafoodbank.org  
+- **Office Hours (Wed, 10–11 AM)** – for live walkthroughs  
+- **Regional Coordinator** – for agency-specific account approvals  
