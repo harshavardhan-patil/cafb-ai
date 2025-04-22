@@ -2,9 +2,7 @@
 
 The Capital Area Food Bank (CAFB) AI Support System is an intelligent customer service solution designed to enhance partner support operations by integrating with the existing Jira ticketing system. This system addresses key challenges in ticket management and customer service automation, providing real-time analytics and AI-powered assistance to improve response times and service quality.
 
-## Video Demo
-
-![CAFB_AI_Demo](reports/figures/CAFB_AI.mp4)
+Check out the video demo [here](https://drive.google.com/file/d/1N8P5I59dgtn2vCyxFgtdPg5quNieWGFp/view?usp=drive_link)
 
 ## Project Organization
 
