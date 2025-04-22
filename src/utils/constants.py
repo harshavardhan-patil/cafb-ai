@@ -87,4 +87,3 @@ JIRA_FIELD_MAPPING = {
 
 # Reverse mapping (useful for parsing responses)
 JIRA_FIELD_REVERSE_MAPPING = {v: k for k, v in JIRA_FIELD_MAPPING.items()}
-
