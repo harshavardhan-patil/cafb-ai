@@ -23,4 +23,9 @@ langchain_openai
 langchain_community
 langchain_google
 langgraph
+plotly
+wordcloud
+nltk
+streamlit-extras
+seaborn
 -e .
