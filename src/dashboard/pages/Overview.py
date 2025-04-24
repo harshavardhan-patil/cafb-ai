@@ -1,5 +1,10 @@
+
 import streamlit as st
-from src.utils.dashboard_helpers import initialize_data_refresh, get_processed_dataframe
+import base64
+from PIL import Image
+import requests
+from io import BytesIO
+
 
 # Custom CSS
 st.markdown("""
@@ -39,18 +44,69 @@ st.markdown("""
         margin-bottom: 1rem;
         color: #3498db;
     }
-    .img {
+    .stats-container {
+        background-color: #3498db;
+        color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .stat-value {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .stat-label {
+        font-size: 1rem;
+    }
+    .highlight {
+        color: #e74c3c;
+        font-weight: bold;
+    }
+    .cta-button {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .footer {
+        margin-top: 3rem;
+        text-align: center;
+        color: #7f8c8d;
+    }
+    /* Custom styling for the support icons */
+    .support-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 2rem;
+    }
+    .support-icon {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        padding: 15px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .img{
         width : 400, 
         height : 300, 
         bg_color : "f1f1f1";
         text_color: "555555"
         text : "Image"
+    
     }
 </style>
 """, unsafe_allow_html=True)
-
-# Get data from the database (unfiltered for overview)
-df = get_processed_dataframe(filtered=False)
 
 # Hero section
 col1, col2, col3 = st.columns([1, 3, 1])
@@ -62,54 +118,25 @@ with col2:
 # Main content section
 col1, col2 = st.columns([3, 2])
 
-# Key metrics
-total_issues = len(df)
-open_issues = len(df[df['status'] != 'Closed'])
-avg_resolution_time = "N/A"  # This would require calculation based on created_at and resolved_at
-
 with col1:
-    st.markdown(f""" 
+    st.markdown(""" 
         <div class="feature-card">
-            <h2>Our Support System Overview</h2>
-            <p>The Capital Area Food Bank Support System provides a centralized platform for tracking 
-            and managing partner inquiries and issues.</p>
-            
-            <h3>Current Statistics:</h3>
+            <h2>Our Support Team is Here For You</h2>
+            <p>At our company, we believe in providing exceptional customer service 24 hours a day, 7 days a week. 
+            Our dedicated team of support specialists is ready to assist you with any questions or issues you may encounter.</p> 
+            <h3>What We Offer:</h3>
             <ul>
-                <li><strong>Total Issues Tracked:</strong> {total_issues}</li>
-                <li><strong>Currently Open Issues:</strong> {open_issues}</li>
-                <li><strong>Average Resolution Time:</strong> {avg_resolution_time}</li>
-            </ul>
-            
-            <h3>System Features:</h3>
-            <ul>
-                <li>Centralized issue tracking</li>
-                <li>AI-powered response assistance</li>
-                <li>Automated ticket categorization</li>
-                <li>Real-time dashboard analytics</li>
-                <li>Knowledge base integration</li>
+                <li>24/7 availability through multiple channels</li>
+                <li>Expert technical assistance</li>
+                <li>Quick response times</li>
+                <li>Personalized solutions to your problems</li>
+                <li>Follow-up to ensure your satisfaction</li>
             </ul>
         </div>
     """, unsafe_allow_html=True)
 
 with col2:
-    try:
-        st.image("reports/figures/overview_img.png")
-    except:
-        st.info("Overview image not found. Please place an image file at 'reports/figures/overview_img.png'")
+    st.image("static/overview_img.png")
 
-# Bottom section - Recent activity
-st.markdown("<h2>Recent Activity</h2>", unsafe_allow_html=True)
 
-# Get the 5 most recent issues
-recent_issues = df.sort_values('created_at', ascending=False).head(5)
-
-# Display in a table
-if not recent_issues.empty:
-    # Select only the columns we want to display
-    display_cols = ['issue_key', 'summary', 'status', 'Priority', 'created_at']
-    cols_to_display = [col for col in display_cols if col in recent_issues.columns]
-    
-    st.table(recent_issues[cols_to_display])
-else:
-    st.info("No recent activity found in the database.")
+ 
